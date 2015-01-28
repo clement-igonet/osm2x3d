@@ -1,0 +1,665 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='true' generator='JOSM'>
+    <bounds minlat="40.7478800" minlon="-73.9870200" maxlat="40.7489700" maxlon="-73.9843000"/>
+    <node id='-1471' visible='true' lat='40.7486208' lon='-73.9858173' />
+    <node id='-1469' visible='true' lat='40.7484348' lon='-73.985355' />
+    <node id='-1468' visible='true' lat='40.7484073' lon='-73.9859891' />
+    <node id='-1465' visible='true' lat='40.7484618' lon='-73.9861063' />
+    <node id='-1464' visible='true' lat='40.7483832' lon='-73.9860824' />
+    <node id='-1463' visible='true' lat='40.7481389' lon='-73.9855058' />
+    <node id='-1461' visible='true' lat='40.7486334' lon='-73.9860007' />
+    <node id='-1460' visible='true' lat='40.7486266' lon='-73.9859847' />
+    <node id='-1459' visible='true' lat='40.7485136' lon='-73.9860681' />
+    <node id='-1458' visible='true' lat='40.7482056' lon='-73.985351' />
+    <node id='-1457' visible='true' lat='40.7483487' lon='-73.9858512' />
+    <node id='-1456' visible='true' lat='40.7482692' lon='-73.9856637' />
+    <node id='-1455' visible='true' lat='40.7482603' lon='-73.9856427' />
+    <node id='-1454' visible='true' lat='40.7482152' lon='-73.9856372' />
+    <node id='-1453' visible='true' lat='40.7481994' lon='-73.9854882' />
+    <node id='-1452' visible='true' lat='40.7484557' lon='-73.9852991' />
+    <node id='-1451' visible='true' lat='40.748507' lon='-73.9854202' />
+    <node id='-1450' visible='true' lat='40.7485197' lon='-73.9854502' />
+    <node id='-1449' visible='true' lat='40.7484949' lon='-73.9854963' />
+    <node id='-1448' visible='true' lat='40.7485744' lon='-73.9856839' />
+    <node id='-1447' visible='true' lat='40.748583' lon='-73.9857042' />
+    <node id='-1446' visible='true' lat='40.7486168' lon='-73.9856793' />
+    <node id='-1445' visible='true' lat='40.7486824' lon='-73.9858343' />
+    <node id='-1444' visible='true' lat='40.7486486' lon='-73.9858593' />
+    <node id='-1443' visible='true' lat='40.74839' lon='-73.98605' />
+    <node id='-1442' visible='true' lat='40.748337' lon='-73.9859247' />
+    <node id='-1441' visible='true' lat='40.7483248' lon='-73.985896' />
+    <node id='-1440' visible='true' lat='40.7485078' lon='-73.9864684' />
+    <node id='-1439' visible='true' lat='40.7487007' lon='-73.9863282' />
+    <node id='-1438' visible='true' lat='40.7487242' lon='-73.9863111' />
+    <node id='-1437' visible='true' lat='40.7489422' lon='-73.9861526' />
+    <node id='-1436' visible='true' lat='40.7483735' lon='-73.9848259' />
+    <node id='-1435' visible='true' lat='40.7479226' lon='-73.9851554' />
+    <node id='-1434' visible='true' lat='40.7484833' lon='-73.9864855' />
+    <node id='-1433' visible='true' lat='40.7484659' lon='-73.9862772' />
+    <node id='-1432' visible='true' lat='40.7484165' lon='-73.9861605' />
+    <node id='-1431' visible='true' lat='40.7483786' lon='-73.9861885' />
+    <node id='-1430' visible='true' lat='40.7482845' lon='-73.9859663' />
+    <node id='-1429' visible='true' lat='40.7483222' lon='-73.9859385' />
+    <node id='-1428' visible='true' lat='40.7483003' lon='-73.9858869' />
+    <node id='-1427' visible='true' lat='40.748221' lon='-73.9856994' />
+    <node id='-1426' visible='true' lat='40.7481619' lon='-73.9856743' />
+    <node id='-1425' visible='true' lat='40.748068' lon='-73.9854525' />
+    <node id='-1424' visible='true' lat='40.7481053' lon='-73.985425' />
+    <node id='-1423' visible='true' lat='40.7480537' lon='-73.985303' />
+    <node id='-1422' visible='true' lat='40.7483773' lon='-73.9850644' />
+    <node id='-1421' visible='true' lat='40.7484642' lon='-73.9851607' />
+    <node id='-1420' visible='true' lat='40.7485227' lon='-73.9854086' />
+    <node id='-1419' visible='true' lat='40.7486238' lon='-73.9856474' />
+    <node id='-1418' visible='true' lat='40.7487401' lon='-73.985922' />
+    <node id='-1417' visible='true' lat='40.7487894' lon='-73.9860386' />
+    <node id='-1416' visible='true' lat='40.7484211' lon='-73.9854195' />
+    <node id='-1415' visible='true' lat='40.748258' lon='-73.9855403' />
+    <node id='-1414' visible='true' lat='40.748421' lon='-73.9859245' />
+    <node id='-1413' visible='true' lat='40.7485841' lon='-73.9858037' />
+    <node id='-1412' visible='true' lat='40.7484592' lon='-73.9856624' />
+    <node id='-1411' visible='true' lat='40.7484512' lon='-73.985701' />
+    <node id='-1410' visible='true' lat='40.7484248' lon='-73.9857208' />
+    <node id='-1409' visible='true' lat='40.7483955' lon='-73.9857101' />
+    <node id='-1408' visible='true' lat='40.7483806' lon='-73.9856753' />
+    <node id='-1407' visible='true' lat='40.748415' lon='-73.9856169' />
+    <node id='-1406' visible='true' lat='40.7484443' lon='-73.9856276' />
+    <node id='-1405' visible='true' lat='40.7484833' lon='-73.9856585' />
+    <node id='-1404' visible='true' lat='40.7484704' lon='-73.9857207' />
+    <node id='-1403' visible='true' lat='40.7484278' lon='-73.9857526' />
+    <node id='-1402' visible='true' lat='40.7483805' lon='-73.9857354' />
+    <node id='-1401' visible='true' lat='40.7483565' lon='-73.9856793' />
+    <node id='-1400' visible='true' lat='40.7483694' lon='-73.985617' />
+    <node id='-1399' visible='true' lat='40.748412' lon='-73.9855851' />
+    <node id='-1398' visible='true' lat='40.7484593' lon='-73.9856023' />
+    <node id='-1397' visible='true' lat='40.748669' lon='-73.985814'>
+        <tag k='amenity' v='bank' />
+        <tag k='name' v='Bank of America' />
+    </node>
+    <node id='-1396' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978558' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WNSR-FM (New York)' />
+    </node>
+    <node id='-1395' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978554' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WLTW-FM (New York)' />
+    </node>
+    <node id='-1393' visible='true' lat='40.748416' lon='-73.985161'>
+        <tag k='amenity' v='fast_food' />
+        <tag k='name' v='Chipotle' />
+    </node>
+    <node id='-1389' visible='true' lat='40.7481907' lon='-73.9854676' />
+    <node id='-1388' visible='true' lat='40.748249' lon='-73.985037'>
+        <tag k='amenity' v='pub' />
+        <tag k='name' v='Heartland Brewery' />
+        <tag k='wheelchair' v='limited' />
+    </node>
+    <node id='-1386' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978550' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WQHT-FM (New York)' />
+    </node>
+    <node id='-1385' visible='true' lat='40.7484883' lon='-73.986462'>
+        <tag k='addr:housenumber' v='1' />
+        <tag k='addr:postcode' v='10001' />
+        <tag k='addr:street' v='West 33rd Street' />
+    </node>
+    <node id='-1384' visible='true' lat='40.7482127' lon='-73.9853677' />
+    <node id='-1383' visible='true' lat='40.7484314' lon='-73.9853711' />
+    <node id='-1382' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978547' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WXRK-FM (New York)' />
+    </node>
+    <node id='-1381' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978557' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WNEW-FM (New York)' />
+    </node>
+    <node id='-1380' visible='true' lat='40.7484354' lon='-73.9860439' />
+    <node id='-1378' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978560' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WCBS-FM (New York)' />
+    </node>
+    <node id='-1377' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978551' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WSKQ-FM (New York)' />
+    </node>
+    <node id='-1376' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978548' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WQXR-FM (New York)' />
+    </node>
+    <node id='-1375' visible='true' lat='40.7483221' lon='-73.9852655' />
+    <node id='-1373' visible='true' lat='40.7481634' lon='-73.9855148' />
+    <node id='-1372' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978549' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WBLS-FM (New York)' />
+    </node>
+    <node id='-1370' visible='true' lat='40.7485203' lon='-73.986084' />
+    <node id='-1369' visible='true' lat='40.7483291' lon='-73.9852819' />
+    <node id='-1368' visible='true' lat='40.7487069' lon='-73.9858433' />
+    <node id='-1367' visible='true' lat='40.7484215' lon='-73.9853244' />
+    <node id='-1366' visible='true' lat='40.7486573' lon='-73.9858799' />
+    <node id='-1364' visible='true' lat='40.7484107' lon='-73.9859729' />
+    <node id='-1361' visible='true' lat='40.7482213' lon='-73.9855267' />
+    <node id='-1360' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978641' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WNYE-TV (New York)' />
+    </node>
+    <node id='-1359' visible='true' lat='40.7485443' lon='-73.9854597' />
+    <node id='-1358' visible='true' lat='40.7483857' lon='-73.98524' />
+    <node id='-1357' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978559' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WPLJ-FM (New York)' />
+    </node>
+    <node id='-1356' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978555' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WRKS-FM (New York)' />
+    </node>
+    <node id='-1355' visible='true' lat='40.7487747' lon='-73.9858964' />
+    <node id='-1354' visible='true' lat='40.7484265' lon='-73.9860231' />
+    <node id='-1353' visible='true' lat='40.7481637' lon='-73.9854039' />
+    <node id='-1352' visible='true' lat='40.7486807' lon='-73.9856744' />
+    <node id='-1351' visible='true' lat='40.7484126' lon='-73.9853036' />
+    <node id='-1349' visible='true' lat='40.748486' lon='-73.9854751' />
+    <node id='-1348' visible='true' lat='40.7486648' lon='-73.985494'>
+        <tag k='addr:housenumber' v='2' />
+        <tag k='addr:postcode' v='10001' />
+        <tag k='addr:street' v='West 34th Street' />
+    </node>
+    <node id='-1347' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978556' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WBAI-FM (New York)' />
+    </node>
+    <node id='-1345' visible='true' lat='40.7482278' lon='-73.9856671' />
+    <node id='-1344' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978552' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WQCD-FM (New York)' />
+    </node>
+    <node id='-1343' visible='true' lat='40.7486838' lon='-73.9859424' />
+    <node id='-1341' visible='true' lat='40.748633' lon='-73.9858218' />
+    <node id='-1340' visible='true' lat='40.7483886' lon='-73.9856367' />
+    <node id='-1339' visible='true' lat='40.7484625' lon='-73.9852667' />
+    <node id='-1338' visible='true' lat='40.748435' lon='-73.9856946'>
+        <tag k='ele' v='15' />
+        <tag k='gnis:county_id' v='061' />
+        <tag k='gnis:created' v='08/01/1994' />
+        <tag k='gnis:feature_id' v='978553' />
+        <tag k='gnis:state_id' v='36' />
+        <tag k='man_made' v='tower' />
+        <tag k='name' v='WNCN-FM (New York)' />
+    </node>
+    <node id='-1336' visible='true' lat='40.7481988' lon='-73.9856471' />
+    <node id='-1335' visible='true' lat='40.7486461' lon='-73.9857' />
+    <node id='-1334' visible='true' lat='40.7481628' lon='-73.9849958'>
+        <tag k='addr:housenumber' v='350' />
+        <tag k='addr:postcode' v='10001' />
+        <tag k='addr:street' v='5th Avenue' />
+    </node>
+    <node id='-1333' visible='true' lat='40.7485581' lon='-73.9853825' />
+    <node id='-1332' visible='true' lat='40.748456' lon='-73.985387'>
+        <tag k='amenity' v='cafe' />
+        <tag k='diet:vegan' v='yes' />
+        <tag k='drink:soy_milk' v='yes' />
+        <tag k='name' v='Starbucks Coffee' />
+        <tag k='wheelchair' v='limited' />
+    </node>
+    <node id='-1331' visible='true' lat='40.7483575' lon='-73.9858719' />
+    <node id='-1329' visible='true' lat='40.7482091' lon='-73.9855222' />
+    <node id='-1328' visible='true' lat='40.748429' lon='-73.9851866' />
+    <way id='-1470' visible='true'>
+        <nd ref='-1471' />
+        <nd ref='-1364' />
+        <nd ref='-1361' />
+        <nd ref='-1383' />
+        <nd ref='-1471' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='320' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1467' visible='true'>
+        <nd ref='-1341' />
+        <nd ref='-1468' />
+        <nd ref='-1331' />
+        <nd ref='-1457' />
+        <nd ref='-1456' />
+        <nd ref='-1455' />
+        <nd ref='-1329' />
+        <nd ref='-1469' />
+        <nd ref='-1349' />
+        <nd ref='-1449' />
+        <nd ref='-1448' />
+        <nd ref='-1447' />
+        <nd ref='-1341' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='310' />
+        <tag k='min_height' v='290' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1466' visible='true'>
+        <nd ref='-1368' />
+        <nd ref='-1335' />
+        <nd ref='-1419' />
+        <nd ref='-1448' />
+        <nd ref='-1449' />
+        <nd ref='-1359' />
+        <nd ref='-1420' />
+        <nd ref='-1339' />
+        <nd ref='-1351' />
+        <nd ref='-1389' />
+        <nd ref='-1463' />
+        <nd ref='-1336' />
+        <nd ref='-1427' />
+        <nd ref='-1456' />
+        <nd ref='-1457' />
+        <nd ref='-1428' />
+        <nd ref='-1429' />
+        <nd ref='-1464' />
+        <nd ref='-1380' />
+        <nd ref='-1366' />
+        <nd ref='-1368' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:levels' v='71' />
+        <tag k='building:min_level' v='29' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='255' />
+        <tag k='min_height' v='115' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1462' visible='true'>
+        <nd ref='-1339' />
+        <nd ref='-1351' />
+        <nd ref='-1358' />
+        <nd ref='-1369' />
+        <nd ref='-1384' />
+        <nd ref='-1353' />
+        <nd ref='-1389' />
+        <nd ref='-1463' />
+        <nd ref='-1336' />
+        <nd ref='-1427' />
+        <nd ref='-1428' />
+        <nd ref='-1429' />
+        <nd ref='-1464' />
+        <nd ref='-1380' />
+        <nd ref='-1465' />
+        <nd ref='-1459' />
+        <nd ref='-1343' />
+        <nd ref='-1366' />
+        <nd ref='-1368' />
+        <nd ref='-1335' />
+        <nd ref='-1419' />
+        <nd ref='-1359' />
+        <nd ref='-1420' />
+        <nd ref='-1339' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:levels' v='29' />
+        <tag k='building:min_level' v='24' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='115' />
+        <tag k='min_height' v='90' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1387' visible='true'>
+        <nd ref='-1421' />
+        <nd ref='-1328' />
+        <nd ref='-1375' />
+        <nd ref='-1369' />
+        <nd ref='-1384' />
+        <nd ref='-1458' />
+        <nd ref='-1424' />
+        <nd ref='-1425' />
+        <nd ref='-1426' />
+        <nd ref='-1336' />
+        <nd ref='-1427' />
+        <nd ref='-1428' />
+        <nd ref='-1429' />
+        <nd ref='-1430' />
+        <nd ref='-1431' />
+        <nd ref='-1432' />
+        <nd ref='-1370' />
+        <nd ref='-1459' />
+        <nd ref='-1460' />
+        <nd ref='-1461' />
+        <nd ref='-1418' />
+        <nd ref='-1355' />
+        <nd ref='-1352' />
+        <nd ref='-1335' />
+        <nd ref='-1419' />
+        <nd ref='-1359' />
+        <nd ref='-1420' />
+        <nd ref='-1333' />
+        <nd ref='-1421' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:levels' v='24' />
+        <tag k='building:min_level' v='20' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='90' />
+        <tag k='min_height' v='75' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1374' visible='true'>
+        <nd ref='-1331' />
+        <nd ref='-1441' />
+        <nd ref='-1442' />
+        <nd ref='-1443' />
+        <nd ref='-1354' />
+        <nd ref='-1444' />
+        <nd ref='-1445' />
+        <nd ref='-1446' />
+        <nd ref='-1447' />
+        <nd ref='-1448' />
+        <nd ref='-1449' />
+        <nd ref='-1349' />
+        <nd ref='-1450' />
+        <nd ref='-1451' />
+        <nd ref='-1452' />
+        <nd ref='-1367' />
+        <nd ref='-1453' />
+        <nd ref='-1373' />
+        <nd ref='-1454' />
+        <nd ref='-1345' />
+        <nd ref='-1455' />
+        <nd ref='-1456' />
+        <nd ref='-1457' />
+        <nd ref='-1331' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:levels' v='80' />
+        <tag k='building:min_level' v='71' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='290' />
+        <tag k='min_height' v='255' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1371' visible='true'>
+        <nd ref='-1434' />
+        <nd ref='-1435' />
+        <nd ref='-1436' />
+        <nd ref='-1437' />
+        <nd ref='-1438' />
+        <nd ref='-1439' />
+        <nd ref='-1440' />
+        <nd ref='-1434' />
+        <tag k='addr:state' v='NY' />
+        <tag k='building' v='office' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:levels' v='5' />
+        <tag k='building:min_level' v='0' />
+        <tag k='building:part' v='yes' />
+        <tag k='building:use' v='office' />
+        <tag k='construction_date' v='1930-1931' />
+        <tag k='ele' v='15' />
+        <tag k='gnis:feature_id' v='949654' />
+        <tag k='height' v='20' />
+        <tag k='name' v='Empire State Building' />
+        <tag k='name:he' v='בניין אמפייר סטייט' />
+        <tag k='name:uk' v='Емпайр-Стейт-Білдінг' />
+        <tag k='name:zh' v='帝国大厦' />
+        <tag k='nycdoitt:bin' v='1015862' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+        <tag k='start_date' v='1931' />
+        <tag k='tourism' v='yes' />
+        <tag k='wheelchair' v='yes' />
+        <tag k='wikipedia' v='en:Empire State Building' />
+    </way>
+    <way id='-1363' visible='true'>
+        <nd ref='-1417' />
+        <nd ref='-1418' />
+        <nd ref='-1355' />
+        <nd ref='-1352' />
+        <nd ref='-1335' />
+        <nd ref='-1419' />
+        <nd ref='-1359' />
+        <nd ref='-1420' />
+        <nd ref='-1333' />
+        <nd ref='-1421' />
+        <nd ref='-1328' />
+        <nd ref='-1422' />
+        <nd ref='-1423' />
+        <nd ref='-1424' />
+        <nd ref='-1425' />
+        <nd ref='-1426' />
+        <nd ref='-1336' />
+        <nd ref='-1427' />
+        <nd ref='-1428' />
+        <nd ref='-1429' />
+        <nd ref='-1430' />
+        <nd ref='-1431' />
+        <nd ref='-1432' />
+        <nd ref='-1433' />
+        <nd ref='-1417' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:levels' v='20' />
+        <tag k='building:min_level' v='5' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='75' />
+        <tag k='min_height' v='20' />
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1350' visible='true'>
+        <nd ref='-1413' />
+        <nd ref='-1414' />
+        <nd ref='-1415' />
+        <nd ref='-1416' />
+        <nd ref='-1413' />
+        <tag k='building:colour' v='beige' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='330' />
+        <!--<tag k='min_height' v='0' />-->
+        <tag k='roof:material' v='concrete' />
+        <tag k='roof:shape' v='flat' />
+    </way>
+    <way id='-1342' visible='true'>
+        <nd ref='-1406' />
+        <nd ref='-1407' />
+        <nd ref='-1340' />
+        <nd ref='-1408' />
+        <nd ref='-1409' />
+        <nd ref='-1410' />
+        <nd ref='-1411' />
+        <nd ref='-1412' />
+        <nd ref='-1406' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='443.2' />
+        <tag k='min_height' v='330' />
+        <tag k='roof:height' v='113.2' />
+        <tag k='roof:material' v='metal' />
+        <tag k='roof:shape' v='pyramidal' />
+    </way>
+    <way id='-1330' visible='true'>
+        <nd ref='-1398' />
+        <nd ref='-1399' />
+        <nd ref='-1400' />
+        <nd ref='-1401' />
+        <nd ref='-1402' />
+        <nd ref='-1403' />
+        <nd ref='-1404' />
+        <nd ref='-1405' />
+        <nd ref='-1398' />
+        <tag k='building:part' v='yes' />
+        <tag k='height' v='390' />
+        <tag k='min_height' v='330' />
+        <tag k='roof:height' v='60' />
+        <tag k='roof:material' v='metal' />
+        <tag k='roof:shape' v='pyramidal' />
+    </way>
+    <relation id='-1474' visible='true'>
+        <tag k='name' v='NYCB - M4' />
+        <tag k='network' v='NYC Transit' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='M4' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+    <relation id='-1473' visible='true'>
+        <tag k='name' v='NYCB - M2' />
+        <tag k='network' v='NYC Transit' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='M2' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+    <relation id='-1472' visible='true'>
+        <tag k='name' v='NYCB - M1' />
+        <tag k='network' v='NYC Transit' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='M1' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+    <relation id='-1394' visible='true'>
+        <member type='relation' ref='-1472' role='route' />
+        <member type='relation' ref='-1473' role='route' />
+        <member type='relation' ref='-1346' role='route' />
+        <member type='relation' ref='-1474' role='route' />
+        <member type='relation' ref='-1379' role='route' />
+        <member type='relation' ref='-1337' role='route' />
+        <member type='relation' ref='-1390' role='route' />
+        <tag k='name' v='New York City Buses (Manhattan)' />
+        <tag k='operator' v='Metropolitan Transportation Authority' />
+        <tag k='route_master' v='bus' />
+        <tag k='type' v='route_master' />
+    </relation>
+    <relation id='-1392' visible='true'>
+        <tag k='name' v='The Magellan' />
+        <tag k='type' v='building' />
+    </relation>
+    <relation id='-1391' visible='true'>
+        <member type='way' ref='-1371' role='' />
+        <member type='way' ref='-1363' role='' />
+        <member type='way' ref='-1462' role='' />
+        <member type='way' ref='-1466' role='' />
+        <member type='way' ref='-1374' role='' />
+        <member type='way' ref='-1467' role='' />
+        <member type='way' ref='-1470' role='' />
+        <member type='way' ref='-1350' role='' />
+        <member type='way' ref='-1342' role='' />
+        <member type='way' ref='-1387' role='' />
+        <tag k='name' v='Empire State Building' />
+        <tag k='name:es' v='Edificio Empire State' />
+        <tag k='tourism' v='attraction' />
+        <tag k='type' v='building' />
+    </relation>
+    <relation id='-1390' visible='true'>
+        <tag k='name' v='NYCB - M34A' />
+        <tag k='network' v='NYC Transit' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='M34A' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+    <relation id='-1379' visible='true'>
+        <tag k='name' v='NYCB - M5' />
+        <tag k='network' v='NYC Transit' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='M5' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+    <relation id='-1365' visible='true'>
+        <member type='relation' ref='-1362' role='route' />
+        <tag k='name' v='New York City Buses (Queens)' />
+        <tag k='operator' v='Metropolitan Transportation Authority' />
+        <tag k='route_master' v='bus' />
+        <tag k='type' v='route_master' />
+    </relation>
+    <relation id='-1362' visible='true'>
+        <tag k='name' v='NYCB - Q32' />
+        <tag k='network' v='MTA' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='Q32' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+    <relation id='-1346' visible='true'>
+        <tag k='name' v='NYCB - M3' />
+        <tag k='network' v='NYC Transit' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='M3' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+    <relation id='-1337' visible='true'>
+        <tag k='name' v='NYCB - M34' />
+        <tag k='network' v='NYC Transit' />
+        <tag k='operator' v='MTA' />
+        <tag k='ref' v='M34' />
+        <tag k='route' v='bus' />
+        <tag k='type' v='route' />
+    </relation>
+</osm>

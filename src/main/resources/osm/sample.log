@@ -1,0 +1,1020 @@
+An informational severity message
+A warning severity message
+An error severity message
+A fatal severity message
+option -i with value /home/pizaninja/Projects/OSM3D/converter/dev/src/main/resources/osm/ESB02.osm
+option -o with value /home/pizaninja/Projects/OSM3D/converter/dev/target/esb02.html
+OsmWorld::setOrigin - lat/lon:40.7488/-73.9863
+
+OsmGround::init - zoom:15
+
+OsmGround::init - xTile:9649
+
+OsmGround::init - yTile:12315
+
+OsmGround::init - minGround (lat/lon):40.7474/-73.9889
+
+OsmGround::init - maxGround (lat/lon):40.7502/-73.9837
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+310 / 290 / 1 / 0 / 13
+
+OsmWorld::init() - buildingMinLevel: 29
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+255 / 115 / 71 / 29 / 21
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+50 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+58 / 0 / 1 / 0 / 16
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+88 / 0 / 1 / 0 / 18
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+0 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+106 / 0 / 1 / 0 / 14
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+115 / 0 / 1 / 0 / 13
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+193 / 0 / 57 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+20 / 0 / 5 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+330 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+320 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+443.2 / 330 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 20
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+90 / 75 / 24 / 20 / 29
+
+OsmWorld::init() - buildingMinLevel: 24
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+115 / 90 / 29 / 24 / 24
+
+OsmWorld::init() - buildingMinLevel: 71
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+290 / 255 / 80 / 71 / 24
+
+OsmWorld::init() - buildingMinLevel: 5
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+75 / 20 / 20 / 5 / 25
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+6.6 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+10.9 / 0 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+6.9 / 0 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+7.8 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+29 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+13.6 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+33.5 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+14.5 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+13.3 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+5.4 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+50.1 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+47.2 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.8 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+17.8 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.9 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+50.3 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+18.1 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+51.2 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+46 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+22.2 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+49.4 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+66.1 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+22.8 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+17.8 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+46.1 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+28.5 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+18.2 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+20.7 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+42.9 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+21.1 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+145.6 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+16.9 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+22.2 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.5 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+8.2 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+8.9 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+17.6 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+20.8 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+22.7 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.1 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+63.5 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.8 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+21.9 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+16.3 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.7 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.3 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+19.4 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+11.7 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+14.8 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+10.3 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+18.9 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+99.2 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+46.3 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+62.7 / 0 / 1 / 0 / 14
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+64.2 / 0 / 1 / 0 / 14
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.9 / 0 / 1 / 0 / 14
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.6 / 0 / 1 / 0 / 16
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+48.4 / 0 / 1 / 0 / 21
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+66.6 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.8 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+33.1 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+21.8 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.8 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.5 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.8 / 0 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+47 / 0 / 1 / 0 / 18
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+62.3 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+73.3 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+47.3 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+46.8 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+22.8 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+33.2 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+44.3 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+49.6 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+46.2 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+9.2 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+14.8 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+12 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+11.9 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+44.5 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+44.9 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+55.3 / 0 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+13.1 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.2 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+44.8 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+25.7 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+52.8 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+32.3 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+30.5 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+15 / 0 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+15.4 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.2 / 0 / 1 / 0 / 8
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+15.3 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+0 / 0 / 23 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+34.5 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+53.8 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+49.6 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+11.5 / 0 / 1 / 0 / 11
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45 / 0 / 1 / 0 / 12
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+102.6 / 0 / 1 / 0 / 17
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+48.3 / 0 / 1 / 0 / 17
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+22.1 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+14.7 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+49.5 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+49.7 / 0 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+26.1 / 0 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+47.2 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+58 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+43.4 / 0 / 1 / 0 / 10
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+40 / 0 / 1 / 0 / 15
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+32.1 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.7 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+23.4 / 0 / 1 / 0 / 5
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+18 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+57.2 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+390 / 330 / 1 / 0 / 9
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+137 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+50.8 / 0 / 1 / 0 / 13
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+48 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+48 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+49 / 0 / 1 / 0 / 7
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+50 / 0 / 1 / 0 / 6
+
+OsmWorld::init() - buildingMinLevel: 0
+
+OsmBuildingPart - maxHeight / minHeight / levels / minLevel / nodes: 
+45.3 / 0 / 1 / 0 / 15
+
+OsmWorld::init - Building 3567489/Part 264685191/MinLevel 0
+
+OsmWorld::init - Building 2098969/Part 34633854/MinLevel 0
+
+OsmWorld::init - Building 2098969/Part 137425131/MinLevel 5
+
+OsmWorld::init - Building 2098969/Part 137425128/MinLevel 24
+
+OsmWorld::init - Building 2098969/Part 137425127/MinLevel 29
+
+OsmWorld::init - Building 2098969/Part 137425129/MinLevel 71
+
+OsmWorld::init - Building 2098969/Part 137425125/MinLevel 0
+
+OsmWorld::init - Building 2098969/Part 137425144/MinLevel 0
+
+OsmWorld::init - Building 2098969/Part 137425142/MinLevel 0
+
+OsmWorld::init - Building 2098969/Part 137425145/MinLevel 0
+
+OsmWorld::init - Building 2098969/Part 137425133/MinLevel 20
+
+OsmWorld::init - Building 2139887/Part 159866208/MinLevel 0
+
+OsmWorld::init - Building 2139887/Part 159866206/MinLevel 0
+
+OsmWorld::init - Building 2139888/Part 159886327/MinLevel 0
+
+OsmWorld::init - Building 2139888/Part 159886332/MinLevel 0
+
+OsmWorld::init - Building 2139888/Part 159886331/MinLevel 0
+
+OsmWorld::init - Building 2139888/Part 159886342/MinLevel 0
+
+OsmWorld::init - Building 2139888/Part 159886339/MinLevel 0
+
+OsmWorld::init - Building 2139888/Part 159886345/MinLevel 0
+
+OsmWorld::init - Building 2178037/Part 86337142/MinLevel 0
+
+OsmWorld::init - Building 2178037/Part 162979253/MinLevel 0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:1
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:1
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=115
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:1
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=106
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:1
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=88
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:1
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=58
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:1
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=47
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:1
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=40
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:57
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 1: elevation=3.38596 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 2: elevation=6.77193 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 3: elevation=10.1579 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 4: elevation=13.5439 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 5: elevation=16.9298 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 6: elevation=20.3158 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 7: elevation=23.7018 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 8: elevation=27.0877 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 9: elevation=30.4737 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 10: elevation=33.8596 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 11: elevation=37.2456 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 12: elevation=40.6316 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 13: elevation=44.0175 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 14: elevation=47.4035 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 15: elevation=50.7895 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 16: elevation=54.1754 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 17: elevation=57.5614 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 18: elevation=60.9474 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 19: elevation=64.3333 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 20: elevation=67.7193 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 21: elevation=71.1053 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 22: elevation=74.4912 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 23: elevation=77.8772 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 24: elevation=81.2632 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 25: elevation=84.6491 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 26: elevation=88.0351 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 27: elevation=91.4211 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 28: elevation=94.807 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 29: elevation=98.193 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 30: elevation=101.579 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 31: elevation=104.965 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 32: elevation=108.351 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 33: elevation=111.737 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 34: elevation=115.123 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 35: elevation=118.509 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 36: elevation=121.895 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 37: elevation=125.281 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 38: elevation=128.667 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 39: elevation=132.053 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 40: elevation=135.439 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 41: elevation=138.825 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 42: elevation=142.211 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 43: elevation=145.596 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 44: elevation=148.982 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 45: elevation=152.368 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 46: elevation=155.754 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 47: elevation=159.14 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 48: elevation=162.526 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 49: elevation=165.912 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 50: elevation=169.298 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 51: elevation=172.684 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 52: elevation=176.07 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 53: elevation=179.456 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 54: elevation=182.842 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 55: elevation=186.228 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - Level 56: elevation=189.614 / minHeight=0 / minLevel=0 / height=3.38596
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:0
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:5
+
+Converter::osmWorld23DBuildings - Level 0: elevation=0 / minHeight=0 / minLevel=0 / height=4
+
+Converter::osmWorld23DBuildings - Level 1: elevation=4 / minHeight=0 / minLevel=0 / height=4
+
+Converter::osmWorld23DBuildings - Level 2: elevation=8 / minHeight=0 / minLevel=0 / height=4
+
+Converter::osmWorld23DBuildings - Level 3: elevation=12 / minHeight=0 / minLevel=0 / height=4
+
+Converter::osmWorld23DBuildings - Level 4: elevation=16 / minHeight=0 / minLevel=0 / height=4
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:5
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:20
+
+Converter::osmWorld23DBuildings - Level 5: elevation=20 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 6: elevation=23.6667 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 7: elevation=27.3333 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 8: elevation=31 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 9: elevation=34.6667 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 10: elevation=38.3333 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 11: elevation=42 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 12: elevation=45.6667 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 13: elevation=49.3333 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 14: elevation=53 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 15: elevation=56.6667 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 16: elevation=60.3333 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 17: elevation=64 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 18: elevation=67.6667 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - Level 19: elevation=71.3333 / minHeight=20 / minLevel=5 / height=3.66667
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:24
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:29
+
+Converter::osmWorld23DBuildings - Level 24: elevation=90 / minHeight=90 / minLevel=24 / height=5
+
+Converter::osmWorld23DBuildings - Level 25: elevation=95 / minHeight=90 / minLevel=24 / height=5
+
+Converter::osmWorld23DBuildings - Level 26: elevation=100 / minHeight=90 / minLevel=24 / height=5
+
+Converter::osmWorld23DBuildings - Level 27: elevation=105 / minHeight=90 / minLevel=24 / height=5
+
+Converter::osmWorld23DBuildings - Level 28: elevation=110 / minHeight=90 / minLevel=24 / height=5
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:29
+
+Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:71
+
+Converter::osmWorld23DBuildings - Level 29: elevation=115 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 30: elevation=118.333 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 31: elevation=121.667 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 32: elevation=125 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 33: elevation=128.333 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 34: elevation=131.667 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 35: elevation=135 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 36: elevation=138.333 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 37: elevation=141.667 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 38: elevation=145 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 39: elevation=148.333 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 40: elevation=151.667 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 41: elevation=155 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 42: elevation=158.333 / minHeight=115 / minLevel=29 / height=3.33333
+
+Converter::osmWorld23DBuildings - Level 43: elevation=161.667 / minHeight=115 / minLevel=29 / height=3.33333

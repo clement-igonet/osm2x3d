@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='true' generator='JOSM'>
+  <node id='-47174' action='modify' visible='true' lat='53.06715750933176' lon='8.787959424959588' />
+  <node id='-47172' action='modify' visible='true' lat='53.0670983391771' lon='8.788067661782236' />
+  <node id='-46673' action='modify' visible='true' lat='53.06712931950736' lon='8.788016227533165' />
+  <node id='-46671' action='modify' visible='true' lat='53.06715774215181' lon='8.788059296847297' />
+  <node id='-46641' timestamp='2013-03-22T17:00:36Z' visible='true' lat='53.0671826' lon='8.7879159' />
+  <node id='-46640' action='modify' visible='true' lat='53.06722124281467' lon='8.787972444251418' />
+  <node id='-46639' timestamp='2013-03-22T17:00:36Z' visible='true' lat='53.0672588' lon='8.7880274' />
+  <node id='-46638' action='modify' visible='true' lat='53.067132246800014' lon='8.788131400629137' />
+  <node id='-46637' action='modify' visible='true' lat='53.067110460341816' lon='8.788170313517957' />
+  <node id='-46636' timestamp='2013-03-22T17:00:36Z' visible='true' lat='53.0671481' lon='8.7882276' />
+  <node id='-46635' timestamp='2013-03-22T17:00:36Z' visible='true' lat='53.0672247' lon='8.7880903' />
+  <node id='-46634' timestamp='2013-03-22T17:00:36Z' visible='true' lat='53.067073' lon='8.7881133' />
+  <way id='-46795' action='modify' visible='true'>
+    <nd ref='-47172' />
+    <nd ref='-46671' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+  <way id='-46792' action='modify' visible='true'>
+    <nd ref='-47174' />
+    <nd ref='-46671' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+  <way id='-46678' action='modify' visible='true'>
+    <nd ref='-47174' />
+    <nd ref='-46673' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+  <way id='-46676' action='modify' visible='true'>
+    <nd ref='-47172' />
+    <nd ref='-46673' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+  <way id='-46674' action='modify' visible='true'>
+    <nd ref='-46671' />
+    <nd ref='-46673' />
+    <tag k='height' v='15m' />
+    <tag k='roof:height' v='4m' />
+    <tag k='roof:ridge' v='yes' />
+  </way>
+  <way id='-46647' action='modify' visible='true'>
+    <nd ref='-46636' />
+    <nd ref='-46638' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+  <way id='-46646' action='modify' visible='true'>
+    <nd ref='-46634' />
+    <nd ref='-46638' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+  <way id='-46645' action='modify' visible='true'>
+    <nd ref='-46638' />
+    <nd ref='-46640' />
+    <tag k='height' v='18m' />
+    <tag k='roof:ridge' v='yes' />
+  </way>
+  <way id='-46644' action='modify' visible='true'>
+    <nd ref='-46639' />
+    <nd ref='-46640' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+  <way id='-46643' action='modify' timestamp='2013-03-22T17:00:45Z' visible='true'>
+    <nd ref='-46639' />
+    <nd ref='-46635' />
+    <nd ref='-46636' />
+    <nd ref='-46637' />
+    <nd ref='-46634' />
+    <nd ref='-47172' />
+    <nd ref='-47174' />
+    <nd ref='-46641' />
+    <nd ref='-46640' />
+    <nd ref='-46639' />
+    <tag k='building' v='yes' />
+    <tag k='height' v='18m' />
+    <tag k='roof:height' v='7m' />
+  </way>
+  <way id='-46642' action='modify' visible='true'>
+    <nd ref='-46641' />
+    <nd ref='-46640' />
+    <tag k='roof:edge' v='yes' />
+  </way>
+</osm>

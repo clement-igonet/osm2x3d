@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Default Box</title>
+        <link rel="stylesheet" href="http://www.x3dom.org/x3dom/example/x3dom.css"/>
+        <script src="http://www.x3dom.org/x3dom/example/x3dom.js"></script>
+    </head>
+    <body id="body">
+        <h1 id="title">Default Box</h1>
+        <x3d id="the_element" showlog="false" showstat="false">
+            <Scene>
+                <Shape>
+                    <!-- When attribute values are not specified, the default values from the X3D (or VRML) Specification are used. -->
+                    <Appearance>
+                        <Material/>
+                    </Appearance>
+                    <Box/>
+                </Shape>
+            </Scene>         
+        </x3d>
+    </body>
+</html>
+

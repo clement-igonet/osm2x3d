@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"
+  "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile="Interchange" version="3.2"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+     xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.2.xsd">            
+    <Scene>
+        <Transform rotation='0 1 0 0' translation='6 3 6'>
+            <Viewpoint description='Extruded room with a doorway' orientation='1 0 0 -1.57' position='0 500 0'/>
+        </Transform>
+        <Group DEF='\x07'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-293.727 203.131 -292.771 204.032 -305.313 212.393 -317.578 220.555 -324.45 215.885 -318.735 211.982 -319.157 209.903 -329.332 210.681 -329.131 211.693 -329.821 211.648 -329.988 212.527 -339.884 206.155 -340.429 203.198 -342.03 194.547 -328.564 193.223 -327.541 193.335 -326.296 199.361 -321.77 199.006 -315.821 202.953 -314.376 201.808 -313.064 202.486 -304.335 196.404 -293.727 203.131 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-325.384 204.51 -318.501 203.809 -320.725 202.23 -325.751 202.786 -325.384 204.51 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+        <Group DEF='\x07'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-439.859 334.419 -444.051 330.927 -452.791 336.354 -483.626 356.068 -512.603 374.927 -510.068 375.75 -509.89 375.494 -505.876 376.74 -506.043 376.995 -501.839 378.285 -501.661 378.041 -496.213 379.753 -496.357 379.986 -495.735 380.198 -495.524 379.942 -491.621 381.198 -491.743 381.41 -491.087 381.643 -490.92 381.399 -489.352 381.877 -485.483 383.044 -485.616 383.311 -481.468 384.668 -481.213 384.401 -477.243 385.635 -418.421 349.063 -429.451 341.469 -428.484 340.857 -430.252 339.645 -434.967 336.398 -435.412 336.098 -436.457 336.765 -439.859 334.419 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+        <Group DEF='\x01'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-477.243 385.635 -471.872 387.626 -458.685 391.695 -405.422 355.001 -409.025 352.955 -410.915 354.1 -417.053 350.008 -418.421 349.063 -477.243 385.635 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+        <Group DEF='.'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-412.761 117.989 -423.714 125.495 -429.863 129.542 -434.978 133.045 -435.345 133.223 -441.138 129.398 -438.736 127.507 -442.706 124.916 -445.597 126.573 -459.863 117.767 -453.481 113.352 -442.472 120.157 -435.412 115.743 -435.879 115.365 -446.275 108.56 -441.249 105.057 -436.813 107.87 -432.543 105.302 -430.697 106.536 -433.099 108.226 -425.148 113.308 -423.024 113.163 -421.523 112.218 -412.761 117.989 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+        <Group DEF='T'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='293.638 -63.5257 317.678 -79.749 173.381 -172.374 149.685 -156.307 293.638 -63.5257 ' solid='false' endCap='false' spine='0 0 0 0 6.91335475171337e-310 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+        <Group DEF='\\'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='576.907 -240.07 560.228 -240.893 560.106 -240.292 559.105 -233.22 560.05 -232.208 558.938 -231.563 558.938 -231.152 562.908 -231.096 562.83 -229.228 575.562 -228.417 576.018 -232.42 576.262 -234.555 576.907 -240.048 576.907 -240.07 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+        <Group DEF=']'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='561.473 -292.432 561.618 -294.099 554.212 -294.455 554.001 -292.798 561.473 -292.432 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+        <Group DEF='y'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.3 0.7 0.3' transparency='0.8'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='530.683 -294.077 530.917 -295.79 524.857 -296.168 524.79 -294.422 530.683 -294.077 ' solid='false' endCap='false' spine='0 0 0 0 9.99 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+        </Group>
+

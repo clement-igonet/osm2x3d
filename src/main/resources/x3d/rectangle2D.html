@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resized Box With Axes</title>
+        <script src="http://www.x3dom.org/download/1.5/x3dom-full.js"></script>                
+        <link rel="stylesheet" href="http://www.x3dom.org/download/1.5/x3dom.css">            
+    </head>
+    <body id="body">
+        <h1 id="title">Resized Box With Axes</h1>
+        <x3d id="the_element" showlog="false" showstat="false">
+            <Scene>
+                <Transform rotation='0 1 0 0.758' translation='6 3 6'>
+                    <Viewpoint description='Extruded room with a doorway' orientation='1 0 0 -0.2' position='0 0 0'/>
+                </Transform>
+                <Group>
+                    <Shape>
+                        <Appearance>
+                            <Material diffuseColor='1 0.9 0.7'/>
+                        </Appearance>
+                        <Extrusion creaseAngle='0.785' crossSection='1.00 0.00 0.92 -0.38 0.71 -0.71 0.38 -0.92 0.00 -1.00 -0.38 -0.92 -0.71 -0.71 -0.92 -0.38 -1.00 -0.00 -0.92 0.38 -0.71 0.71 -0.38 0.92 0.00 1.00 0.38 0.92 0.71 0.71 0.92 0.38 1.00 0.00' spine='0 -1 0 0 1 0'/>
+                    </Shape>
+                    <Shape>
+                        <Appearance>
+                            <Material diffuseColor='1 0.9 0.7'/>
+                        </Appearance>
+                        <Extrusion convex='false' creaseAngle='0.785' crossSection='-0.5 1.0 -0.5 0.8 -1.8 0.8 -1.8 -0.8 1.8 -0.8 1.8 0.8 0.5 0.8 0.5 1.0 2.0 1.0 2.0 -1.0 -2.0 -1.0 -2.0 1.0 -0.5 1.0' solid='false' spine='0 0 0 0 2 0'/>
+                    </Shape>
+                </Group>
+            </Scene>             
+        </x3d>
+    </body>
+</html>
+

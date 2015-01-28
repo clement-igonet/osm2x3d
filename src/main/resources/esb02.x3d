@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"
+  "http://www.web3d.org/specifications/x3d-3.2.dtd">
+ 
+<X3D profile="Interchange" version="3.2"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+     xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.2.xsd">
+            <Scene>
+                <Transform rotation='0 1 0 0.758' translation='6 3 6'>
+                    <Viewpoint description='Extruded room with a doorway' orientation='1 0 0 -0.2' position='0 250 300'/>
+                </Transform>
+                <Group DEF='The Magellan'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-56.5704 20.0318 -80.3217 10.0909 -62.9864 -13.6937 -61.4852 -15.773 -60.907 -16.5847 -45.9847 -10.3022 -37.1558 -6.61054 -43.594 2.21834 -52.1782 14.005 -56.5704 20.0318 ' solid='false' spine='0 0 0 0 0 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-46.9409 -9.52385 -52.7564 -1.6846 -46.4517 0.995195 -51.2998 7.53346 -57.6268 4.83142 -58.9166 6.56606 -64.4875 4.19761 -63.1976 2.45185 -69.8582 -0.394742 -63.3978 -9.1013 -59.1613 -7.29995 -54.9803 -12.9375 -46.9409 -9.52385 ' solid='false' spine='0 0 0 0 115 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-52.1782 14.005 -57.0708 11.9479 -61.7632 9.94639 -66.4668 7.93376 -71.1703 5.93225 -75.8739 3.9085 -62.9864 -13.6937 -61.4852 -15.773 -54.9803 -12.9375 -46.9409 -9.52385 -52.7564 -1.6846 -46.4517 0.995195 -43.594 2.21834 -52.1782 14.005 ' solid='false' spine='0 0 0 0 106 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-52.1782 14.005 -57.0708 11.9479 -58.672 14.1051 -63.3311 12.1147 -61.7632 9.94639 -66.4668 7.93376 -68.068 10.0909 -72.7604 8.07831 -71.1703 5.93225 -75.8739 3.9085 -62.9864 -13.6937 -61.4852 -15.773 -54.9803 -12.9375 -46.9409 -9.52385 -52.7564 -1.6846 -46.4517 0.995195 -43.594 2.21834 -52.1782 14.005 ' solid='false' spine='0 0 0 0 88 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-52.7564 -1.6846 -46.4517 0.995195 -43.594 2.21834 -52.1782 14.005 -57.0708 11.9479 -58.672 14.1051 -63.3311 12.1147 -68.068 10.0909 -72.7604 8.07831 -71.1703 5.93225 -75.8739 3.9085 -62.9864 -13.6937 -61.4852 -15.773 -54.9803 -12.9375 -46.9409 -9.52385 -52.7564 -1.6846 ' solid='false' spine='0 0 0 0 58 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-61.4852 -15.773 -54.9803 -12.9375 -46.9409 -9.52385 -52.7564 -1.6846 -46.4517 0.995195 -43.594 2.21834 -52.1782 14.005 -57.0708 11.9479 -58.672 14.1051 -63.3311 12.1147 -64.9768 14.3163 -69.7025 12.2815 -68.068 10.0909 -72.7604 8.07831 -71.1703 5.93225 -75.8739 3.9085 -62.9864 -13.6937 -61.4852 -15.773 ' solid='false' spine='0 0 0 0 47 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                </Group>
+                <Group DEF='400 Fifth Avenue'>
+                    <Transform translation='0 189.614 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 186.228 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 182.842 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 179.456 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 176.07 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 172.684 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 169.298 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 165.912 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 162.526 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 159.14 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 155.754 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 71.1053 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 67.7193 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 64.3333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 60.9474 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 57.5614 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 54.1754 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 50.7895 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 47.4035 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 44.0175 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 40.6316 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 37.2456 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 33.8596 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='311.362 -155.2 289.346 -124.388 287.967 -122.865 287.4 -122.409 286.277 -121.797 284.498 -121.442 282.452 -121.286 281.151 -121.397 278.805 -121.953 241.198 -137.531 255.62 -157.68 260.335 -164.296 262.403 -163.54 268.964 -172.725 311.362 -155.2 ' solid='false' spine='0 0 0 0 40 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 3.38596 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 6.77193 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 10.1579 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 13.5439 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 16.9298 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 20.3158 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 23.7018 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 27.0877 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 30.4737 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 74.4912 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 77.8772 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 81.2632 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 84.6491 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 88.0351 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 91.4211 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 94.807 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 98.193 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 101.579 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 104.965 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 108.351 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 111.737 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 115.123 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 118.509 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 121.895 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 125.281 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 128.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 132.053 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 135.439 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 138.825 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 142.211 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 145.596 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 148.982 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 152.368 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='#F8F7E3'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='273.434 -169.077 251.339 -138.788 281.407 -126.245 303.334 -156.435 273.434 -169.077 ' solid='false' spine='0 0 0 0 3.38596 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                </Group>
+                <Group DEF='Empire State Building'>
+                    <Transform translation='0 86.25 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='126.445 36.0994 123.565 40.0135 114.792 51.9002 112.968 51.1219 103.428 64.065 105.285 64.8544 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 23.779 29.8614 25.547 30.6064 34.8207 18.0414 33.0416 17.2853 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 ' solid='false' spine='0 0 0 0 3.75 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 82.5 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='126.445 36.0994 123.565 40.0135 114.792 51.9002 112.968 51.1219 103.428 64.065 105.285 64.8544 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 23.779 29.8614 25.547 30.6064 34.8207 18.0414 33.0416 17.2853 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 ' solid='false' spine='0 0 0 0 3.75 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 78.75 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='126.445 36.0994 123.565 40.0135 114.792 51.9002 112.968 51.1219 103.428 64.065 105.285 64.8544 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 23.779 29.8614 25.547 30.6064 34.8207 18.0414 33.0416 17.2853 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 ' solid='false' spine='0 0 0 0 3.75 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 75 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='126.445 36.0994 123.565 40.0135 114.792 51.9002 112.968 51.1219 103.428 64.065 105.285 64.8544 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 23.779 29.8614 25.547 30.6064 34.8207 18.0414 33.0416 17.2853 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 ' solid='false' spine='0 0 0 0 3.75 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 286.111 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 282.222 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 278.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 274.444 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 270.556 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 266.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 262.778 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 258.889 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 255 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='47.3635 47.9639 44.6837 51.6 41.4924 50.2434 27.5597 44.3501 30.5508 40.2915 48.7645 15.5951 51.5444 11.8367 68.7796 19.1311 66.0109 22.8895 68.2681 23.8458 89.1283 32.6857 91.4856 33.6754 94.2544 29.9281 97.5902 31.3403 111.056 37.0446 108.243 40.8475 90.029 65.5438 87.0712 69.5469 73.4609 63.787 70.1362 62.3859 72.8494 58.7721 70.5143 57.7824 49.6652 48.9424 47.3635 47.9639 ' solid='false' spine='0 0 0 0 3.88889 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 251.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 248.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 245 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 241.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 238.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 235 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 231.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 228.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 225 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 221.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 218.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 215 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 211.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 208.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 205 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 201.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 198.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 195 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 191.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 188.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 185 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 71.3333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 67.6667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 64 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 60.3333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 56.6667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 53 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 49.3333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 45.6667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 42 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 38.3333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-20.8657 33.9756 127.035 96.3226 163.673 46.1848 16.1511 -17.0517 -1.47333 7.18875 -3.37477 9.80183 -18.9643 31.2513 -20.8657 33.9756 ' solid='false' spine='0 0 0 0 4 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 290 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='52.9343 17.3297 34.3314 42.4264 47.3635 47.9639 49.6652 48.9424 70.5143 57.7824 72.8494 58.7721 86.2483 64.4653 104.84 39.3686 91.4856 33.6754 89.1283 32.6857 68.2681 23.8458 66.0109 22.8895 52.9343 17.3297 ' solid='false' spine='0 0 0 0 20 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='53.4347 18.6863 36.1328 42.0484 85.748 63.1087 103.05 39.7466 53.4347 18.6863 ' solid='false' spine='0 0 0 0 320 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='54.947 22.7672 41.5146 40.9031 84.2357 59.0278 97.6681 40.8919 54.947 22.7672 ' solid='false' spine='0 0 0 0 330 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 330 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='74.5284 38.3122 75.7182 41.5702 73.5165 44.5058 69.2244 45.3953 65.3548 43.7385 64.165 40.4805 66.3667 37.545 70.6588 36.6554 74.5284 38.3122 ' solid='false' spine='0 0 0 0 113.2 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 175 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 90 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='114.659 36.2885 110.556 41.8371 117.628 44.8282 112.968 51.1219 103.428 64.065 99.4027 69.5135 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 21.2994 36.3663 25.547 30.6064 39.5242 11.681 46.4739 14.6277 50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 114.659 36.2885 ' solid='false' spine='0 0 0 0 5 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 4 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-20.8657 33.9756 127.035 96.3226 163.673 46.1848 16.1511 -17.0517 -1.47333 7.18875 -3.37477 9.80183 -18.9643 31.2513 -20.8657 33.9756 ' solid='false' spine='0 0 0 0 4 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 178.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 95 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='114.659 36.2885 110.556 41.8371 117.628 44.8282 112.968 51.1219 103.428 64.065 99.4027 69.5135 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 21.2994 36.3663 25.547 30.6064 39.5242 11.681 46.4739 14.6277 50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 114.659 36.2885 ' solid='false' spine='0 0 0 0 5 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 8 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-20.8657 33.9756 127.035 96.3226 163.673 46.1848 16.1511 -17.0517 -1.47333 7.18875 -3.37477 9.80183 -18.9643 31.2513 -20.8657 33.9756 ' solid='false' spine='0 0 0 0 4 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 181.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 12 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-20.8657 33.9756 127.035 96.3226 163.673 46.1848 16.1511 -17.0517 -1.47333 7.18875 -3.37477 9.80183 -18.9643 31.2513 -20.8657 33.9756 ' solid='false' spine='0 0 0 0 4 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 16 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-20.8657 33.9756 127.035 96.3226 163.673 46.1848 16.1511 -17.0517 -1.47333 7.18875 -3.37477 9.80183 -18.9643 31.2513 -20.8657 33.9756 ' solid='false' spine='0 0 0 0 4 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 20 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 23.6667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 27.3333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 31 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 34.6667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='28.8273 -0.0611572 41.7926 5.42075 44.6392 1.57341 69.3245 12.0257 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 101.782 25.6582 126.445 36.0994 123.565 40.0135 137.153 45.7623 110.622 81.745 97.0565 76.0073 93.9986 80.1549 69.3356 69.7137 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 36.8667 56.0812 12.1592 45.6177 15.2726 41.4034 2.29618 35.9104 28.8273 -0.0611572 ' solid='false' spine='0 0 0 0 3.66667 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 100 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='114.659 36.2885 110.556 41.8371 117.628 44.8282 112.968 51.1219 103.428 64.065 99.4027 69.5135 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 21.2994 36.3663 25.547 30.6064 39.5242 11.681 46.4739 14.6277 50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 114.659 36.2885 ' solid='false' spine='0 0 0 0 5 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 105 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='114.659 36.2885 110.556 41.8371 117.628 44.8282 112.968 51.1219 103.428 64.065 99.4027 69.5135 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 21.2994 36.3663 25.547 30.6064 39.5242 11.681 46.4739 14.6277 50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 114.659 36.2885 ' solid='false' spine='0 0 0 0 5 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 110 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='114.659 36.2885 110.556 41.8371 117.628 44.8282 112.968 51.1219 103.428 64.065 99.4027 69.5135 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 21.2994 36.3663 25.547 30.6064 39.5242 11.681 46.4739 14.6277 50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 93.198 27.1927 98.8801 29.5945 114.659 36.2885 ' solid='false' spine='0 0 0 0 5 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 115 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 118.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 121.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 125 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 128.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 131.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 135 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 138.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 141.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 145 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 148.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 151.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 155 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 158.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 161.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 165 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 168.333 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 171.667 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='beige'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='50.5437 9.11242 66.4779 15.8731 72.3267 18.3527 68.2681 23.8458 89.1283 32.6857 93.198 27.1927 98.8801 29.5945 114.659 36.2885 110.556 41.8371 92.3196 66.5112 88.0719 72.2711 72.3601 65.6106 66.5446 63.142 70.5143 57.7824 49.6652 48.9424 45.6956 54.3243 39.9579 51.8891 23.9569 45.1062 28.238 39.3018 46.4739 14.6277 50.5437 9.11242 ' solid='false' spine='0 0 0 0 3.33333 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                </Group>
+                <Group DEF='1250 Broadway'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-133.228 104.507 -142.013 116.471 -138.999 117.628 -162.539 149.463 -203.17 132.094 -196.809 97.5346 -190.849 97.9572 -189.504 90.6961 -155.501 94.6769 -133.228 104.507 ' solid='false' spine='0 0 0 0 50 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-197.432 132.383 -190.849 97.9572 -189.504 90.6961 -155.501 94.6769 -162.128 136.775 -197.432 132.383 ' solid='false' spine='0 0 0 0 137 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                </Group>
+                <Group DEF='Manhattan Mall'>
+                    <Transform translation='0 0 0'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <Material diffuseColor='0.13 0.17 0.23'/>
+                                </Appearance>
+                                <Extrusion convex='false' creaseAngle='0.785' crossSection='-359.221 -17.2297 -421.179 -43.3049 -382.483 -96.5005 -241.899 -37.3559 -280.606 15.8397 -354.061 -15.0614 -359.221 -17.2297 ' solid='false' spine='0 0 0 0 57.2 0'/>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                </Group>
+                    <Transform translation='-278.232 0 -176.715' rotation='1 0 0 -1.5708'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <ImageTexture url='"http://a.tile.openstreetmap.org/17/38597/49262.png"'/>
+                                </Appearance>
+                                <Rectangle2D size='305.406 231.364'></Rectangle2D>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='27.1742 0 -176.715' rotation='1 0 0 -1.5708'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <ImageTexture url='"http://a.tile.openstreetmap.org/17/38598/49262.png"'/>
+                                </Appearance>
+                                <Rectangle2D size='305.406 231.364'></Rectangle2D>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='332.58 0 -176.715' rotation='1 0 0 -1.5708'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <ImageTexture url='"http://a.tile.openstreetmap.org/17/38599/49262.png"'/>
+                                </Appearance>
+                                <Rectangle2D size='305.406 231.364'></Rectangle2D>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='-278.232 0 54.6527' rotation='1 0 0 -1.5708'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <ImageTexture url='"http://a.tile.openstreetmap.org/17/38597/49263.png"'/>
+                                </Appearance>
+                                <Rectangle2D size='305.406 231.371'></Rectangle2D>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='27.1742 0 54.6527' rotation='1 0 0 -1.5708'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <ImageTexture url='"http://a.tile.openstreetmap.org/17/38598/49263.png"'/>
+                                </Appearance>
+                                <Rectangle2D size='305.406 231.371'></Rectangle2D>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                    <Transform translation='332.58 0 54.6527' rotation='1 0 0 -1.5708'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <ImageTexture url='"http://a.tile.openstreetmap.org/17/38599/49263.png"'/>
+                                </Appearance>
+                                <Rectangle2D size='305.406 231.371'></Rectangle2D>
+                            </Shape>
+                        </Group>
+                    </Transform>
+            </Scene>             
+</X3D>

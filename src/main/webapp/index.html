@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>Area selection</title>
+        <link rel="stylesheet" href="OpenLayers/theme/default/style.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+            html, body {height: 100%}
+            .mymap {
+                width: 100%;
+                height: 85%;
+                border: 1px solid #ccc;
+            }
+        </style>
+        <script src="OpenLayers/lib/OpenLayers.js"></script>
+        <script type="text/javascript">
+            var lon = 5;
+            var lat = 40;
+            var zoom = 5;
+            var map, layer;
+
+            function init() {
+                map = new OpenLayers.Map('map');
+                layer = new OpenLayers.Layer.OSM();
+
+                var control = new OpenLayers.Control();
+                OpenLayers.Util.extend(control, {
+                    draw: function () {
+                        // this Handler.Box will intercept the shift-mousedown
+                        // before Control.MouseDlefault gets to see it
+                        this.box = new OpenLayers.Handler.Box(control,
+                                {"done": this.notice},
+                        {keyMask: OpenLayers.Handler.MOD_SHIFT});
+                        this.box.activate();
+                    },
+                    notice: function (bounds) {
+
+                        var toProjection = new OpenLayers.Projection("EPSG:4326");
+                        var ll = map.getLonLatFromPixel(new OpenLayers.Pixel(bounds.left, bounds.bottom)).transform(map.getProjectionObject(), toProjection);
+                        var ur = map.getLonLatFromPixel(new OpenLayers.Pixel(bounds.right, bounds.top)).transform(map.getProjectionObject(), toProjection);
+
+                        if (ur.lon - ll.lon > 0.02 || ur.lat - ll.lat > 0.02) {
+                            map.zoomToExtent(new OpenLayers.Bounds(ll.lon, ll.lat, ur.lon, ur.lat).transform("EPSG:4326", "EPSG:900913"))
+                        } else {
+                            window.open("x3dContainer.php?type=bbox&" +
+                                    "ll_lon=" + ll.lon + "&" +
+                                    "ll_lat=" + ll.lat + "&" +
+                                    "ur_lon=" + ur.lon + "&" +
+                                    "ur_lat=" + ur.lat,
+                                    "_blank")
+                        }
+                    }
+                });
+
+                map.addLayer(layer);
+                map.addControl(control);
+                map.setCenter(new OpenLayers.LonLat(lon, lat), zoom);
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <h1 id="title">Area selection</h1>
+        <p id="shortdesc">
+            Hold down the shift key on your keyboard and draw a rectangle with the mouse.
+        </p>
+
+        <div id="map" class="mymap"></div>
+
+        <div id="docs">
+            <p>
+                <a href="x3dContainer.php?type=bbox&ll_lon=-73.99697756528165&ll_lat=40.742730112764875&ur_lon=-73.97757982968555&ur_lat=40.75423932635588" target="_blank">wide ESB</a>
+                <a href="x3dContainer.php?type=bbox&ll_lon=-73.98887277356641&ll_lat=40.747427394867096&ur_lon=-73.98372293225745&ur_lat=40.750150254285565" target="_blank">ESB</a>
+                <a href="x3dContainer.php?type=bbox&ll_lon=21.000296045787998&ll_lat=52.225164674354126&ur_lon=21.015659739025814&ur_lat=52.23147339923343" target="_blank">Francfort</a>
+                <a href="x3dContainer.php?type=bbox&ll_lon=101.70595816485833&ll_lat=3.149624557002663&ur_lon=101.72501257770355&ur_lat=3.1610655825857448">petronas_twin_towers</a>
+                <a href="x3dContainer.php?type=bbox&ll_lon=13.4070966614881&ll_lat=52.5192348230968&ur_lon=13.41313699618962&ur_lat=52.52156541568299">berlin</a>
+            </p>
+        </div>
+    </body>
+</html>

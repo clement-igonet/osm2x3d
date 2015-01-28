@@ -1,0 +1,120 @@
+html,body{
+   margin:0;
+   padding:0px;
+   background:white;
+
+}
+#container {
+
+	position:absolute;
+	margin-top:0px;
+	margin-bottom:0px;
+	top:5px;
+	left:5px;
+	right:5px;
+	bottom:5px;
+	border: 1px solid #e6e6e6;
+	border-radius: 15px 15px 15px 15px ;
+	overflow: hidden;
+}
+
+#header {
+    display:block;
+    width:20%;
+    position:absolute;
+    top:0px;
+    text-align: center; 
+    background:white;
+    height:30px;
+    z-index:5;
+    margin-top:5px;
+    margin-left:40%;
+    margin-right:40%;
+    border: 1px solid #e6e6e6;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#body {
+   padding:0px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+#footer {
+   position:absolute;
+   height:30px;  
+   bottom:5px;
+   width:30%;
+   margin-left:100px;
+   margin-right:100px;
+   background:white;
+   text-align:center;
+   color:black;
+   border: 1px solid #e6e6e6;
+   border-bottom: 0px;
+   border-radius: 15px 15px 0px 0px ;
+}
+
+#content {
+   position:absolute;
+   right:5px; 
+
+   top:50px;
+   width:150px;
+   margin-left:100px;
+   margin-right:0px;
+   background:white;
+   padding:10px;
+   max-height:80%;
+   overflow: auto;
+   overflow-x:hidden;
+   color:black;
+   border: 1px solid #e6e6e6;
+   border-right: 0px;
+   border-radius: 15px 0px 0px 15px ;
+}
+
+a:link, ul a:visited {
+    color:#575757;
+    text-decoration:none;
+}
+
+
+x3d {
+	margin:0px;
+	padding:0px;
+	border:none;
+	height:100%;
+	width:100%;
+}
+
+#x3dom_controls ul {
+    color:white;
+    padding: 0;
+    list-style-type: none;
+    }
+    
+#x3dom_controls {
+    position: absolute;
+    top: 50px;
+    opacity: 1.0;
+    margin-left:5px;
+    border: 1px solid #e6e6e6;
+    border-left: 0px;
+    background-color:white;
+    border-radius: 0px 15px 0px 15px;
+    padding:5px;
+    z-index:1
+    
+}
+
+#x3dom_controls div{
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.box {
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    margin-top:5px;
+}

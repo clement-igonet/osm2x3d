@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resized Box With Axes</title>
+        <link rel="stylesheet" href="http://www.x3dom.org/x3dom/example/x3dom.css"/>
+        <script src="http://www.x3dom.org/x3dom/example/x3dom.js"></script>
+    </head>
+    <body id="body">
+        <h1 id="title">Resized Box With Axes</h1>
+        <x3d id="the_element" showlog="false" showstat="false">
+            <Scene>
+                <Group>
+                    <Viewpoint description='Rear View' orientation='0 1 0 3.14159' position='0 0 -6'/>
+                    <Viewpoint description='View from 80m away' position='0 0 10'/>
+                    <Background groundAngle='1.57' groundColor='0 0.5 0 0 0.5 0' skyColor='0 0 1'/>
+                    <ProximitySensor DEF='PROX_SENSOR' size='1000 1000 1000'/>
+                    <Viewpoint description='Default viewpoint at (0 0 10) is way too close!! That is a bad place to be, provide a replacement viewpoint instead.'/>
+                </Group> 
+                <Group>
+                    <Shape>
+                        <Appearance>
+                            <Material DEF='WHITE' diffuseColor='1 1 1'/>
+                        </Appearance>
+                        <Box size='1 1 1'/>
+                    </Shape>
+                </Group>
+                <Transform scale='2 2 2'>
+                    <Collision DEF='DoNotCollideWithVisualizationWidget' enabled='false'>
+                         Invoke CoordinateAxes in other scenes as an Inline child inside a scaling Transform node, at the topmost level of the scene graph. 
+                         This NavigationInfo allows examine mode and will be overridden by any parent scene. 
+                         Each arrow goes from +1m to -1m to allow linear scaling to fit a scene 
+                         Note each label rotates about the scene's vertical Y axis for consistency, enabling local orientation by user 
+                        <Group>
+                             Vertical Y arrow and label 
+                            <Group DEF='ArrowGreen'>
+                                <Shape>
+                                    <Cylinder DEF='ArrowCylinder' radius='.025' top='false'/>
+                                    <Appearance DEF='Green'>
+                                        <Material diffuseColor='.1 .6 .1' emissiveColor='.05 .2 .05'/>
+                                    </Appearance>
+                                </Shape>
+                                <Transform translation='0 1 0'>
+                                    <Shape>
+                                        <Cone DEF='ArrowCone' bottomRadius='.05' height='.1'/>
+                                        <Appearance USE='Green'/>
+                                    </Shape>
+                                </Transform>
+                            </Group>
+                            <Transform translation='0 1.08 0'>
+                                <Billboard>
+                                    <Shape>
+                                        <Appearance DEF='LABEL_APPEARANCE'>
+                                            <Material diffuseColor='1 1 .3' emissiveColor='.33 .33 .1'/>
+                                        </Appearance>
+                                        <Text string='"Y"'>
+                                            <FontStyle DEF='LABEL_FONT' family='"SANS"' justify='"MIDDLE" "MIDDLE"' size='.2'/>
+                                        </Text>
+                                    </Shape>
+                                </Billboard>
+                            </Transform>
+                        </Group>
+                        <Transform rotation='0 0 1 -1.57079'>
+                             Horizontal X arrow and label 
+                            <Group>
+                                <Group DEF='ArrowRed'>
+                                    <Shape>
+                                        <Cylinder USE='ArrowCylinder'/>
+                                        <Appearance DEF='Red'>
+                                            <Material diffuseColor='.7 .1 .1' emissiveColor='.33 0 0'/>
+                                        </Appearance>
+                                    </Shape>
+                                    <Transform translation='0 1 0'>
+                                        <Shape>
+                                            <Cone USE='ArrowCone'/>
+                                            <Appearance USE='Red'/>
+                                        </Shape>
+                                    </Transform>
+                                </Group>
+                                <Transform rotation='0 0 1 1.57079' translation='.072 1.1 0'>
+                                     note label rotated back to original coordinate frame 
+                                    <Billboard>
+                                        <Shape>
+                                            <Appearance USE='LABEL_APPEARANCE'/>
+                                            <Text string='"X"'>
+                                                <FontStyle USE='LABEL_FONT'/>
+                                            </Text>
+                                        </Shape>
+                                    </Billboard>
+                                </Transform>
+                            </Group>
+                        </Transform>
+                        <Transform rotation='1 0 0 1.57079'>
+                             Perpendicular Z arrow and label, note right-hand rule 
+                            <Group>
+                                <Group DEF='ArrowBlue'>
+                                    <Shape>
+                                        <Cylinder USE='ArrowCylinder'/>
+                                        <Appearance DEF='Blue'>
+                                            <Material diffuseColor='.3 .3 1' emissiveColor='.1 .1 .33'/>
+                                        </Appearance>
+                                    </Shape>
+                                    <Transform translation='0 1 0'>
+                                        <Shape>
+                                            <Cone USE='ArrowCone'/>
+                                            <Appearance USE='Blue'/>
+                                        </Shape>
+                                    </Transform>
+                                </Group>
+                                <Transform rotation='1 0 0 -1.57079' translation='0 1.1 .072'>
+                                     note label rotated back to original coordinate frame 
+                                    <Billboard>
+                                        <Shape>
+                                            <Appearance USE='LABEL_APPEARANCE'/>
+                                            <Text string='"Z"'>
+                                                <FontStyle USE='LABEL_FONT'/>
+                                            </Text>
+                                        </Shape>
+                                    </Billboard>
+                                </Transform>
+                            </Group>
+                        </Transform>
+                    </Collision>                
+                </Transform>
+            </Scene> 
+            
+<!--            
+            <Scene>
+                <NavigationInfo type='"EXAMINE" "WALK" "FLY" "ANY"'/>
+                <Group>
+                    <Viewpoint description='Front View' position='0 0 13'/>
+                    <Viewpoint description='Left View' orientation='0 1 0 -1.57' position='-13 0 0'/>
+                    <Viewpoint description='Rear View' orientation='0 1 0 3.14' position='0 0 -13'/>
+                    <Viewpoint description='Right View' orientation='0 1 0 1.57' position='13 0 0'/>
+                    <Viewpoint description='Top View' orientation='1 0 0 -1.57' position='0 13 0'/>
+                    <Viewpoint description='Bottom View' orientation='1 0 0 1.57' position='0 -13 0'/>
+                </Group>
+                <Transform translation='-3 3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet DEF='the-set' colorPerVertex='false' solid='false' colorIndex='2 3 1 0 5 4' coordIndex='0 1 2 3 -1 1 7 4 2 -1 7 6 5 4 -1 0 3 5 6 -1 3 2 4 5 -1 6 7 1 0 -1'>
+                            <Color color='1 0 0 0 1 0 0 0 1 1 1 0 1 0 0 0 1 0'/>
+                            <Coordinate point='-0.5 -0.5 0.5 0.5 -0.5 0.5 0.5 0.5 0.5 -0.5 0.5 0.5 0.5 0.5 -0.5 -0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5'/>
+                        </IndexedFaceSet>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 0.5' translation='-1.5 3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 1' translation='0 3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 1.5' translation='1.5 3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 2' translation='3 3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 2.5' translation='-3 0 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 3' translation='-1.5 0 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 3.5'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 4' translation='1.5 0 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 4.5' translation='3 0 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 5' translation='-3 -3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 5.5' translation='-1.5 -3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 6' translation='0 -3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 6.14' translation='1.5 -3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+                <Transform rotation='0 0 1 6.28' translation='3 -3 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material/>
+                        </Appearance>
+                        <IndexedFaceSet USE='the-set'/>
+                    </Shape>
+                </Transform>
+            </Scene> -->
+            
+            
+        </x3d>
+        
+    </body>
+</html>
+

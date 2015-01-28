@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
+        <script type='text/javascript' src='http://www.x3dom.org/x3dom/release/x3dom.js'></script>
+        <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="scripts/x3dom_template_0.1.js"></script>
+        <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/x3dom/release/x3dom.css'></link>
+        <link rel='stylesheet' type='text/css' href='x3dom-fullscreen-style.css'></link>
+    </head>
+    <body>
+        <div id="header">
+            <a href="index.html">City</a> | 
+            <a href="index2.html">Church</a> 
+        </div>
+        <div id="container">
+            <x3d id='display3d' showStat='false' showLog='false' >
+                <scene DEF="scene"><Inline nameSpaceName ="tmpl" url="result.x3d" /></scene>
+            </x3d> 
+        </div>
+
+        <div id="content"> info </div>
+
+        <div id="x3dom_controls"> 
+            <div class="box viewpoints">
+                <div>Viewpoints:</div>
+                <ul class="list_viewpoint" id="viewpoints">
+                    <li><a href="#" cam="piha">piha</a></li>
+                    <li><a href="#" cam="sivusta">sivusta</a></li>
+                    <li><a href="#" cam="top">top</a></li>
+                </ul>
+            </div><div class="box examineable">
+                <div>talot</div>
+                <ul class="list_examineable" id="examine" >
+                    <li>
+                        <a href="#" groupname="Suzanne's house" axis="posY">Suzanne talo</a>
+                    </li>
+                    <li>
+                        <a href="#" groupname="House2" axis="posZ">House2</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box examineable">
+                <div>apinat</div>
+                <ul class="list_examineable" id="examine" >
+                    <li>
+                        <a href="#" objname="Suzanne" axis="posZ">Suzanne</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box layers">
+                <div>Toggle layers:</div>
+                <ul class="checkbox_groups_as_layers" id="layers" >
+                    <li>
+                        <input type="checkbox" groupname="House2" checked autocomplete="off">
+                            <a href="#" style="display:inline" groupname="House2">Talo2</a>
+                        </input>
+                    </li>
+                    <li>
+                        <input type="checkbox" groupname="Suzanne's house" checked autocomplete="off">
+                            <a href="#" style="display:inline" groupname="Suzanne's house">Suzanne talo</a>
+                        </input>
+                    </li>
+                    <li>
+                        <input type="checkbox" objname="Suzanne" checked autocomplete="off">
+                            <a href="#" style="display:inline" objname="Suzanne">Suzanne</a>
+                        </input>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#" class="reset">reset</a> | <a href="#" class="invert">invert</a></div>
+            </div>
+            <div class="box switches">
+
+                <div>rich and poor</div>
+                <select class="select_switch" id="temple_or_cabin" autocomplete="off">
+                    <option value="0">Suskun talo</option>
+                    <option value="1">Suskun temppeli</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <div>Options</div>
+                <ul>
+                    <li><a href="#" id="headlight" type="checkbox">Headlight</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            Made by Ari Häyrinen 2013 <a href="http://opendimension.blogspot.fi/" target="_blank">(blog)</a>
+        </div>
+        <script type="text/javascript">
+
+            var $element;
+            $(document).ready(function () {
+
+                $element = document.getElementById('display3d');
+
+                $("#content").load("content/about.html");
+                $("#pages a").on("click", changePage);
+
+                // viewpoints
+                $(".list_viewpoint a").on("click", changeCam);
+                $(".select_viewpoint").on("change", changeCam);
+
+                // examineables
+                $(".list_examineable a").on("click", examineLayer);
+                $(".select_examineable").on("change", examineLayer);
+
+                // switches
+                $(".select_switch").on("change", setSwitch);
+
+                // layers
+                $(".checkbox_groups_as_layers input").on("click", toggleLayer);
+                $(".checkbox_groups_as_layers a").on("click", examineLayer);
+                $(".reset").on("click", resetVisibility);
+                $(".invert").on("click", invertVisibility);
+
+                // options
+                $("#headlight").on("click", toggleHeadLight);
+
+                // display .x3d file name
+                $("#displaytitle").text($("Inline").attr("url"));
+
+
+            });
+        </script>  
+    </body>
+</html>

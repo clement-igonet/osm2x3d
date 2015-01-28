@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hut</title>
+        <link rel="stylesheet" href="http://www.x3dom.org/x3dom/example/x3dom.css"/>
+        <script src="http://www.x3dom.org/x3dom/example/x3dom.js"></script>
+    </head>
+    <body id="body">
+        <h1 id="title">Hut</h1>
+        <x3d id="the_element" showlog="false" showstat="false">
+            <Scene>
+                <!-- This NavigationInfo node is added to many scenes, making examination of objects easier -->
+                <Group>
+                    <Shape>
+                        <Appearance DEF='BROWN'>
+                            <Material diffuseColor='0.8 0.6 0.3'/>
+                        </Appearance>
+                        <!-- Default Cylinder height=2, centered about origin -->
+                        <Cylinder radius='2'/>
+                    </Shape>
+                    <Transform translation='0 2 0'>
+                        <Shape>
+                            <Appearance DEF='BROWN'>
+                                <Material diffuseColor='0.8 0.6 0.3'/>
+                            </Appearance>
+                            <Cone bottomRadius='2.5'/>
+                        </Shape>
+                    </Transform>
+                </Group>
+            </Scene>     
+        </x3d>
+    </body>
+</html>
+

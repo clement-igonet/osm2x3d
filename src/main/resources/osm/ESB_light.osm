@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (7626 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="40.7481926" minlon="-73.9862797" maxlat="40.7486022" maxlon="-73.9852939"/>
+ <node id="357606928" visible="true" version="1" changeset="763672" timestamp="2009-03-08T23:33:16Z" user="iandees" uid="4732" lat="40.7484350" lon="-73.9856946">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978558"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WNSR-FM (New York)"/>
+ </node>
+ <node id="357606922" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:52Z" user="ediyes" uid="1240849" lat="40.7484279" lon="-73.9856997">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978556"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WBAI-FM (New York)"/>
+ </node>
+ <node id="357607195" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:52Z" user="ediyes" uid="1240849" lat="40.7484372" lon="-73.9856964">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978641"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WNYE-TV (New York)"/>
+ </node>
+ <node id="883235940" visible="true" version="4" changeset="20436565" timestamp="2014-02-07T19:50:34Z" user="andrewpmk" uid="1679" lat="40.7484560" lon="-73.9853870">
+  <tag k="amenity" v="cafe"/>
+  <tag k="diet:vegan" v="yes"/>
+  <tag k="drink:soy_milk" v="yes"/>
+  <tag k="name" v="Starbucks Coffee"/>
+  <tag k="wheelchair" v="limited"/>
+ </node>
+ <node id="1507557082" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:18Z" user="robgeb" uid="336460" lat="40.7480537" lon="-73.9853030"/>
+ <node id="1507557091" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7480680" lon="-73.9854525"/>
+ <node id="1507557093" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481053" lon="-73.9854250"/>
+ <node id="1507557095" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481389" lon="-73.9855058"/>
+ <node id="1507557098" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481619" lon="-73.9856743"/>
+ <node id="1507557099" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481634" lon="-73.9855148"/>
+ <node id="1507557100" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481637" lon="-73.9854039"/>
+ <node id="1507557101" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481907" lon="-73.9854676"/>
+ <node id="1507557102" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481988" lon="-73.9856471"/>
+ <node id="1507557103" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7481994" lon="-73.9854882"/>
+ <node id="1507557104" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7482056" lon="-73.9853510"/>
+ <node id="1507557105" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7482091" lon="-73.9855222"/>
+ <node id="1507557106" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7482127" lon="-73.9853677"/>
+ <node id="1507557107" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7482152" lon="-73.9856372"/>
+ <node id="1507557108" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:19Z" user="robgeb" uid="336460" lat="40.7482210" lon="-73.9856994"/>
+ <node id="1507557109" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7482213" lon="-73.9855267"/>
+ <node id="1507557111" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7482278" lon="-73.9856671"/>
+ <node id="1507557120" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7482580" lon="-73.9855403"/>
+ <node id="1507557122" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7482603" lon="-73.9856427"/>
+ <node id="1507557124" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7482692" lon="-73.9856637"/>
+ <node id="1507557125" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7482845" lon="-73.9859663"/>
+ <node id="1507557126" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483003" lon="-73.9858869"/>
+ <node id="1507557127" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483221" lon="-73.9852655"/>
+ <node id="1507557128" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483222" lon="-73.9859385"/>
+ <node id="1507557129" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483248" lon="-73.9858960"/>
+ <node id="1507557130" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483291" lon="-73.9852819"/>
+ <node id="1507557131" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483370" lon="-73.9859247"/>
+ <node id="1507557132" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483487" lon="-73.9858512"/>
+ <node id="1507557133" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483575" lon="-73.9858719"/>
+ <node id="1507557134" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:20Z" user="robgeb" uid="336460" lat="40.7483773" lon="-73.9850644"/>
+ <node id="1507557135" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7483786" lon="-73.9861885"/>
+ <node id="1507557136" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7483806" lon="-73.9856753"/>
+ <node id="1507557138" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7483832" lon="-73.9860824"/>
+ <node id="1507557140" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7483857" lon="-73.9852400"/>
+ <node id="1507557142" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7483886" lon="-73.9856367"/>
+ <node id="1507557144" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7483900" lon="-73.9860500"/>
+ <node id="1507557146" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7483955" lon="-73.9857101"/>
+ <node id="1507557147" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7484073" lon="-73.9859891"/>
+ <node id="1507557149" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7484107" lon="-73.9859729"/>
+ <node id="1507557151" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7484126" lon="-73.9853036"/>
+ <node id="1507557153" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7484150" lon="-73.9856169"/>
+ <node id="1507557155" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7484165" lon="-73.9861605"/>
+ <node id="1507557157" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7484210" lon="-73.9859245"/>
+ <node id="1507557160" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:21Z" user="robgeb" uid="336460" lat="40.7484211" lon="-73.9854195"/>
+ <node id="1507557161" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484215" lon="-73.9853244"/>
+ <node id="1507557162" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484248" lon="-73.9857208"/>
+ <node id="1507557163" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484265" lon="-73.9860231"/>
+ <node id="1507557164" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484290" lon="-73.9851866"/>
+ <node id="1507557165" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484314" lon="-73.9853711"/>
+ <node id="1507557166" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484348" lon="-73.9853550"/>
+ <node id="1507557168" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484354" lon="-73.9860439"/>
+ <node id="1507557169" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484443" lon="-73.9856276"/>
+ <node id="1507557171" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484512" lon="-73.9857010"/>
+ <node id="1507557172" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484557" lon="-73.9852991"/>
+ <node id="1507557174" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484592" lon="-73.9856624"/>
+ <node id="1507557175" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484618" lon="-73.9861063"/>
+ <node id="1507557185" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:22Z" user="robgeb" uid="336460" lat="40.7484625" lon="-73.9852667"/>
+ <node id="1507557189" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7484642" lon="-73.9851607"/>
+ <node id="1507557192" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7484659" lon="-73.9862772"/>
+ <node id="1507557194" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7484860" lon="-73.9854751"/>
+ <node id="1507557196" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7484949" lon="-73.9854963"/>
+ <node id="1507557198" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485070" lon="-73.9854202"/>
+ <node id="1507557199" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485136" lon="-73.9860681"/>
+ <node id="1507557200" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485197" lon="-73.9854502"/>
+ <node id="1507557201" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485203" lon="-73.9860840"/>
+ <node id="1507557202" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485227" lon="-73.9854086"/>
+ <node id="1507557203" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485443" lon="-73.9854597"/>
+ <node id="1507557204" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485581" lon="-73.9853825"/>
+ <node id="1507557205" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485744" lon="-73.9856839"/>
+ <node id="1507557206" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485830" lon="-73.9857042"/>
+ <node id="1507557207" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7485841" lon="-73.9858037"/>
+ <node id="1507557208" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:23Z" user="robgeb" uid="336460" lat="40.7486168" lon="-73.9856793"/>
+ <node id="1507557209" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486208" lon="-73.9858173"/>
+ <node id="1507557210" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486238" lon="-73.9856474"/>
+ <node id="1507557211" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486266" lon="-73.9859847"/>
+ <node id="1507557213" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486330" lon="-73.9858218"/>
+ <node id="1507557214" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486334" lon="-73.9860007"/>
+ <node id="1507557216" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486461" lon="-73.9857000"/>
+ <node id="1507557218" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486486" lon="-73.9858593"/>
+ <node id="1507557220" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486573" lon="-73.9858799"/>
+ <node id="1507557222" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486807" lon="-73.9856744"/>
+ <node id="1507557223" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486824" lon="-73.9858343"/>
+ <node id="1507557225" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7486838" lon="-73.9859424"/>
+ <node id="1507557232" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7487069" lon="-73.9858433"/>
+ <node id="1507557233" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7487401" lon="-73.9859220"/>
+ <node id="1507557234" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7487747" lon="-73.9858964"/>
+ <node id="1507557235" visible="true" version="1" changeset="9865730" timestamp="2011-11-18T17:03:24Z" user="robgeb" uid="336460" lat="40.7487894" lon="-73.9860386"/>
+ <node id="2715353372" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7483565" lon="-73.9856793"/>
+ <node id="2715353375" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7483694" lon="-73.9856170"/>
+ <node id="2715353377" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7483805" lon="-73.9857354"/>
+ <node id="2715353378" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7484120" lon="-73.9855851"/>
+ <node id="2715353380" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7484278" lon="-73.9857526"/>
+ <node id="2715353382" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7484593" lon="-73.9856023"/>
+ <node id="2715353383" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7484704" lon="-73.9857207"/>
+ <node id="2715353385" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:15Z" user="robgeb" uid="336460" lat="40.7484833" lon="-73.9856585"/>
+ <node id="357606898" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:52Z" user="ediyes" uid="1240849" lat="40.7484329" lon="-73.9857001">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978549"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WBLS-FM (New York)"/>
+ </node>
+ <node id="357606935" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:52Z" user="ediyes" uid="1240849" lat="40.7484357" lon="-73.9856932">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978560"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WCBS-FM (New York)"/>
+ </node>
+ <node id="357606916" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:52Z" user="ediyes" uid="1240849" lat="40.7484346" lon="-73.9856951">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978554"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WLTW-FM (New York)"/>
+ </node>
+ <node id="357606913" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:52Z" user="ediyes" uid="1240849" lat="40.7484353" lon="-73.9856957">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978553"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WNCN-FM (New York)"/>
+ </node>
+ <node id="357606924" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:52Z" user="ediyes" uid="1240849" lat="40.7484311" lon="-73.9856903">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978557"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WNEW-FM (New York)"/>
+ </node>
+ <node id="357606931" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:53Z" user="ediyes" uid="1240849" lat="40.7484361" lon="-73.9856955">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978559"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WPLJ-FM (New York)"/>
+ </node>
+ <node id="357606910" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:53Z" user="ediyes" uid="1240849" lat="40.7484398" lon="-73.9856926">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978552"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WQCD-FM (New York)"/>
+ </node>
+ <node id="357606902" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:53Z" user="ediyes" uid="1240849" lat="40.7484359" lon="-73.9856848">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978550"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WQHT-FM (New York)"/>
+ </node>
+ <node id="357606895" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:53Z" user="ediyes" uid="1240849" lat="40.7484343" lon="-73.9856963">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978548"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WQXR-FM (New York)"/>
+ </node>
+ <node id="357606919" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:53Z" user="ediyes" uid="1240849" lat="40.7484356" lon="-73.9856950">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978555"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WRKS-FM (New York)"/>
+ </node>
+ <node id="357606907" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:53Z" user="ediyes" uid="1240849" lat="40.7484273" lon="-73.9856942">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978551"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WSKQ-FM (New York)"/>
+ </node>
+ <node id="357606893" visible="true" version="2" changeset="22334153" timestamp="2014-05-14T13:53:53Z" user="ediyes" uid="1240849" lat="40.7484362" lon="-73.9856944">
+  <tag k="ele" v="15"/>
+  <tag k="gnis:county_id" v="061"/>
+  <tag k="gnis:created" v="08/01/1994"/>
+  <tag k="gnis:feature_id" v="978547"/>
+  <tag k="gnis:state_id" v="36"/>
+  <tag k="man_made" v="tower"/>
+  <tag k="name" v="WXRK-FM (New York)"/>
+ </node>
+ <way id="137425125" visible="true" version="4" changeset="22290166" timestamp="2014-05-12T12:07:49Z" user="cigone" uid="2047239">
+  <nd ref="1507557213"/>
+  <nd ref="1507557147"/>
+  <nd ref="1507557133"/>
+  <nd ref="1507557132"/>
+  <nd ref="1507557124"/>
+  <nd ref="1507557122"/>
+  <nd ref="1507557105"/>
+  <nd ref="1507557166"/>
+  <nd ref="1507557194"/>
+  <nd ref="1507557196"/>
+  <nd ref="1507557205"/>
+  <nd ref="1507557206"/>
+  <nd ref="1507557213"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="310"/>
+  <tag k="min_height" v="290"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="137425127" visible="true" version="4" changeset="22290166" timestamp="2014-05-12T12:07:49Z" user="cigone" uid="2047239">
+  <nd ref="1507557232"/>
+  <nd ref="1507557216"/>
+  <nd ref="1507557210"/>
+  <nd ref="1507557205"/>
+  <nd ref="1507557196"/>
+  <nd ref="1507557203"/>
+  <nd ref="1507557202"/>
+  <nd ref="1507557185"/>
+  <nd ref="1507557151"/>
+  <nd ref="1507557101"/>
+  <nd ref="1507557095"/>
+  <nd ref="1507557102"/>
+  <nd ref="1507557108"/>
+  <nd ref="1507557124"/>
+  <nd ref="1507557132"/>
+  <nd ref="1507557126"/>
+  <nd ref="1507557128"/>
+  <nd ref="1507557138"/>
+  <nd ref="1507557168"/>
+  <nd ref="1507557220"/>
+  <nd ref="1507557232"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:levels" v="71"/>
+  <tag k="building:min_level" v="29"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="255"/>
+  <tag k="min_height" v="115"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="137425142" visible="true" version="3" changeset="20280503" timestamp="2014-01-30T10:01:09Z" user="robgeb" uid="336460">
+  <nd ref="1507557207"/>
+  <nd ref="1507557157"/>
+  <nd ref="1507557120"/>
+  <nd ref="1507557160"/>
+  <nd ref="1507557207"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="330"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="137425144" visible="true" version="3" changeset="20280503" timestamp="2014-01-30T10:01:09Z" user="robgeb" uid="336460">
+  <nd ref="1507557209"/>
+  <nd ref="1507557149"/>
+  <nd ref="1507557109"/>
+  <nd ref="1507557165"/>
+  <nd ref="1507557209"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="320"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="137425145" visible="true" version="4" changeset="20280503" timestamp="2014-01-30T10:01:09Z" user="robgeb" uid="336460">
+  <nd ref="1507557169"/>
+  <nd ref="1507557153"/>
+  <nd ref="1507557142"/>
+  <nd ref="1507557136"/>
+  <nd ref="1507557146"/>
+  <nd ref="1507557162"/>
+  <nd ref="1507557171"/>
+  <nd ref="1507557174"/>
+  <nd ref="1507557169"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="443.2"/>
+  <tag k="min_height" v="330"/>
+  <tag k="roof:height" v="113.2"/>
+  <tag k="roof:material" v="metal"/>
+  <tag k="roof:shape" v="pyramidal"/>
+ </way>
+ <way id="137425133" visible="true" version="4" changeset="22290166" timestamp="2014-05-12T12:07:49Z" user="cigone" uid="2047239">
+  <nd ref="1507557189"/>
+  <nd ref="1507557164"/>
+  <nd ref="1507557127"/>
+  <nd ref="1507557130"/>
+  <nd ref="1507557106"/>
+  <nd ref="1507557104"/>
+  <nd ref="1507557093"/>
+  <nd ref="1507557091"/>
+  <nd ref="1507557098"/>
+  <nd ref="1507557102"/>
+  <nd ref="1507557108"/>
+  <nd ref="1507557126"/>
+  <nd ref="1507557128"/>
+  <nd ref="1507557125"/>
+  <nd ref="1507557135"/>
+  <nd ref="1507557155"/>
+  <nd ref="1507557201"/>
+  <nd ref="1507557199"/>
+  <nd ref="1507557211"/>
+  <nd ref="1507557214"/>
+  <nd ref="1507557233"/>
+  <nd ref="1507557234"/>
+  <nd ref="1507557222"/>
+  <nd ref="1507557216"/>
+  <nd ref="1507557210"/>
+  <nd ref="1507557203"/>
+  <nd ref="1507557202"/>
+  <nd ref="1507557204"/>
+  <nd ref="1507557189"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:levels" v="24"/>
+  <tag k="building:min_level" v="20"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="90"/>
+  <tag k="min_height" v="75"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="137425128" visible="true" version="4" changeset="22290166" timestamp="2014-05-12T12:07:49Z" user="cigone" uid="2047239">
+  <nd ref="1507557185"/>
+  <nd ref="1507557151"/>
+  <nd ref="1507557140"/>
+  <nd ref="1507557130"/>
+  <nd ref="1507557106"/>
+  <nd ref="1507557100"/>
+  <nd ref="1507557101"/>
+  <nd ref="1507557095"/>
+  <nd ref="1507557102"/>
+  <nd ref="1507557108"/>
+  <nd ref="1507557126"/>
+  <nd ref="1507557128"/>
+  <nd ref="1507557138"/>
+  <nd ref="1507557168"/>
+  <nd ref="1507557175"/>
+  <nd ref="1507557199"/>
+  <nd ref="1507557225"/>
+  <nd ref="1507557220"/>
+  <nd ref="1507557232"/>
+  <nd ref="1507557216"/>
+  <nd ref="1507557210"/>
+  <nd ref="1507557203"/>
+  <nd ref="1507557202"/>
+  <nd ref="1507557185"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:levels" v="29"/>
+  <tag k="building:min_level" v="24"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="115"/>
+  <tag k="min_height" v="90"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="137425129" visible="true" version="4" changeset="22290166" timestamp="2014-05-12T12:07:49Z" user="cigone" uid="2047239">
+  <nd ref="1507557133"/>
+  <nd ref="1507557129"/>
+  <nd ref="1507557131"/>
+  <nd ref="1507557144"/>
+  <nd ref="1507557163"/>
+  <nd ref="1507557218"/>
+  <nd ref="1507557223"/>
+  <nd ref="1507557208"/>
+  <nd ref="1507557206"/>
+  <nd ref="1507557205"/>
+  <nd ref="1507557196"/>
+  <nd ref="1507557194"/>
+  <nd ref="1507557200"/>
+  <nd ref="1507557198"/>
+  <nd ref="1507557172"/>
+  <nd ref="1507557161"/>
+  <nd ref="1507557103"/>
+  <nd ref="1507557099"/>
+  <nd ref="1507557107"/>
+  <nd ref="1507557111"/>
+  <nd ref="1507557122"/>
+  <nd ref="1507557124"/>
+  <nd ref="1507557132"/>
+  <nd ref="1507557133"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:levels" v="80"/>
+  <tag k="building:min_level" v="71"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="290"/>
+  <tag k="min_height" v="255"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="137425131" visible="true" version="5" changeset="22934757" timestamp="2014-06-14T22:03:01Z" user="cigone" uid="2047239">
+  <nd ref="1507557235"/>
+  <nd ref="1507557233"/>
+  <nd ref="1507557234"/>
+  <nd ref="1507557222"/>
+  <nd ref="1507557216"/>
+  <nd ref="1507557210"/>
+  <nd ref="1507557203"/>
+  <nd ref="1507557202"/>
+  <nd ref="1507557204"/>
+  <nd ref="1507557189"/>
+  <nd ref="1507557164"/>
+  <nd ref="1507557134"/>
+  <nd ref="1507557082"/>
+  <nd ref="1507557093"/>
+  <nd ref="1507557091"/>
+  <nd ref="1507557098"/>
+  <nd ref="1507557102"/>
+  <nd ref="1507557108"/>
+  <nd ref="1507557126"/>
+  <nd ref="1507557128"/>
+  <nd ref="1507557125"/>
+  <nd ref="1507557135"/>
+  <nd ref="1507557155"/>
+  <nd ref="1507557192"/>
+  <nd ref="1507557235"/>
+  <tag k="building:colour" v="beige"/>
+  <tag k="building:levels" v="20"/>
+  <tag k="building:min_level" v="5"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="75"/>
+  <tag k="min_height" v="20"/>
+  <tag k="roof:material" v="concrete"/>
+  <tag k="roof:shape" v="flat"/>
+ </way>
+ <way id="265932618" visible="true" version="1" changeset="21081192" timestamp="2014-03-13T11:55:16Z" user="robgeb" uid="336460">
+  <nd ref="2715353382"/>
+  <nd ref="2715353378"/>
+  <nd ref="2715353375"/>
+  <nd ref="2715353372"/>
+  <nd ref="2715353377"/>
+  <nd ref="2715353380"/>
+  <nd ref="2715353383"/>
+  <nd ref="2715353385"/>
+  <nd ref="2715353382"/>
+  <tag k="building:part" v="yes"/>
+  <tag k="height" v="390"/>
+  <tag k="min_height" v="330"/>
+  <tag k="roof:height" v="60"/>
+  <tag k="roof:material" v="metal"/>
+  <tag k="roof:shape" v="pyramidal"/>
+ </way>
+ <relation id="2098969" visible="true" version="3" changeset="15832977" timestamp="2013-04-23T07:16:33Z" user="pizaninja" uid="544485">
+  <member type="way" ref="34633854" role=""/>
+  <member type="way" ref="137425131" role=""/>
+  <member type="way" ref="137425128" role=""/>
+  <member type="way" ref="137425127" role=""/>
+  <member type="way" ref="137425129" role=""/>
+  <member type="way" ref="137425125" role=""/>
+  <member type="way" ref="137425144" role=""/>
+  <member type="way" ref="137425142" role=""/>
+  <member type="way" ref="137425145" role=""/>
+  <member type="way" ref="137425133" role=""/>
+  <tag k="name" v="Empire State Building"/>
+  <tag k="name:es" v="Edificio Empire State"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="type" v="building"/>
+ </relation>
+</osm>
