@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-osm2building3d
+osm2x3d
 ==============
 
 Conversion from open street map data to building in 3D scene graph  
@@ -11,8 +10,3 @@ Examples:
 ![Empire State Building](http://web.osm2x3d.net/examples/Empire_State_Building.png)
 ![St Basil's Cathedral](http://web.osm2x3d.net/examples/St_Basil_Cathedral.png)
 
-
-=======
-osm2x3d
-=======
->>>>>>> 6690bf1f6fc3e5dc357622224d2d35d2d32a5ae2
