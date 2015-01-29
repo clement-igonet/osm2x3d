@@ -127,11 +127,11 @@ void Converter::osmWorld23DBuildings() {
                 vector < shared_ptr < OsmBuildingPart >> ::iterator osmBuildingPartIt = osmBuilding->osmBuildingParts_.begin();
                 osmBuildingPartIt != osmBuilding->osmBuildingParts_.end();
                 ++osmBuildingPartIt) {
-            string colour = OsmUtil::osmColor2x3DColor(
+            string buildingPartColour = OsmUtil::osmColor2x3DColor(
                     (*osmBuildingPartIt)->colour_);
 
             shared_ptr < vector < Node> > osmNodes = (*osmBuildingPartIt)->nodes_;
-            shared_ptr < vector < pair<double, double >> > points(new vector < pair<double, double >>);
+            shared_ptr < vector < pair<double, double >> > buildingPartPoints(new vector < pair<double, double >>);
             double perimeter = 0.0;
             // For each node
             for (
@@ -140,11 +140,12 @@ void Converter::osmWorld23DBuildings() {
                     ++nodeIt) {
                 double z = RADIUS * (OsmWorld::getInstance()->origin_.first - nodeIt->lat_) * (M_PI / 180);
                 double x = RADIUS * (nodeIt->lon_ - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
-                points->push_back(make_pair(x, z));
+                buildingPartPoints->push_back(make_pair(x, z));
                 perimeter += sqrt(pow(x, 2.0) + pow(z, 2.0));
             }
             my3DBuilding->perimeter_ = perimeter;
-            double height = ((*osmBuildingPartIt)->maxHeight_ - (*osmBuildingPartIt)->minHeight_)
+            double buildingPartHeight = ((*osmBuildingPartIt)->maxHeight_ - (*osmBuildingPartIt)->minHeight_);
+            double floorHeight = buildingPartHeight
                     / (double) ((*osmBuildingPartIt)->levels_ - (*osmBuildingPartIt)->minLevel_);
             FILE_LOG(logDEBUG)
                     << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:"
@@ -152,26 +153,41 @@ void Converter::osmWorld23DBuildings() {
             FILE_LOG(logDEBUG)
                     << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:"
                     << (*osmBuildingPartIt)->levels_;
+
+            // Add my3DBuildingPart
+            double buildingPartElevation = (*osmBuildingPartIt)->minHeight_;
+            shared_ptr<My3DBuildingPart> my3DBuildingPart(
+                    new My3DBuildingPart(
+                    buildingPartPoints,
+                    buildingPartHeight,
+                    buildingPartElevation,
+                    buildingPartColour));
+            (*my3DBuilding).addBuildingPart(my3DBuildingPart);
+
             for (
                     int level = (*osmBuildingPartIt)->minLevel_;
                     level < (*osmBuildingPartIt)->levels_;
                     level++) {
-                double elevation = (*osmBuildingPartIt)->minHeight_ + (double) ((level - (*osmBuildingPartIt)->minLevel_) * height);
+                double floorElevation = buildingPartElevation + (double) ((level - (*osmBuildingPartIt)->minLevel_) * floorHeight);
                 shared_ptr<My3DBuildingFloorPart> my3DBuildingFloorPart(
-                        new My3DBuildingFloorPart(points, height, elevation, colour));
+                        new My3DBuildingFloorPart(
+                        buildingPartPoints,
+                        floorHeight,
+                        floorElevation,
+                        buildingPartColour));
                 FILE_LOG(logDEBUG)
                         << "Converter::osmWorld23DBuildings - Level " << level
-                        << ": elevation=" << elevation
+                        << ": elevation=" << floorElevation
                         << " / " << "minHeight=" << (*osmBuildingPartIt)->minHeight_
                         << " / " << "minLevel=" << (*osmBuildingPartIt)->minLevel_
-                        << " / " << "height=" << height;
+                        << " / " << "height=" << floorHeight;
                 //                }
                 (*my3DBuilding).addLevel(level, my3DBuildingFloorPart);
             }
 
             // Add roof
             shared_ptr<My3DRoof> my3DRoof(new My3DRoof(
-                    points,
+                    buildingPartPoints,
                     (*osmBuildingPartIt)->maxHeight_ + 0.1,
                     Shape::FLAT,
                     //                    OsmUtil::osmColor2x3DColor((*osmBuildingPartIt)->osmRoof_->colour_)
