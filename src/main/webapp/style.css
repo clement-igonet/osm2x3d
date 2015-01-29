@@ -2,14 +2,37 @@ html,body{
    margin:0;
    padding:0px;
    background:white;
-
+   height: 100%;
 }
+
+mymap {
+   width: 100%;
+   border: 1px solid #ccc;
+}
+
+
+#map {
+
+	position:absolute;
+	margin-top:0px;
+	margin-bottom:0px;
+	top:5px;
+	left:1px;
+	right:5px;
+	bottom:5px;
+	border: 1px solid #e6e6e6;
+	border-radius: 15px 15px 15px 15px ;
+	overflow: hidden;
+        z-index:0;
+}
+
 #container {
 
 	position:absolute;
 	margin-top:0px;
 	margin-bottom:0px;
 	top:5px;
+	height:100%;
 	left:5px;
 	right:5px;
 	bottom:5px;
@@ -55,6 +78,46 @@ html,body{
    border-radius: 15px 15px 0px 0px ;
 }
 
+
+
+#docs {
+   position:absolute;
+   left:1px; 
+
+   top:70px;
+   margin-right:0px;
+   background:white;
+   padding:3px;
+   max-height:80%;
+   overflow: auto;
+   overflow-x:hidden;
+   color:black;
+   border: 1px solid #e6e6e6;
+   border-right: 0px;
+   z-index:5;
+}
+
+#shortdesc {
+   position:absolute;
+   left:40px; 
+
+   top:6px;
+   margin-right:0px;
+   background:white;
+   padding:3px;
+   max-height:80%;
+   overflow: auto;
+   overflow-x:hidden;
+   color:black;
+   border: 1px solid #e6e6e6;
+   border-right: 0px;
+   border-radius: 15px 0px 0px 15px ;
+   z-index:5;
+}
+
+
+
+
 #content {
    position:absolute;
    right:5px; 
@@ -73,12 +136,12 @@ html,body{
    border-right: 0px;
    border-radius: 15px 0px 0px 15px ;
 }
-
+/*
 a:link, ul a:visited {
     color:#575757;
     text-decoration:none;
 }
-
+*/
 
 x3d {
 	margin:0px;

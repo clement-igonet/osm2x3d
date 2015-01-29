@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8"> 
         <title>OSM to X3D</title>
         <script src="http://www.x3dom.org/download/dev/x3dom-full.js"></script>
         <script src="jquery-2.1.3.min.js"></script>
