@@ -47,86 +47,19 @@ void My3DBuilding::addBuildingPart(shared_ptr<My3DBuildingPart> my3DBuildingPart
     my3DBuildingParts_.push_back(my3DBuildingPart);
 }
 
-void My3DBuilding::addRoof(shared_ptr<My3DRoof> my3DRoof) {
-    this->my3DBuildingRoofs.push_back(my3DRoof);
-}
+//void My3DBuilding::addRoof(shared_ptr<My3DRoof> my3DRoof) {
+//    this->my3DBuildingRoofs.push_back(my3DRoof);
+//}
 
 void My3DBuilding::buildX3Dom(ostream& outputStream) {
 
-
-
-
-
-
-
-
-
-
-
+    // Building parts
     for (
             vector<shared_ptr < My3DBuildingPart >> ::iterator my3DBuildingPartIt = this->my3DBuildingParts_.begin();
             my3DBuildingPartIt != this->my3DBuildingParts_.end();
             ++my3DBuildingPartIt) {
-
-        double elevation = (*my3DBuildingPartIt)->elevation_;
-        outputStream << R"(
-                    <Transform translation='0 )" << elevation << " 0'>";
-        outputStream << R"(
-                        <Group>)";
-        outputStream << R"(
-                            <Shape>
-                                <Appearance>)";
-        string colour = (*my3DBuildingPartIt)->colour_;
-        ostringstream diffuseColorSS;
-        ostringstream transparencySS;
-        double wallElevation;
-        if (!(*my3DBuildingPartIt)->height_) {
-            wallElevation = 9.99;
-        } else {
-            wallElevation = *((*my3DBuildingPartIt)->height_);
-        }
-        if (!colour.empty()) {
-            diffuseColorSS << (*my3DBuildingPartIt)->colour_;
-            transparencySS << (double) 0.8;
-        } else {
-            diffuseColorSS << (double) (((13 * (1 + (int) wallElevation)) % 100) / (double) 100) << " "
-                    << (double) (((17 * (1 + (int) wallElevation)) % 100) / (double) 100) << " "
-                    << (double) (((23 * (1 + (int) wallElevation)) % 100) / (double) 100);
-            transparencySS << (double) 0.8;
-        }
-        outputStream << R"(
-                                    <Material diffuseColor=')" << diffuseColorSS.str();
-        outputStream << R"(' transparency=')" << transparencySS.str() << "'/>";
-        outputStream << R"(
-                                </Appearance>)";
-        shared_ptr < vector < pair<double, double >> > points = (*my3DBuildingPartIt)->points_;
-        stringstream pointsSS;
-        for (
-                vector < pair<double, double >> ::iterator pointIt = points->begin();
-                pointIt != points->end();
-                ++pointIt) {
-            pointsSS << pointIt->first << " ";
-            pointsSS << pointIt->second << " ";
-        }
-        outputStream << R"(
-                                <Extrusion convex='false' creaseAngle='0.785' crossSection=')" << pointsSS.str() << "' "
-                << "solid='false' endCap='false' "
-                << "spine='0 0 0 0 " << wallElevation << " 0'/>";
-        outputStream << R"(
-                            </Shape>)";
-        outputStream << R"(
-                        </Group>
-                    </Transform>)";
+        (*my3DBuildingPartIt)->buildX3Dom(outputStream);        
     }
-
-
-
-
-
-
-
-
-
 
     for (
             unordered_map<int, shared_ptr < My3DBuildingFloor >> ::iterator my3DBuildingFloorPairIt = this->my3DBuildingFloors.begin();
@@ -155,8 +88,9 @@ void My3DBuilding::buildX3Dom(ostream& outputStream) {
                 ++my3DBuildingFloorPartIt) {
             double elevation = (*my3DBuildingFloorPartIt)->elevation_;
             outputStream << R"(
-                    <Transform translation='0 )" << elevation << " 0'>";
+                <Transform translation='0 )" << elevation << " 0'>";
             outputStream << R"(
+                    <Transform rotation='1 0 0 1.5708'>
                         <Group>)";
             outputStream << R"(
                             <Shape>
@@ -186,67 +120,50 @@ void My3DBuilding::buildX3Dom(ostream& outputStream) {
                     << "My3DBuilding::buildX3Dom - Level " << level
                     << ": elevation=" << elevation
                     << " / height=" << wallElevation;
+
+
+
+
+            //             coordIndex='0 1 2 3 0 -1'
+            //            outputStream << R"(            
+            //                                <IndexedFaceSet convex='false' colorIndex='0 1 2 3 0 -1'>
+            //                                    <Coordinate DEF='FourPoints' point=')" << pointsSS.str() <<"'/>";
+            //            outputStream << R"(            
+            //                                    <Color DEF='FourColors' color='1 0 0 0 1 0 0 0 1 0.8 0.8 0.8'/>
+            //                                </IndexedFaceSet>)";
+// <Shape>
+//<Polyline2D lineSegments='-3 2 -3 0 -2 -2 3 -1.5 3 1.5 .5 3 -3 2'/>
+//<Appearance DEF='MagentaAppearance'>
+//<Material diffuseColor='1 0 0' emissiveColor='0 0 1' specularColor='0 .8 0'/>
+//</Appearance>
+//</Shape> 
+            //<Polyline2D lineSegments='-3 2 -3 0 -2 -2 3 -1.5 3 1.5 .5 3 -3 2'/>
+//            outputStream << R"(
+//                                <Extrusion convex='false' creaseAngle='0.785' crossSection=')" << pointsSS.str() << "' "
+//                    << "solid='false' endCap='false' "
+//                    << "spine='0 0 0 0 0.1 0'/>";
             outputStream << R"(
-                                <Extrusion convex='false' creaseAngle='0.785' crossSection=')" << pointsSS.str() << "' "
-                    << "solid='false' endCap='false' "
-                    << "spine='0 0 0 0 0 0'/>";
+                                <Polyline2D lineSegments=')" << pointsSS.str() << "'/>";
+
+
+            //            outputStream << R"(
+            //                                <Extrusion convex='false' creaseAngle='0.785' crossSection=')" << pointsSS.str() << "' "
+            //                    << "solid='false' endCap='false' "
+            //                    << "spine='0 0 0 0 1 0'/>";
+
+
+
+            //                    << "spine='0 0 0 0 0 0'/>";
             //                    << "spine='0 0 0 0 " << wallElevation << " 0'/>";
             outputStream << R"(
                             </Shape>)";
             outputStream << R"(
                         </Group>
-                    </Transform>)";
+                    </Transform>
+                </Transform>)";
         }
     }
 
-    // Roof
-    for (vector<shared_ptr < My3DRoof>>::iterator my3DRoofIt = my3DBuildingRoofs.begin();
-            my3DRoofIt != my3DBuildingRoofs.end();
-            ++my3DRoofIt) {
-        //        (my3DRoofIt*)
-        double roofElevation;
-        if ((*my3DRoofIt)->elevation_ == 0) {
-            roofElevation = 9.99;
-        } else {
-            roofElevation = (*my3DRoofIt)->elevation_;
-        }
-        outputStream << R"(
-                        <Transform translation='0 )" << roofElevation << " 0'>";
-        outputStream << R"(
-                            <Group>)";
-        outputStream << R"(
-                                <Shape>
-                                    <Appearance>)";
-        ostringstream diffuseColorSS;
-        ostringstream transparencySS;
-
-        diffuseColorSS << (*my3DRoofIt)->colour_;
-        transparencySS << (double) 0.5;
-
-        outputStream << R"(
-                                        <Material diffuseColor=')" << diffuseColorSS.str();
-        outputStream << R"(' transparency=')" << transparencySS.str() << "'/>";
-        outputStream << R"(
-                                    </Appearance>)";
-        shared_ptr < vector < pair<double, double >> > points = (*my3DRoofIt)->points_;
-        stringstream pointsSS;
-        for (
-                vector < pair<double, double >> ::iterator pointIt = points->begin();
-                pointIt != points->end();
-                ++pointIt) {
-            pointsSS << pointIt->first << " ";
-            pointsSS << pointIt->second << " ";
-        }
-        outputStream << R"(
-                                    <Extrusion convex='false' creaseAngle='0.785' crossSection=')" << pointsSS.str() << "' "
-                << "solid='false' endCap='false' "
-                << "spine='0 0 0 0 0 0'/>";
-        outputStream << R"(
-                                </Shape>)";
-        outputStream << R"(
-                            </Group>
-                        </Transform>)";
-    }
 }
 
 string My3DBuilding::buildX3Dom() {

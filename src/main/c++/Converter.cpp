@@ -59,12 +59,11 @@ void Converter::osmWorld23DGround() {
     double lonStart = OsmUtil::tilex2long(xTile, zoom);
     double lon = lonStart;
     double lat = OsmUtil::tiley2lat(yTile, zoom);
-    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - zoom: " << zoom;
-    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - xTile: " << xTile;
-    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - yTile: " << yTile;
-
-    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - latMin: " << latMin;
-    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lonMax: " << lonMax;
+    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - zoom: " << zoom;
+    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - xTile: " << xTile;
+    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - yTile: " << yTile;
+    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - latMin: " << latMin;
+    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lonMax: " << lonMax;
 
     //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
     //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
@@ -143,8 +142,29 @@ void Converter::osmWorld23DBuildings() {
                 buildingPartPoints->push_back(make_pair(x, z));
                 perimeter += sqrt(pow(x, 2.0) + pow(z, 2.0));
             }
+
+            // Building part roof
+            double roofElevation = (*osmBuildingPartIt)->maxHeight_ - (*osmBuildingPartIt)->osmRoof_->height_;
+            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofElevation: " << roofElevation;
+
+            double roofHeight = (*osmBuildingPartIt)->osmRoof_->height_;
+            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofHeight: " << roofHeight;
+            shared_ptr<My3DRoof> my3DBuildingPartRoof(new My3DRoof(
+                    buildingPartPoints,
+                    roofElevation,
+                    roofHeight,
+                    Shape::getEnumFromString((*osmBuildingPartIt)->osmRoof_->shape_),
+                    "0 0 0"));
+            //                    OsmUtil::osmColor2x3DColor((*osmBuildingPartIt)->osmRoof_->colour_)
+
             my3DBuilding->perimeter_ = perimeter;
-            double buildingPartHeight = ((*osmBuildingPartIt)->maxHeight_ - (*osmBuildingPartIt)->minHeight_);
+            double buildingPartHeight = ((*osmBuildingPartIt)->maxHeight_
+                    - (*osmBuildingPartIt)->minHeight_)
+                    - roofHeight;
+            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - ((*osmBuildingPartIt)->maxHeight_: " << (*osmBuildingPartIt)->maxHeight_;
+            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minHeight_): " << (*osmBuildingPartIt)->minHeight_;
+            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofHeight: " << roofHeight;
+            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - buildingPartHeight: " << buildingPartHeight;
             double floorHeight = buildingPartHeight
                     / (double) ((*osmBuildingPartIt)->levels_ - (*osmBuildingPartIt)->minLevel_);
             FILE_LOG(logDEBUG)
@@ -156,12 +176,16 @@ void Converter::osmWorld23DBuildings() {
 
             // Add my3DBuildingPart
             double buildingPartElevation = (*osmBuildingPartIt)->minHeight_;
-            shared_ptr<My3DBuildingPart> my3DBuildingPart(
-                    new My3DBuildingPart(
+            shared_ptr<My3DBuildingPart> my3DBuildingPart(new My3DBuildingPart(
                     buildingPartPoints,
-                    buildingPartHeight,
+                    //                    buildingPartHeight,
                     buildingPartElevation,
-                    buildingPartColour));
+                    buildingPartColour,
+                    my3DBuildingPartRoof));
+            my3DBuildingPart->height_ = buildingPartHeight;
+            //    if (height != 0) {
+            //        this->height_ = height;
+            //    }
             (*my3DBuilding).addBuildingPart(my3DBuildingPart);
 
             for (
@@ -172,9 +196,10 @@ void Converter::osmWorld23DBuildings() {
                 shared_ptr<My3DBuildingFloorPart> my3DBuildingFloorPart(
                         new My3DBuildingFloorPart(
                         buildingPartPoints,
-                        floorHeight,
+//                        floorHeight,
                         floorElevation,
                         buildingPartColour));
+                my3DBuildingFloorPart->height_ = floorHeight;
                 FILE_LOG(logDEBUG)
                         << "Converter::osmWorld23DBuildings - Level " << level
                         << ": elevation=" << floorElevation
@@ -184,16 +209,6 @@ void Converter::osmWorld23DBuildings() {
                 //                }
                 (*my3DBuilding).addLevel(level, my3DBuildingFloorPart);
             }
-
-            // Add roof
-            shared_ptr<My3DRoof> my3DRoof(new My3DRoof(
-                    buildingPartPoints,
-                    (*osmBuildingPartIt)->maxHeight_ + 0.1,
-                    Shape::FLAT,
-                    //                    OsmUtil::osmColor2x3DColor((*osmBuildingPartIt)->osmRoof_->colour_)
-                    "0 0 0"
-                    ));
-            (*my3DBuilding).addRoof(my3DRoof);
         }
         My3DWorld::getInstance()->addBuilding(my3DBuilding);
     }

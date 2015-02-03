@@ -5,8 +5,10 @@ using namespace std;
 OsmRoof::OsmRoof(
         shared_ptr<vector<Node >> nodes,
         string colour,
-        string shape) {
+        string shape,
+        double height) {
     this->nodes_ = nodes;
     this->colour_ = colour;
     this->shape_ = shape;
+    this->height_ = height;
 }

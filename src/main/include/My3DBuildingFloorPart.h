@@ -21,14 +21,14 @@ class My3DBuildingFloorPart {
 public:
     My3DBuildingFloorPart(
             shared_ptr <vector < pair<double, double >> > points,
-            double height,
+//            double height,
             double elevation,
             string colour);
 
     shared_ptr<vector<pair<double, double >> > points_;
-private:
-//    double height_;
     boost::optional<double> height_;
+private:
+    //    double height_;
     double elevation_;
     string colour_;
 };

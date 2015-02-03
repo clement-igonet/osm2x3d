@@ -3,6 +3,7 @@
 
 #include "Color.h"
 #include "osm/Node.h"
+#include "My3DRoof.h"
 
 #include <utility>
 #include <memory>
@@ -21,13 +22,15 @@ class My3DBuildingPart {
 public:
     My3DBuildingPart(
             shared_ptr <vector < pair<double, double >> > points,
-            double height,
+//            double height,
             double elevation,
-            string colour);
-
+            string colour,
+            shared_ptr<My3DRoof> my3DRoof);
+    void buildX3Dom(ostream& outputStream);
     shared_ptr<vector<pair<double, double >> > points_;
-private:
+    shared_ptr<My3DRoof> my3DRoof_;
     boost::optional<double> height_;
+private:
     double elevation_;
     string colour_;
 };

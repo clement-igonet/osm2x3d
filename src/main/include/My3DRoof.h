@@ -18,18 +18,20 @@ public:
     My3DRoof(
             shared_ptr <vector < pair<double, double >> > points,
             double elevation,
+            double height,
             Shape::Type shape,
             string colour);
     void buildX3Dom(ostream& outputStream);
+
     shared_ptr <vector<pair<double, double >> > points_;
     string orientation_;
     double angle_;
     long levels_;
     double direction_;
     double elevation_;
+    double height_;
     string colour_;
 private:
-    double height_;
     Shape::Type shape_;
 };
 

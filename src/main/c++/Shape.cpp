@@ -1,6 +1,6 @@
 #include "Shape.h"
 
-boost::unordered_map<std::string, int> Shape::xmap = boost::assign::map_list_of("flat", FLAT)
+boost::unordered_map<std::string, Shape::Type> Shape::xmap = boost::assign::map_list_of("flat", FLAT)
     ("skillion", SKILLION)
     ("gabled", GABLED)
     ("half-hipped", HALF_HIPPED)

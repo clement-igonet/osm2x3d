@@ -29,19 +29,19 @@ public:
         SALTBOX = 10
     };
 
-    static int getEnumFromString(string strEnum) {
-        int result;
+    static Type getEnumFromString(string strEnum) {
+        Type result;
         //        boost::unordered_map<std::string, int>::const_iterator pos = xmap.find(strEnum);
-        boost::unordered_map<std::string, int>::const_iterator pos = xmap.find(strEnum);
+        boost::unordered_map<std::string, Type>::const_iterator pos = xmap.find(strEnum);
         if (pos == xmap.end()) {
-            return -1;
+            return FLAT;
         } else {
             result = pos->second;
         }
         return result;
     }
 private:
-    static boost::unordered_map<std::string, int> xmap;
+    static boost::unordered_map<std::string, Type> xmap;
 };
 
 #endif // OSM2X3D_SHAPE_H
