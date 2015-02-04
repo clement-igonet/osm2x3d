@@ -187,12 +187,13 @@ void OsmWorld::init_() {
                 shared_ptr<OsmBuildingPart> osmBuildingPart(new OsmBuildingPart(
                         nodes,
                         minHeight,
-                        height,
+                        //                        height,
                         buildingLevels,
                         buildingMinLevel,
                         name,
                         colour,
                         osmRoof));
+                osmBuildingPart->maxHeight_ = height;
                 FILE_LOG(logINFO) << "OsmWorld::init - name: " << name;
                 FILE_LOG(logINFO) << "OsmWorld::init - height: " << height;
 
@@ -211,12 +212,13 @@ void OsmWorld::init_() {
                 shared_ptr<OsmBuildingPart> osmBuildingPart(new OsmBuildingPart(
                         nodes,
                         minHeight,
-                        height,
+                        //                        height,
                         buildingLevels,
                         buildingMinLevel,
                         name,
                         colour,
                         osmRoof));
+                osmBuildingPart->maxHeight_ = height;
                 //
                 //                this->osmBuildingParts_.push_back(osmBuildingPart);
                 this->osmBuildingParts_.insert(pair<long long, shared_ptr < OsmBuildingPart >> (id, osmBuildingPart));

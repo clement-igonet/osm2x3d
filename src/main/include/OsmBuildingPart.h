@@ -27,7 +27,7 @@ public:
     OsmBuildingPart(
             shared_ptr<vector<Node >> osmNodes,
             double osmMinHeight,
-            double osmHeight,
+//            double osmHeight,
             int buildingLevels,
             int buildingMinLevel,
             string name,

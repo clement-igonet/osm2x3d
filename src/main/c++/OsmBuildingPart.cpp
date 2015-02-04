@@ -17,14 +17,14 @@ using namespace std;
 OsmBuildingPart::OsmBuildingPart(
         shared_ptr<vector<Node >> osmNodes,
         double osmMinHeight,
-        double osmHeight,
+//        double osmHeight,
         int osmBuildingLevels,
         int osmMinLevel,
         string name,
         string colour,
         shared_ptr<OsmRoof> osmRoof) {
     this->nodes_ = osmNodes;
-    this->maxHeight_ = osmHeight;
+//    this->maxHeight_ = osmHeight;
     this->minHeight_ = osmMinHeight;
     this->levels_ = osmBuildingLevels;
     this->minLevel_ = osmMinLevel;
