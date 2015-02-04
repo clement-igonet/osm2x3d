@@ -48,7 +48,7 @@ string OsmBuildingPart::titleString() {
 string OsmBuildingPart::toString() {
     stringstream ss;
     ss
-            << maxHeight_ << "\t      / "
+            << *maxHeight_ << "\t      / "
             << minHeight_ << "\t      / "
             << levels_ << "\t      / "
             << minLevel_ << "\t      / "

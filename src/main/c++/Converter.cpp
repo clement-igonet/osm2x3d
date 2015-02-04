@@ -144,7 +144,7 @@ void Converter::osmWorld23DBuildings() {
             }
 
             // Building part roof
-            double roofElevation = (*osmBuildingPartIt)->maxHeight_ - (*osmBuildingPartIt)->osmRoof_->height_;
+            double roofElevation = *((*osmBuildingPartIt)->maxHeight_) - (*osmBuildingPartIt)->osmRoof_->height_;
             FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofElevation: " << roofElevation;
 
             double roofHeight = (*osmBuildingPartIt)->osmRoof_->height_;
@@ -158,10 +158,10 @@ void Converter::osmWorld23DBuildings() {
             //                    OsmUtil::osmColor2x3DColor((*osmBuildingPartIt)->osmRoof_->colour_)
 
             my3DBuilding->perimeter_ = perimeter;
-            double buildingPartHeight = ((*osmBuildingPartIt)->maxHeight_
+            double buildingPartHeight = (*((*osmBuildingPartIt)->maxHeight_)
                     - (*osmBuildingPartIt)->minHeight_)
                     - roofHeight;
-            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - ((*osmBuildingPartIt)->maxHeight_: " << (*osmBuildingPartIt)->maxHeight_;
+            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - ((*osmBuildingPartIt)->maxHeight_: " << *((*osmBuildingPartIt)->maxHeight_);
             FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minHeight_): " << (*osmBuildingPartIt)->minHeight_;
             FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofHeight: " << roofHeight;
             FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - buildingPartHeight: " << buildingPartHeight;

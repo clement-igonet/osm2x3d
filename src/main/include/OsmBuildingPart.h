@@ -8,6 +8,7 @@
 #include <memory>
 #include <vector>
 #include <string>
+#include <boost/optional.hpp>
 using namespace std;
 
 class OsmWorld;
@@ -38,7 +39,8 @@ public:
     shared_ptr<vector<Node> > nodes_;
     //    void init();
     double minHeight_;
-    double maxHeight_;
+    boost::optional<double> maxHeight_;
+    //    double maxHeight_;
     int levels_;
     int minLevel_;
     string name_;

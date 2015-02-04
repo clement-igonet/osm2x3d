@@ -274,14 +274,14 @@ void OsmWorld::init_() {
                             osmBuildingPartIt != osmBuilding->osmBuildingParts_.end();
                             ++osmBuildingPartIt) {
                         shared_ptr < OsmBuildingPart > osmBuildingPart = (*osmBuildingPartIt);
-                        FILE_LOG(logINFO) << "OsmWorld::init before - osmBuildingPart height: " << osmBuildingPart->maxHeight_;
-                        if (osmBuildingPart->maxHeight_ == 0) {
+                        FILE_LOG(logINFO) << "OsmWorld::init before - osmBuildingPart height: " << *(osmBuildingPart->maxHeight_);
+                        if (!(osmBuildingPart->maxHeight_)) {
                             osmBuildingPart->maxHeight_ = height;
                         }
                         if (osmBuildingPart->minHeight_ == 0) {
                             osmBuildingPart->minHeight_ = minHeight;
                         }
-                        FILE_LOG(logINFO) << "OsmWorld::init after  - osmBuildingPart height: " << osmBuildingPart->maxHeight_;
+                        FILE_LOG(logINFO) << "OsmWorld::init after  - osmBuildingPart height: " << *(osmBuildingPart->maxHeight_);
                     }
                 }
             }
