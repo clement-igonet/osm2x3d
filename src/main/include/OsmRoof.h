@@ -9,6 +9,8 @@
 #include <memory>
 #include <vector>
 #include <string>
+#include <boost/optional.hpp>
+
 using namespace std;
 
 class OsmRoof {
@@ -16,10 +18,10 @@ public:
     OsmRoof(
             shared_ptr<vector<Node >> osmNodes,
             string colour,
-            string shape_,
-            double height);
+            string shape_);
     string orientation_;
-    double height_;
+    //    double height_;
+    boost::optional<double> optHeight_;
     double angle_;
     long levels_;
     double direction_;

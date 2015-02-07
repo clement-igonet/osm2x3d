@@ -91,11 +91,11 @@ void OsmWorld::init_() {
             //            bool isBuildingPart = true;
             string name;
             string colour;
-            double height = 0;
+            boost::optional<double> osmBuildingPartHeight;
             double minHeight = 0;
             int buildingLevels = 1;
             int buildingMinLevel = 0;
-            double roofHeight = 0;
+            boost::optional<double> optRoofHeight;
             string roofShape("flat");
 
             BOOST_FOREACH(ptree::value_type const& w, v.second) {
@@ -130,7 +130,7 @@ void OsmWorld::init_() {
                     } else if (w.second.get<string > ("<xmlattr>.k") == "building:min_level") {
                         buildingMinLevel = w.second.get<int> ("<xmlattr>.v");
                     } else if (w.second.get<string > ("<xmlattr>.k") == "height") {
-                        height = OsmUtil::height2m(
+                        osmBuildingPartHeight = OsmUtil::height2m(
                                 w.second.get<string > ("<xmlattr>.v"));
                     } else if (w.second.get<string > ("<xmlattr>.k") == "min_height") {
                         minHeight = OsmUtil::height2m(
@@ -168,7 +168,7 @@ void OsmWorld::init_() {
                     else if (w.second.get<string > ("<xmlattr>.k") == "roof:shape") {
                         roofShape = w.second.get<string> ("<xmlattr>.v");
                     } else if (w.second.get<string > ("<xmlattr>.k") == "roof:height") {
-                        roofHeight = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
+                        optRoofHeight = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
                     }
                 }
             }
@@ -176,8 +176,10 @@ void OsmWorld::init_() {
             shared_ptr<OsmRoof> osmRoof(new OsmRoof(
                     nodes,
                     colour,
-                    roofShape,
-                    roofHeight));
+                    roofShape));
+            if (optRoofHeight) {
+                osmRoof->optHeight_ = *optRoofHeight;
+            }
             //            Shape::getEnumFromString(roofShape)
 
             // Process "way" as a floor object
@@ -193,9 +195,11 @@ void OsmWorld::init_() {
                         name,
                         colour,
                         osmRoof));
-                osmBuildingPart->maxHeight_ = height;
-                FILE_LOG(logINFO) << "OsmWorld::init - name: " << name;
-                FILE_LOG(logINFO) << "OsmWorld::init - height: " << height;
+                if (osmBuildingPartHeight) {
+                    osmBuildingPart->optHeight_ = *osmBuildingPartHeight;
+                    FILE_LOG(logINFO) << "OsmWorld::init - name: " << name;
+                    FILE_LOG(logINFO) << "OsmWorld::init - osmBuildingPartHeight: " << *osmBuildingPartHeight;
+                }
 
                 shared_ptr<OsmBuilding> osmBuilding(OsmBuildingManager::getBuilding(id));
                 osmBuilding->osmBuildingParts_.push_back(osmBuildingPart);
@@ -218,7 +222,9 @@ void OsmWorld::init_() {
                         name,
                         colour,
                         osmRoof));
-                osmBuildingPart->maxHeight_ = height;
+                if (osmBuildingPartHeight) {
+                    osmBuildingPart->optHeight_ = *osmBuildingPartHeight;
+                }
                 //
                 //                this->osmBuildingParts_.push_back(osmBuildingPart);
                 this->osmBuildingParts_.insert(pair<long long, shared_ptr < OsmBuildingPart >> (id, osmBuildingPart));
@@ -228,10 +234,10 @@ void OsmWorld::init_() {
             bool isBuilding = false;
             shared_ptr<OsmBuilding> osmBuilding;
 
-            double height = 0;
+            boost::optional<double> osmBuildingPartHeight;
             double minHeight = 0;
             string name;
-            double roofHeight = 0;
+            boost::optional<double> optRoofHeight;
             string roofShape("flat");
 
             BOOST_FOREACH(ptree::value_type const& w, v.second) {
@@ -254,36 +260,37 @@ void OsmWorld::init_() {
                 } else if (w.first == "tag" && (w.second.get<string > ("<xmlattr>.k")) == "type" && (w.second.get<string > ("<xmlattr>.v")) == "building") {
                     isBuilding = true;
                 } else if (w.first == "tag" && (w.second.get<string > ("<xmlattr>.k")) == "height") {
-                    height = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
+                    osmBuildingPartHeight = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
                 } else if (w.first == "tag" && (w.second.get<string > ("<xmlattr>.k")) == "min_height") {
                     minHeight = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
                 } else if (w.first == "tag" && (w.second.get<string > ("<xmlattr>.k")) == "roof:shape") {
                     roofShape = w.second.get<string > ("<xmlattr>.v");
                 } else if (w.first == "tag" && (w.second.get<string > ("<xmlattr>.k")) == "roof:height") {
-                    roofHeight = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
+                    optRoofHeight = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
                 }
             }
             if (!isBuilding) {
                 //                osmBuilding = OsmBuildingManager::removeBuilding(relationId);
                 OsmBuildingManager::removeBuilding(relationId);
             } else {
+                // Is a building (made of relations)
                 osmBuilding = OsmBuildingManager::getBuilding(relationId);
-                if (height != 0) {
-                    FILE_LOG(logINFO) << "OsmWorld::init - relation height: " << height;
+                if (osmBuildingPartHeight) {
+                    FILE_LOG(logINFO) << "OsmWorld::init - relation osmBuildingPartHeight: " << *osmBuildingPartHeight;
                     OsmBuildingManager::getBuilding(relationId)->name_ = name;
                     for (
                             vector < shared_ptr < OsmBuildingPart >> ::iterator osmBuildingPartIt = osmBuilding->osmBuildingParts_.begin();
                             osmBuildingPartIt != osmBuilding->osmBuildingParts_.end();
                             ++osmBuildingPartIt) {
                         shared_ptr < OsmBuildingPart > osmBuildingPart = (*osmBuildingPartIt);
-                        FILE_LOG(logINFO) << "OsmWorld::init before - osmBuildingPart height: " << *(osmBuildingPart->maxHeight_);
-                        if (!(osmBuildingPart->maxHeight_)) {
-                            osmBuildingPart->maxHeight_ = height;
+                        if (!(osmBuildingPart->optHeight_)) {
+                            //                            FILE_LOG(logINFO) << "OsmWorld::init before - osmBuildingPart height: " << *(osmBuildingPart->optHeight_);
+                            osmBuildingPart->optHeight_ = *osmBuildingPartHeight;
+                            FILE_LOG(logINFO) << "OsmWorld::init after  - osmBuildingPartHeight: " << *osmBuildingPartHeight;
                         }
                         if (osmBuildingPart->minHeight_ == 0) {
                             osmBuildingPart->minHeight_ = minHeight;
                         }
-                        FILE_LOG(logINFO) << "OsmWorld::init after  - osmBuildingPart height: " << *(osmBuildingPart->maxHeight_);
                     }
                 }
             }

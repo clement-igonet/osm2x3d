@@ -29,7 +29,7 @@ public:
     void buildX3Dom(ostream& outputStream);
     shared_ptr<vector<pair<double, double >> > points_;
     shared_ptr<My3DRoof> my3DRoof_;
-    boost::optional<double> height_;
+    boost::optional<double> optHeight_;
 private:
     double elevation_;
     string colour_;

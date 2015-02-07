@@ -1,23 +1,25 @@
 #include "My3DRoof.h"
+#include "geometry/My3DGeometry.h"
 #include <string>
 using namespace std;
 
 My3DRoof::My3DRoof(
         shared_ptr <vector < pair<double, double >> > points,
         double elevation,
-        double height,
+        //        double height,
         Shape::Type shape,
         string colour) {
     this->points_ = points;
     this->elevation_ = elevation;
     this->shape_ = shape;
     this->colour_ = colour;
-    this->height_ = height;
+    //    this->height_ = height;
 }
 
 void My3DRoof::buildX3Dom(ostream& outputStream) {
 
     FILE_LOG(logINFO) << "My3DRoof::buildX3Dom - elevation_: " << elevation_;
+    //    FILE_LOG(logINFO) << "My3DRoof::buildX3Dom - height_: " << optHeight_ ? *optHeight_ : 0.0;
 
     stringstream roofPointsSS;
     for (
@@ -29,30 +31,32 @@ void My3DRoof::buildX3Dom(ostream& outputStream) {
     }
 
     double x, z;
-    double xCenter, zCenter;
+    //    double xCenter, zCenter;
+    pair<double, double > centerPoint;
     shared_ptr <vector<pair<double, double >> > centerPoints(new vector < pair<double, double >>);
     stringstream centerPointsSS;
     int it = 0;
     switch (shape_) {
         case Shape::PYRAMIDAL:
             // http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Chapter15-Extrusion/_pages/page12.html
-            for (
-                    vector < pair<double, double >> ::iterator pointIt = points_->begin();
-                    pointIt != points_->end() && it < 4;
-                    ++pointIt) {
-                x += pointIt->first;
-                z += pointIt->second;
-                ++it;
-            }
-            xCenter = x / 4.0;
-            zCenter = z / 4.0;
+            centerPoint = My3DGeometry::centroid(points_);
+            //            for (
+            //                    vector < pair<double, double >> ::iterator pointIt = points_->begin();
+            //                    pointIt != points_->end() && it < 4;
+            //                    ++pointIt) {
+            //                x += pointIt->first;
+            //                z += pointIt->second;
+            //                ++it;
+            //            }
+            //            xCenter = x / 4.0;
+            //            zCenter = z / 4.0;
             for (
                     vector < pair<double, double >> ::iterator pointIt = points_->begin();
                     pointIt != points_->end();
                     ++pointIt) {
                 centerPoints->push_back(make_pair(
-                        pointIt->first - xCenter,
-                        pointIt->second - zCenter));
+                        pointIt->first - centerPoint.first,
+                        pointIt->second - centerPoint.second));
             }
             for (
                     vector < pair<double, double >> ::iterator pointIt = centerPoints->begin();
@@ -63,15 +67,21 @@ void My3DRoof::buildX3Dom(ostream& outputStream) {
             }
 
             outputStream << R"(
-                        <Transform translation=')" << xCenter << " " << elevation_ << " " << zCenter << "'>";
+                        <Transform translation=')" << centerPoint.first << " " << elevation_ << " " << centerPoint.second << "'>";
 
             //<Extrusion crossSection='-1 1 1 1 1 -1 -1 -1 -1 1' scale='1 1 0.01 0.01'/>
             //<!-- default Extrusion spine='0 0 0, 0 1 0' -->
+            double height;
+            if (optHeight_) {
+                height = *optHeight_;
+            } else {
+                height = 9.99;
+            }
             outputStream << R"(
                             <Group>
                                 <Shape>
                                     <Extrusion crossSection=')" << centerPointsSS.str() << "' "
-                    << "spine='0 0 0 0 " << height_ << " 0' "
+                    << "spine='0 0 0 0 " << height << " 0' "
                     << "scale='1 1 0.01 0.01'/>";
             //                    << "scale='1 1 1 1'/>";
             outputStream << R"(
@@ -84,8 +94,17 @@ void My3DRoof::buildX3Dom(ostream& outputStream) {
             break;
         case Shape::FLAT:
         default:
+            double elevation;
+            if (elevation_ == 0.0) {
+                elevation = 9.99;
+            }
+            //            if (optElevation_) {
+            //                elevation = *optElevation;
+            //            } else {
+            //                elevation = 9.99;
+            //            }
             outputStream << R"(
-                            <Transform translation='0 )" << elevation_ << " 0'>";
+                            <Transform translation='0 )" << elevation << " 0'>";
             outputStream << R"(
                                 <Group>)";
             outputStream << R"(

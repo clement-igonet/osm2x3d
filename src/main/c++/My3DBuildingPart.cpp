@@ -4,15 +4,17 @@
 
 My3DBuildingPart::My3DBuildingPart(
         shared_ptr <vector < pair<double, double >> > points,
-//        double height,
+        //        double height,
         double elevation,
         string colour,
         shared_ptr<My3DRoof> my3DRoof) {
     //    this->init();
     this->points_ = points;
-//    if (height != 0) {
-//        this->height_ = height;
-//    }
+    //    if (height != 0) {
+    //        this->height_ = height;
+    //    }
+//    optHeight_ = 0.0;
+
     this->elevation_ = elevation;
     this->colour_ = colour;
     this->my3DRoof_ = my3DRoof;
@@ -30,10 +32,10 @@ void My3DBuildingPart::buildX3Dom(ostream& outputStream) {
     ostringstream diffuseColorSS;
     ostringstream transparencySS;
     double wallElevation;
-    if (!height_) {
-        wallElevation = 9.99;
+    if (optHeight_) {
+        wallElevation = *optHeight_;
     } else {
-        wallElevation = *(height_);
+        wallElevation = 9.99;
     }
     FILE_LOG(logINFO) << "My3DBuildingPart::buildX3Dom - wallElevation: " << wallElevation;
 

@@ -128,8 +128,9 @@
                                 <argument>-i</argument>
                                 <!--<argument>${project.basedir}/src/main/resources/osm/ESB02.osm</argument>-->
                                 <!--<argument>${project.basedir}/src/main/resources/osm/ESB_light.osm</argument>-->
-                                <!--<argument>${project.basedir}/src/main/resources/osm/Louvre.osm</argument>-->
-                                <argument>${project.basedir}/src/main/resources/osm/coliseo.osm</argument>
+                                <argument>${project.basedir}/src/main/resources/osm/Louvre.osm</argument>
+                                <!--<argument>${project.basedir}/src/main/resources/osm/coliseo.osm</argument>-->
+                                <!--<argument>${project.basedir}/src/main/resources/osm/coliseo_light.osm</argument>-->
                                 <!--<argument>${project.basedir}/src/main/resources/osm/trento.osm</argument>-->
                                 <argument>-o</argument>
                                 <argument>${project.build.directory}/result.x3d</argument>

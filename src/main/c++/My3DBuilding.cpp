@@ -58,7 +58,7 @@ void My3DBuilding::buildX3Dom(ostream& outputStream) {
             vector<shared_ptr < My3DBuildingPart >> ::iterator my3DBuildingPartIt = this->my3DBuildingParts_.begin();
             my3DBuildingPartIt != this->my3DBuildingParts_.end();
             ++my3DBuildingPartIt) {
-        (*my3DBuildingPartIt)->buildX3Dom(outputStream);        
+        (*my3DBuildingPartIt)->buildX3Dom(outputStream);
     }
 
     for (
@@ -97,10 +97,10 @@ void My3DBuilding::buildX3Dom(ostream& outputStream) {
                                 <Appearance>)";
             string colour = (*my3DBuildingFloorPartIt)->colour_;
             double wallElevation;
-            if (!(*my3DBuildingFloorPartIt)->height_) {
-                wallElevation = 9.99;
+            if ((*my3DBuildingFloorPartIt)->optHeight_) {
+                wallElevation = *((*my3DBuildingFloorPartIt)->optHeight_);
             } else {
-                wallElevation = *((*my3DBuildingFloorPartIt)->height_);
+                wallElevation = 9.99;
             }
             outputStream << R"(
                                     <Material diffuseColor='1 1 1' transparency='0'/>)";
@@ -131,17 +131,17 @@ void My3DBuilding::buildX3Dom(ostream& outputStream) {
             //            outputStream << R"(            
             //                                    <Color DEF='FourColors' color='1 0 0 0 1 0 0 0 1 0.8 0.8 0.8'/>
             //                                </IndexedFaceSet>)";
-// <Shape>
-//<Polyline2D lineSegments='-3 2 -3 0 -2 -2 3 -1.5 3 1.5 .5 3 -3 2'/>
-//<Appearance DEF='MagentaAppearance'>
-//<Material diffuseColor='1 0 0' emissiveColor='0 0 1' specularColor='0 .8 0'/>
-//</Appearance>
-//</Shape> 
+            // <Shape>
             //<Polyline2D lineSegments='-3 2 -3 0 -2 -2 3 -1.5 3 1.5 .5 3 -3 2'/>
-//            outputStream << R"(
-//                                <Extrusion convex='false' creaseAngle='0.785' crossSection=')" << pointsSS.str() << "' "
-//                    << "solid='false' endCap='false' "
-//                    << "spine='0 0 0 0 0.1 0'/>";
+            //<Appearance DEF='MagentaAppearance'>
+            //<Material diffuseColor='1 0 0' emissiveColor='0 0 1' specularColor='0 .8 0'/>
+            //</Appearance>
+            //</Shape> 
+            //<Polyline2D lineSegments='-3 2 -3 0 -2 -2 3 -1.5 3 1.5 .5 3 -3 2'/>
+            //            outputStream << R"(
+            //                                <Extrusion convex='false' creaseAngle='0.785' crossSection=')" << pointsSS.str() << "' "
+            //                    << "solid='false' endCap='false' "
+            //                    << "spine='0 0 0 0 0.1 0'/>";
             outputStream << R"(
                                 <Polyline2D lineSegments=')" << pointsSS.str() << "'/>";
 

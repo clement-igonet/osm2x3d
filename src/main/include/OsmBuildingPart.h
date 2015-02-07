@@ -39,7 +39,7 @@ public:
     shared_ptr<vector<Node> > nodes_;
     //    void init();
     double minHeight_;
-    boost::optional<double> maxHeight_;
+    boost::optional<double> optHeight_;
     //    double maxHeight_;
     int levels_;
     int minLevel_;

@@ -68,10 +68,10 @@ void Converter::osmWorld23DGround() {
     //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
     //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
     while (lat > latMin) {
-        FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
+        //        FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
         double nextLat = OsmUtil::tiley2lat(yTile + 1, zoom);
         while (lon < lonMax) {
-            FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
+            //            FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
             double nextLon = OsmUtil::tilex2long(xTile + 1, zoom);
 
 
@@ -144,29 +144,47 @@ void Converter::osmWorld23DBuildings() {
             }
 
             // Building part roof
-            double roofElevation = *((*osmBuildingPartIt)->maxHeight_) - (*osmBuildingPartIt)->osmRoof_->height_;
-            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofElevation: " << roofElevation;
-
-            double roofHeight = (*osmBuildingPartIt)->osmRoof_->height_;
-            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofHeight: " << roofHeight;
+            boost::optional<double> osmRoofHeight;
+            if ((*osmBuildingPartIt)->osmRoof_->optHeight_) {
+                osmRoofHeight = *((*osmBuildingPartIt)->osmRoof_->optHeight_);
+            }
+            boost::optional<double> osmBuildingPartHeight;
+            if ((*osmBuildingPartIt)->optHeight_) {
+                osmBuildingPartHeight = *((*osmBuildingPartIt)->optHeight_);
+            }
+            double roofElevation = 0;
+            if (osmBuildingPartHeight && osmRoofHeight) {
+                roofElevation = *osmBuildingPartHeight - *osmRoofHeight;
+                FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - optBuildingPartHeight: " << *osmBuildingPartHeight;
+                FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - optRoofHeight: " << *osmRoofHeight;
+            }
             shared_ptr<My3DRoof> my3DBuildingPartRoof(new My3DRoof(
                     buildingPartPoints,
                     roofElevation,
-                    roofHeight,
                     Shape::getEnumFromString((*osmBuildingPartIt)->osmRoof_->shape_),
                     "0 0 0"));
             //                    OsmUtil::osmColor2x3DColor((*osmBuildingPartIt)->osmRoof_->colour_)
 
+            if (osmRoofHeight) {
+                my3DBuildingPartRoof->optHeight_ = *osmRoofHeight;
+            }
             my3DBuilding->perimeter_ = perimeter;
-            double buildingPartHeight = (*((*osmBuildingPartIt)->maxHeight_)
-                    - (*osmBuildingPartIt)->minHeight_)
-                    - roofHeight;
-            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - ((*osmBuildingPartIt)->maxHeight_: " << *((*osmBuildingPartIt)->maxHeight_);
-            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minHeight_): " << (*osmBuildingPartIt)->minHeight_;
-            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - roofHeight: " << roofHeight;
-            FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - buildingPartHeight: " << buildingPartHeight;
-            double floorHeight = buildingPartHeight
-                    / (double) ((*osmBuildingPartIt)->levels_ - (*osmBuildingPartIt)->minLevel_);
+            //            double buildingPartHeight;
+            double floorHeight;
+            boost::optional<double> my3DBuildingPartHeight;
+            if (osmBuildingPartHeight) {
+                my3DBuildingPartHeight = *osmBuildingPartHeight
+                        - (*osmBuildingPartIt)->minHeight_;
+                if (osmRoofHeight) {
+                    my3DBuildingPartHeight = *my3DBuildingPartHeight - *osmRoofHeight;
+                    FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - *osmRoofHeight: " << *osmRoofHeight;
+                }
+                FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - *osmBuildingPartHeight: " << *osmBuildingPartHeight;
+                FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minHeight_): " << (*osmBuildingPartIt)->minHeight_;
+                FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - *my3DBuildingPartHeight: " << *my3DBuildingPartHeight;
+                floorHeight = *my3DBuildingPartHeight
+                        / (double) ((*osmBuildingPartIt)->levels_ - (*osmBuildingPartIt)->minLevel_);
+            }
             FILE_LOG(logDEBUG)
                     << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:"
                     << (*osmBuildingPartIt)->minLevel_;
@@ -182,10 +200,9 @@ void Converter::osmWorld23DBuildings() {
                     buildingPartElevation,
                     buildingPartColour,
                     my3DBuildingPartRoof));
-            my3DBuildingPart->height_ = buildingPartHeight;
-            //    if (height != 0) {
-            //        this->height_ = height;
-            //    }
+            if (my3DBuildingPartHeight) {
+                my3DBuildingPart->optHeight_ = *my3DBuildingPartHeight;
+            }
             (*my3DBuilding).addBuildingPart(my3DBuildingPart);
 
             for (
@@ -196,10 +213,9 @@ void Converter::osmWorld23DBuildings() {
                 shared_ptr<My3DBuildingFloorPart> my3DBuildingFloorPart(
                         new My3DBuildingFloorPart(
                         buildingPartPoints,
-//                        floorHeight,
                         floorElevation,
                         buildingPartColour));
-                my3DBuildingFloorPart->height_ = floorHeight;
+                my3DBuildingFloorPart->optHeight_ = floorHeight;
                 FILE_LOG(logDEBUG)
                         << "Converter::osmWorld23DBuildings - Level " << level
                         << ": elevation=" << floorElevation

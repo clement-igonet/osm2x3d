@@ -26,7 +26,7 @@ public:
             string colour);
 
     shared_ptr<vector<pair<double, double >> > points_;
-    boost::optional<double> height_;
+    boost::optional<double> optHeight_;
 private:
     //    double height_;
     double elevation_;

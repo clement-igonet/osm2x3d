@@ -12,14 +12,16 @@
 
 My3DBuildingFloorPart::My3DBuildingFloorPart(
         shared_ptr <vector < pair<double, double >> > points,
-//        double height,
+        //        double height,
         double elevation,
         string colour) {
     //    this->init();
     this->points_ = points;
-//    if (height != 0) {
-//        this->height_ = height;
-//    }
+    //    if (height != 0) {
+    //        this->height_ = height;
+    //    }
+//    optHeight_ = 0.0;
+
     this->elevation_ = elevation;
     this->colour_ = colour;
     //    FILE_LOG(logDEBUG) << "My3DBuildingFloorPart - height: " << height_ << endl;

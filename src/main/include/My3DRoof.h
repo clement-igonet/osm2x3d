@@ -4,6 +4,7 @@
 #include "Shape.h"
 #include <boost/assign/list_of.hpp>
 #include <boost/unordered_map.hpp>
+#include <boost/optional.hpp>
 #include <iostream>
 #include <utility>
 #include <memory>
@@ -18,7 +19,7 @@ public:
     My3DRoof(
             shared_ptr <vector < pair<double, double >> > points,
             double elevation,
-            double height,
+//            double height,
             Shape::Type shape,
             string colour);
     void buildX3Dom(ostream& outputStream);
@@ -29,7 +30,8 @@ public:
     long levels_;
     double direction_;
     double elevation_;
-    double height_;
+    //    double height_;
+    boost::optional<double> optHeight_;
     string colour_;
 private:
     Shape::Type shape_;

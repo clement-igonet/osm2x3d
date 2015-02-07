@@ -17,14 +17,16 @@ using namespace std;
 OsmBuildingPart::OsmBuildingPart(
         shared_ptr<vector<Node >> osmNodes,
         double osmMinHeight,
-//        double osmHeight,
+        //        double osmHeight,
         int osmBuildingLevels,
         int osmMinLevel,
         string name,
         string colour,
         shared_ptr<OsmRoof> osmRoof) {
     this->nodes_ = osmNodes;
-//    this->maxHeight_ = osmHeight;
+    //    this->maxHeight_ = osmHeight;
+    //    optHeight_ = 0.0;
+
     this->minHeight_ = osmMinHeight;
     this->levels_ = osmBuildingLevels;
     this->minLevel_ = osmMinLevel;
@@ -47,8 +49,12 @@ string OsmBuildingPart::titleString() {
 
 string OsmBuildingPart::toString() {
     stringstream ss;
+    if (optHeight_) {
+        ss << (*optHeight_) << "\t      / ";
+    } else {
+        ss << "X" << "\t      / ";
+    }
     ss
-            << *maxHeight_ << "\t      / "
             << minHeight_ << "\t      / "
             << levels_ << "\t      / "
             << minLevel_ << "\t      / "

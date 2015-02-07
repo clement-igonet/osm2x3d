@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (3884 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="41.8888200" minlon="12.4938400" maxlat="41.8894900" maxlon="12.4952500"/>
+ <node id="465627957" visible="true" version="4" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890910" lon="12.4938717"/>
+ <node id="3320437842" visible="true" version="1" changeset="28501457" timestamp="2015-01-30T09:59:27Z" user="dieterdreist" uid="26139" lat="41.8888602" lon="12.4952402">
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:street" v="Via Ostilia"/>
+ </node>
+ <node id="1445131824" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889828" lon="12.4944039"/>
+ <node id="1542758952" visible="true" version="1" changeset="10100557" timestamp="2011-12-12T16:26:23Z" user="Giardia" uid="113909" lat="41.8892718" lon="12.4939673">
+  <tag k="amenity" v="bureau_de_change"/>
+  <tag k="name" v="Change"/>
+ </node>
+ <node id="1688847351" visible="true" version="5" changeset="14784288" timestamp="2013-01-25T18:40:56Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894459" lon="12.4940460">
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="amenity" v="restaurant"/>
+  <tag k="cuisine" v="italian"/>
+  <tag k="name" v="Al Gladiatore"/>
+  <tag k="phone" v="+39 06 77209496"/>
+ </node>
+ <node id="2127884554" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:05Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891133" lon="12.4944518"/>
+ <node id="2127884557" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:05Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891185" lon="12.4940941"/>
+ <node id="2127884560" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:05Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891319" lon="12.4940285"/>
+ <node id="2127884562" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:05Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891561" lon="12.4943993"/>
+ <node id="2127884564" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891576" lon="12.4942591"/>
+ <node id="2127884566" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891635" lon="12.4943628"/>
+ <node id="2127884569" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891718" lon="12.4943220"/>
+ <node id="2127884571" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891768" lon="12.4943239"/>
+ <node id="2127884573" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891777" lon="12.4941604"/>
+ <node id="2127884582" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891877" lon="12.4942702"/>
+ <node id="2127884584" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891890" lon="12.4944795"/>
+ <node id="2127884586" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892019" lon="12.4944161"/>
+ <node id="2127884589" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892078" lon="12.4941714"/>
+ <node id="2127884591" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892093" lon="12.4943796"/>
+ <node id="2127884593" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892162" lon="12.4941299"/>
+ <node id="2127884595" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892296" lon="12.4940643"/>
+ <node id="2127884597" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892372" lon="12.4944973"/>
+ <node id="2127884599" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892382" lon="12.4943903"/>
+ <node id="2127884601" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892576" lon="12.4943973"/>
+ <node id="2127884603" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892620" lon="12.4942974"/>
+ <node id="2127884605" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892659" lon="12.4943566"/>
+ <node id="2127884608" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892768" lon="12.4943029"/>
+ <node id="2127884610" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892780" lon="12.4940419"/>
+ <node id="2127884612" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892821" lon="12.4941987"/>
+ <node id="2127884615" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892969" lon="12.4942041"/>
+ <node id="2127884618" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892972" lon="12.4939474"/>
+ <node id="2127884621" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893053" lon="12.4941626"/>
+ <node id="1445131825" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890114" lon="12.4942632"/>
+ <node id="1445131835" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890509" lon="12.4940692"/>
+ <node id="1445131882" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892179" lon="12.4944902"/>
+ <node id="1445131898" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892570" lon="12.4941449"/>
+ <node id="1445131904" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892905" lon="12.4941572"/>
+ <node id="1445131910" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893115" lon="12.4940542"/>
+ <node id="1445131921" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893707" lon="12.4945462"/>
+ <node id="1445131925" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893993" lon="12.4944055"/>
+ <node id="1445131935" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894388" lon="12.4942116"/>
+ <node id="1445131940" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894789" lon="12.4940141"/>
+ <node id="2127886089" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8888504" lon="12.4950552"/>
+ <node id="2127886097" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8888844" lon="12.4948882"/>
+ <node id="2127886099" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889445" lon="12.4945924"/>
+ <node id="2127886101" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890148" lon="12.4949360"/>
+ <node id="2127886103" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890446" lon="12.4949469"/>
+ <node id="2127886105" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890749" lon="12.4946403"/>
+ <node id="2127886107" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890859" lon="12.4945860"/>
+ <node id="2127886109" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891047" lon="12.4946512"/>
+ <node id="2127886111" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891048" lon="12.4946513"/>
+ <node id="2127886113" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891082" lon="12.4944769"/>
+ <node id="2127886115" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891159" lon="12.4945970"/>
+ <node id="2127886117" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891381" lon="12.4944878"/>
+ <node id="2127886118" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891432" lon="12.4944628"/>
+ <node id="2127886119" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891506" lon="12.4946681"/>
+ <node id="2127886120" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891589" lon="12.4949050"/>
+ <node id="2127886121" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891659" lon="12.4945927"/>
+ <node id="2127886122" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891766" lon="12.4949954"/>
+ <node id="2127886123" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891925" lon="12.4949173"/>
+ <node id="2127886124" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892238" lon="12.4946949"/>
+ <node id="2127886127" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892244" lon="12.4945590"/>
+ <node id="2127886129" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892319" lon="12.4945223"/>
+ <node id="2127886131" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892383" lon="12.4951975"/>
+ <node id="2127886133" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892391" lon="12.4946195"/>
+ <node id="2127886135" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892496" lon="12.4945682"/>
+ <node id="2127886137" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892570" lon="12.4945315"/>
+ <node id="2127886139" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892881" lon="12.4949524"/>
+ <node id="2127886141" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:37Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893324" lon="12.4947348"/>
+ <node id="1445131860" visible="true" version="2" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8891431" lon="12.4949831"/>
+ <node id="1445131900" visible="true" version="2" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8892723" lon="12.4950305"/>
+ <node id="2127910937" visible="true" version="1" changeset="14783896" timestamp="2013-01-25T18:05:18Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8897458" lon="12.4953744"/>
+ <node id="2127910940" visible="true" version="1" changeset="14783896" timestamp="2013-01-25T18:05:18Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8898330" lon="12.4950794"/>
+ <node id="1445131906" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:18Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893019" lon="12.4952219"/>
+ <node id="1445131918" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:18Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893427" lon="12.4950584"/>
+ <node id="1445131923" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:18Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893825" lon="12.4948991"/>
+ <node id="1445131932" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:18Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894526" lon="12.4951725"/>
+ <node id="1445131933" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894486" lon="12.4946344"/>
+ <node id="1445131934" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894658" lon="12.4949645"/>
+ <node id="1445131936" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894721" lon="12.4949395"/>
+ <node id="1445131937" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894671" lon="12.4951144"/>
+ <node id="1445131938" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894865" lon="12.4948815"/>
+ <node id="1445131947" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895058" lon="12.4944054"/>
+ <node id="1445131949" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895006" lon="12.4949802"/>
+ <node id="1445131951" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895156" lon="12.4952009"/>
+ <node id="1445131953" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895330" lon="12.4951315"/>
+ <node id="1445131954" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895313" lon="12.4947625"/>
+ <node id="1445131956" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895517" lon="12.4946809"/>
+ <node id="1445131962" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895955" lon="12.4952198"/>
+ <node id="1445131964" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8896090" lon="12.4951658"/>
+ <node id="1445131965" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8895873" lon="12.4945384"/>
+ <node id="1445131967" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8896089" lon="12.4944519"/>
+ <node id="1445131971" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8896452" lon="12.4949530"/>
+ <node id="1445131984" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8896468" lon="12.4952429"/>
+ <node id="1445132020" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8896764" lon="12.4948279"/>
+ <node id="1445132045" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8896927" lon="12.4950594"/>
+ <node id="1445132098" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8897489" lon="12.4950848"/>
+ <node id="1445132107" visible="true" version="3" changeset="14783896" timestamp="2013-01-25T18:05:19Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8897586" lon="12.4950459"/>
+ <node id="2127949380" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8885830" lon="12.4949672"/>
+ <node id="2127949382" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8885909" lon="12.4942988"/>
+ <node id="2127949383" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8885929" lon="12.4947247"/>
+ <node id="2127949384" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8885964" lon="12.4942711"/>
+ <node id="2127949387" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886116" lon="12.4946292"/>
+ <node id="2127949388" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886161" lon="12.4947985"/>
+ <node id="2127949389" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886191" lon="12.4945724"/>
+ <node id="2127949390" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886281" lon="12.4947372"/>
+ <node id="2127949391" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886301" lon="12.4945164"/>
+ <node id="2127949392" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886352" lon="12.4947009"/>
+ <node id="2127949393" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886404" lon="12.4945201"/>
+ <node id="2127949394" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886435" lon="12.4946588"/>
+ <node id="2127949395" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886468" lon="12.4946417"/>
+ <node id="2127949396" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886499" lon="12.4942816"/>
+ <node id="2127949397" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886552" lon="12.4947468"/>
+ <node id="2127949398" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886553" lon="12.4941809"/>
+ <node id="2127949399" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886623" lon="12.4947105"/>
+ <node id="2127949400" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886682" lon="12.4943785"/>
+ <node id="2127949401" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886687" lon="12.4941857"/>
+ <node id="2127949402" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886703" lon="12.4941042"/>
+ <node id="2127949403" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:22Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886706" lon="12.4946684"/>
+ <node id="2127949404" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886771" lon="12.4948201"/>
+ <node id="2127949405" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886778" lon="12.4943296"/>
+ <node id="2127949406" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886838" lon="12.4941090"/>
+ <node id="2127949407" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886848" lon="12.4945957"/>
+ <node id="2127949408" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8886892" lon="12.4947588"/>
+ <node id="2127949409" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8887067" lon="12.4939922"/>
+ <node id="2127949410" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8887637" lon="12.4943600"/>
+ <node id="2127949411" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8887722" lon="12.4943167"/>
+ <node id="2127949412" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8887860" lon="12.4950391"/>
+ <node id="2127949413" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8888286" lon="12.4940392"/>
+ <node id="2127949414" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8888311" lon="12.4948091"/>
+ <node id="2127949415" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8888351" lon="12.4940062"/>
+ <node id="2127949416" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8888608" lon="12.4946580"/>
+ <node id="2127949417" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889176" lon="12.4943682"/>
+ <node id="2127949418" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889295" lon="12.4940749"/>
+ <node id="2127949419" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889453" lon="12.4940365"/>
+ <node id="2127949420" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889463" lon="12.4939497"/>
+ <node id="2127949421" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889500" lon="12.4942033"/>
+ <node id="2127949422" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8889511" lon="12.4939932"/>
+ <node id="2127949423" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890065" lon="12.4938401"/>
+ <node id="2127949424" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8890180" lon="12.4938568"/>
+ <node id="1147386908" visible="true" version="5" changeset="14784288" timestamp="2013-01-25T18:40:56Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8893987" lon="12.4943096">
+  <tag k="addr:housenumber" v="44"/>
+  <tag k="addr:postcode" v="00184"/>
+  <tag k="addr:street" v="Via De' Santi Quattro"/>
+  <tag k="amenity" v="cafe"/>
+  <tag k="name" v="Cafè Cafè"/>
+  <tag k="website" v="www.cafecafebistrot.it"/>
+ </node>
+ <node id="1147386907" visible="true" version="3" changeset="14784352" timestamp="2013-01-25T18:46:08Z" user="Paolo Gianfrancesco" uid="663149" lat="41.8894856" lon="12.4945929">
+  <tag k="addr:city" v="Roma"/>
+  <tag k="addr:country" v="IT"/>
+  <tag k="addr:housenumber" v="63"/>
+  <tag k="addr:postcode" v="00184"/>
+  <tag k="addr:street" v="Via De' Santi Quattro"/>
+  <tag k="amenity" v="restaurant"/>
+  <tag k="name" v="La Pace del Cervello"/>
+ </node>
+ <way id="131271419" visible="true" version="1" changeset="9388850" timestamp="2011-09-24T23:52:34Z" user="Emistrac" uid="430115">
+  <nd ref="1445131947"/>
+  <nd ref="1445131933"/>
+  <nd ref="1445131956"/>
+  <nd ref="1445131965"/>
+  <nd ref="1445131967"/>
+  <nd ref="1445131947"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="131271421" visible="true" version="1" changeset="9388850" timestamp="2011-09-24T23:52:34Z" user="Emistrac" uid="430115">
+  <nd ref="1445131923"/>
+  <nd ref="1445131918"/>
+  <nd ref="1445131937"/>
+  <nd ref="1445131949"/>
+  <nd ref="1445131934"/>
+  <nd ref="1445131936"/>
+  <nd ref="1445131923"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="131271426" visible="true" version="1" changeset="9388850" timestamp="2011-09-24T23:52:35Z" user="Emistrac" uid="430115">
+  <nd ref="1445131933"/>
+  <nd ref="1445131923"/>
+  <nd ref="1445131936"/>
+  <nd ref="1445131938"/>
+  <nd ref="1445131971"/>
+  <nd ref="1445132020"/>
+  <nd ref="1445131954"/>
+  <nd ref="1445131956"/>
+  <nd ref="1445131933"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="131271420" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="1445131910"/>
+  <nd ref="2127884610"/>
+  <nd ref="2127884618"/>
+  <nd ref="1445131940"/>
+  <nd ref="1445131935"/>
+  <nd ref="2127884621"/>
+  <nd ref="1445131904"/>
+  <nd ref="1445131910"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="131271432" visible="true" version="2" changeset="14783789" timestamp="2013-01-25T17:58:07Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127884584"/>
+  <nd ref="2127884554"/>
+  <nd ref="1445131824"/>
+  <nd ref="1445131825"/>
+  <nd ref="2127884569"/>
+  <nd ref="2127884566"/>
+  <nd ref="2127884562"/>
+  <nd ref="2127884586"/>
+  <nd ref="2127884584"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849746" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127886103"/>
+  <nd ref="2127886109"/>
+  <nd ref="2127886111"/>
+  <nd ref="2127886119"/>
+  <nd ref="2127886141"/>
+  <nd ref="2127886139"/>
+  <nd ref="1445131900"/>
+  <nd ref="2127886122"/>
+  <nd ref="2127886123"/>
+  <nd ref="2127886120"/>
+  <nd ref="1445131860"/>
+  <nd ref="2127886103"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849747" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127886105"/>
+  <nd ref="2127886101"/>
+  <nd ref="2127886097"/>
+  <nd ref="2127886099"/>
+  <nd ref="2127886105"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849748" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="1445131900"/>
+  <nd ref="2127886131"/>
+  <nd ref="2127886089"/>
+  <nd ref="2127886097"/>
+  <nd ref="2127886101"/>
+  <nd ref="2127886103"/>
+  <nd ref="1445131860"/>
+  <nd ref="1445131900"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849750" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127886099"/>
+  <nd ref="1445131824"/>
+  <nd ref="2127884554"/>
+  <nd ref="2127886113"/>
+  <nd ref="2127886117"/>
+  <nd ref="2127886115"/>
+  <nd ref="2127886107"/>
+  <nd ref="2127886105"/>
+  <nd ref="2127886099"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849751" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127886124"/>
+  <nd ref="2127886133"/>
+  <nd ref="2127886121"/>
+  <nd ref="2127886119"/>
+  <nd ref="2127886111"/>
+  <nd ref="2127886115"/>
+  <nd ref="2127886117"/>
+  <nd ref="2127886118"/>
+  <nd ref="2127884597"/>
+  <nd ref="1445131921"/>
+  <nd ref="2127886141"/>
+  <nd ref="2127886124"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849752" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127886129"/>
+  <nd ref="2127886127"/>
+  <nd ref="2127886135"/>
+  <nd ref="2127886137"/>
+  <nd ref="2127886129"/>
+ </way>
+ <way id="202849720" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127884589"/>
+  <nd ref="2127884593"/>
+  <nd ref="2127884557"/>
+  <nd ref="1445131835"/>
+  <nd ref="1445131825"/>
+  <nd ref="2127884569"/>
+  <nd ref="2127884571"/>
+  <nd ref="2127884582"/>
+  <nd ref="2127884564"/>
+  <nd ref="2127884573"/>
+  <nd ref="2127884589"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="202849721" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127884621"/>
+  <nd ref="1445131904"/>
+  <nd ref="1445131898"/>
+  <nd ref="2127884593"/>
+  <nd ref="2127884589"/>
+  <nd ref="2127884582"/>
+  <nd ref="2127884571"/>
+  <nd ref="2127884605"/>
+  <nd ref="2127884608"/>
+  <nd ref="2127884603"/>
+  <nd ref="2127884612"/>
+  <nd ref="2127884615"/>
+  <nd ref="2127884621"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849722" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="1445131882"/>
+  <nd ref="2127884584"/>
+  <nd ref="2127884586"/>
+  <nd ref="2127884591"/>
+  <nd ref="2127884566"/>
+  <nd ref="2127884569"/>
+  <nd ref="2127884571"/>
+  <nd ref="2127884605"/>
+  <nd ref="1445131925"/>
+  <nd ref="1445131921"/>
+  <nd ref="2127884597"/>
+  <nd ref="2127884601"/>
+  <nd ref="2127884599"/>
+  <nd ref="1445131882"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849724" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127884621"/>
+  <nd ref="1445131935"/>
+  <nd ref="1445131925"/>
+  <nd ref="2127884605"/>
+  <nd ref="2127884608"/>
+  <nd ref="2127884615"/>
+  <nd ref="2127884621"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202849725" visible="true" version="1" changeset="14783789" timestamp="2013-01-25T17:58:06Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="1445131898"/>
+  <nd ref="2127884593"/>
+  <nd ref="2127884595"/>
+  <nd ref="2127884560"/>
+  <nd ref="2127884557"/>
+  <nd ref="1445131835"/>
+  <nd ref="465627957"/>
+  <nd ref="2127884618"/>
+  <nd ref="2127884610"/>
+  <nd ref="1445131898"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="131271411" visible="true" version="2" changeset="14783896" timestamp="2013-01-25T18:05:18Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="1445131918"/>
+  <nd ref="1445131906"/>
+  <nd ref="2127910937"/>
+  <nd ref="2127910940"/>
+  <nd ref="1445132107"/>
+  <nd ref="1445132098"/>
+  <nd ref="1445132045"/>
+  <nd ref="1445131984"/>
+  <nd ref="1445131962"/>
+  <nd ref="1445131964"/>
+  <nd ref="1445131953"/>
+  <nd ref="1445131951"/>
+  <nd ref="1445131932"/>
+  <nd ref="1445131937"/>
+  <nd ref="1445131918"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="202853854" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127949405"/>
+  <nd ref="2127949410"/>
+  <nd ref="2127949411"/>
+  <nd ref="2127949417"/>
+  <nd ref="2127949416"/>
+  <nd ref="2127949407"/>
+  <nd ref="2127949389"/>
+  <nd ref="2127949391"/>
+  <nd ref="2127949393"/>
+  <nd ref="2127949400"/>
+  <nd ref="2127949405"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202853856" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127949406"/>
+  <nd ref="2127949421"/>
+  <nd ref="2127949417"/>
+  <nd ref="2127949411"/>
+  <nd ref="2127949410"/>
+  <nd ref="2127949405"/>
+  <nd ref="2127949382"/>
+  <nd ref="2127949384"/>
+  <nd ref="2127949396"/>
+  <nd ref="2127949401"/>
+  <nd ref="2127949398"/>
+  <nd ref="2127949402"/>
+  <nd ref="2127949406"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202853857" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127949416"/>
+  <nd ref="2127949407"/>
+  <nd ref="2127949403"/>
+  <nd ref="2127949394"/>
+  <nd ref="2127949395"/>
+  <nd ref="2127949387"/>
+  <nd ref="2127949383"/>
+  <nd ref="2127949390"/>
+  <nd ref="2127949392"/>
+  <nd ref="2127949399"/>
+  <nd ref="2127949397"/>
+  <nd ref="2127949408"/>
+  <nd ref="2127949414"/>
+  <nd ref="2127949416"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202853858" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:23Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127949388"/>
+  <nd ref="2127949404"/>
+  <nd ref="2127949408"/>
+  <nd ref="2127949414"/>
+  <nd ref="2127949412"/>
+  <nd ref="2127949380"/>
+  <nd ref="2127949388"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202853862" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:24Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127949409"/>
+  <nd ref="2127949423"/>
+  <nd ref="2127949424"/>
+  <nd ref="2127949421"/>
+  <nd ref="2127949406"/>
+  <nd ref="2127949409"/>
+  <tag k="source" v="Bing, Local knowledge"/>
+ </way>
+ <way id="202853863" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:24Z" user="Paolo Gianfrancesco" uid="663149">
+  <nd ref="2127949418"/>
+  <nd ref="2127949419"/>
+  <nd ref="2127949422"/>
+  <nd ref="2127949420"/>
+  <nd ref="2127949415"/>
+  <nd ref="2127949413"/>
+  <nd ref="2127949418"/>
+ </way>
+ <relation id="2722132" visible="true" version="1" changeset="14783799" timestamp="2013-01-25T17:58:38Z" user="Paolo Gianfrancesco" uid="663149">
+  <member type="way" ref="202849751" role="outer"/>
+  <member type="way" ref="202849752" role="inner"/>
+  <tag k="building" v="yes"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+ <relation id="2722218" visible="true" version="1" changeset="14784101" timestamp="2013-01-25T18:23:24Z" user="Paolo Gianfrancesco" uid="663149">
+  <member type="way" ref="202853862" role="outer"/>
+  <member type="way" ref="202853863" role="inner"/>
+  <tag k="building" v="yes"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+</osm>
