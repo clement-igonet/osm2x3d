@@ -111,6 +111,7 @@ void Converter::osmWorld23DBuildings() {
         if (!osmBuilding->name_.empty()) {
             string name = "_" + osmBuilding->name_;
             boost::replace_all(name, " ", "_");
+            boost::replace_all(name, "&", "_");
             boost::replace_all(name, ":", "-");
             my3DBuilding->name_ = name;
         } else {
