@@ -2,6 +2,7 @@
 #define OSM2X3D_OSMGROUND_H
 
 #include <utility>
+#include <boost/optional.hpp>
 #include "Singleton.h"
 
 /**
@@ -24,13 +25,20 @@
 class OsmGround : public Singleton<OsmGround> {
     friend class Singleton<OsmGround>;
 public:
-    void init(pair<double, double> minBound, pair<double, double> maxBound);
+    void init(
+            pair<double, double> minBound,
+            pair<double, double> maxBound);
+    void init(
+            int zoom,
+            int xTile,
+            int yTile);
     pair<double, double> minGround;
     pair<double, double> maxGround;
     //private:
-    //    int zoom;
-    //    int xTile;
-    //    int yTile;
+    boost::optional<int> zoom_;
+    boost::optional<int> xTile_;
+    boost::optional<int> yTile_;
+
 };
 
 #endif // OSM2X3D_OSMGROUND_H

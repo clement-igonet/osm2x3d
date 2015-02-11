@@ -30,18 +30,18 @@ using namespace std;
 void OsmGround::init(
         pair<double, double> minBound,
         pair<double, double> maxBound) {
-//    double phi = max(
-//            maxBound.first - minBound.first,
-//            maxBound.second - minBound.second);
-//    // Take the integer part of decimal zoom
-//    this->zoom = (int) (log2(360 / phi) - 0.5);
-//    double lat = maxBound.first;
-//    double lon = minBound.second;
-//    this->xTile = OsmUtil::long2tilex(lon, zoom);
-//    this->yTile = OsmUtil::lat2tiley(lat, zoom);
-//    FILE_LOG(logINFO) << "OsmGround::init - zoom:" << zoom << endl;
-//    FILE_LOG(logINFO) << "OsmGround::init - xTile:" << xTile << endl;
-//    FILE_LOG(logINFO) << "OsmGround::init - yTile:" << yTile << endl;
+    //    double phi = max(
+    //            maxBound.first - minBound.first,
+    //            maxBound.second - minBound.second);
+    //    // Take the integer part of decimal zoom
+    //    this->zoom = (int) (log2(360 / phi) - 0.5);
+    //    double lat = maxBound.first;
+    //    double lon = minBound.second;
+    //    this->xTile = OsmUtil::long2tilex(lon, zoom);
+    //    this->yTile = OsmUtil::lat2tiley(lat, zoom);
+    //    FILE_LOG(logINFO) << "OsmGround::init - zoom:" << zoom << endl;
+    //    FILE_LOG(logINFO) << "OsmGround::init - xTile:" << xTile << endl;
+    //    FILE_LOG(logINFO) << "OsmGround::init - yTile:" << yTile << endl;
     //    minGround = make_pair(
     //            OsmUtil::tiley2lat(yTile + 1, zoom),
     //            OsmUtil::tilex2long(xTile, zoom));
@@ -56,4 +56,19 @@ void OsmGround::init(
     FILE_LOG(logINFO)
             << "OsmGround::init - maxGround (lat/lon):" << maxGround.first
             << "/" << maxGround.second;
+}
+
+void OsmGround::init(
+        int zoom,
+        int xTile,
+        int yTile) {
+    this->zoom_ = zoom;
+    this->xTile_ = xTile;
+    this->yTile_ = yTile;
+    this->minGround = make_pair(
+            OsmUtil::tiley2lat(yTile + 1, zoom),
+            OsmUtil::tilex2long(xTile, zoom));
+    this->maxGround = make_pair(
+            OsmUtil::tiley2lat(yTile, zoom),
+            OsmUtil::tilex2long(xTile + 1, zoom));
 }

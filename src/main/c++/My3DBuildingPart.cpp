@@ -13,11 +13,12 @@ My3DBuildingPart::My3DBuildingPart(
     //    if (height != 0) {
     //        this->height_ = height;
     //    }
-//    optHeight_ = 0.0;
+    //    optHeight_ = 0.0;
 
     this->elevation_ = elevation;
     this->colour_ = colour;
     this->my3DRoof_ = my3DRoof;
+    this->transparency_ = 0.0;
 }
 
 void My3DBuildingPart::buildX3Dom(ostream& outputStream) {
@@ -41,13 +42,13 @@ void My3DBuildingPart::buildX3Dom(ostream& outputStream) {
 
     if (!colour.empty()) {
         diffuseColorSS << colour_;
-        transparencySS << (double) 0.5;
     } else {
         diffuseColorSS << (double) (((13 * (1 + (int) wallElevation)) % 100) / (double) 100) << " "
                 << (double) (((17 * (1 + (int) wallElevation)) % 100) / (double) 100) << " "
                 << (double) (((23 * (1 + (int) wallElevation)) % 100) / (double) 100);
-        transparencySS << (double) 0.8;
     }
+    //    transparencySS << (double) 0.5;
+    transparencySS << (double) transparency_;
     outputStream << R"(
                                     <Material diffuseColor=')" << diffuseColorSS.str();
     outputStream << R"(' transparency=')" << transparencySS.str() << "'/>";

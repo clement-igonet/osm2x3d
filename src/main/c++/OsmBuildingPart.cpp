@@ -4,31 +4,17 @@
 #include "Log.h"
 #include <sstream>
 using namespace std;
-//OsmBuildingPart::OsmBuildingPart() {
-//    this->init();
-//}
-//
-//void OsmBuildingPart::init() {
-//    this->minHeight_ = 0;
-//    //    color_ = (Color)("black");
-//    nodes_ = shared_ptr<vector<Node> > (new vector<Node>);
-//}
 
 OsmBuildingPart::OsmBuildingPart(
         shared_ptr<vector<Node >> osmNodes,
         double osmMinHeight,
-        //        double osmHeight,
-        int osmBuildingLevels,
         int osmMinLevel,
         string name,
         string colour,
         shared_ptr<OsmRoof> osmRoof) {
     this->nodes_ = osmNodes;
-    //    this->maxHeight_ = osmHeight;
-    //    optHeight_ = 0.0;
 
     this->minHeight_ = osmMinHeight;
-    this->levels_ = osmBuildingLevels;
     this->minLevel_ = osmMinLevel;
     this->name_ = name;
     this->colour_ = colour;
@@ -63,15 +49,3 @@ string OsmBuildingPart::toString() {
 
     return ss.str();
 }
-
-//OsmBuildingPart::OsmBuildingPart(
-//        shared_ptr<vector<Node >> osmNodes,
-//        int osmMinHeight,
-//        int osmHeight) {
-//    OsmBuildingPart(osmNodes, 0, osmHeight, 0, 0);
-//}
-//
-//OsmBuildingPart::OsmBuildingPart(shared_ptr<vector<Node >> osmNodes, int osmHeight) {
-//    OsmBuildingPart(osmNodes, 0, osmHeight);
-//}
-//

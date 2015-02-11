@@ -35,65 +35,82 @@ void Converter::osmWorld23DWorld() {
  */
 
 void Converter::osmWorld23DGround() {
-    // Square from selected area
-    double latMin = OsmGround::getInstance()->minGround.first;
-    double latMax = OsmGround::getInstance()->maxGround.first;
-    double lonMin = OsmGround::getInstance()->minGround.second;
-    double lonMax = OsmGround::getInstance()->maxGround.second;
-    My3DGround::getInstance()->minGround_ = make_pair(
-            RADIUS * (lonMin - OsmWorld::getInstance()->origin_.second) * (M_PI / 180),
-            RADIUS * (OsmWorld::getInstance()->origin_.first - latMin) * (M_PI / 180));
-    My3DGround::getInstance()->maxGround_ = make_pair(
-            RADIUS * (lonMax - OsmWorld::getInstance()->origin_.second) * (M_PI / 180),
-            RADIUS * (OsmWorld::getInstance()->origin_.first - latMax) * (M_PI / 180));
+    if (
+            OsmGround::getInstance()->zoom_ &&
+            OsmGround::getInstance()->xTile_ &&
+            OsmGround::getInstance()->yTile_) {
+        double x0 = RADIUS * (OsmGround::getInstance()->minGround.second - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
+        double x1 = RADIUS * (OsmGround::getInstance()->maxGround.second - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
+        double z0 = RADIUS * (OsmWorld::getInstance()->origin_.first - OsmGround::getInstance()->minGround.first) * (M_PI / 180);
+        double z1 = RADIUS * (OsmWorld::getInstance()->origin_.first - OsmGround::getInstance()->maxGround.first) * (M_PI / 180);
+        shared_ptr<My3DGroundTile> my3DGroundTile(new My3DGroundTile(
+                make_pair(x0, z0), make_pair(x1, z1),
+                *(OsmGround::getInstance()->xTile_),
+                *(OsmGround::getInstance()->yTile_),
+                *(OsmGround::getInstance()->zoom_)));
+        My3DGround::getInstance()->tiles_.push_back(my3DGroundTile);
+    } else {
+
+        // Square from selected area
+        double latMin = OsmGround::getInstance()->minGround.first;
+        double latMax = OsmGround::getInstance()->maxGround.first;
+        double lonMin = OsmGround::getInstance()->minGround.second;
+        double lonMax = OsmGround::getInstance()->maxGround.second;
+        My3DGround::getInstance()->minGround_ = make_pair(
+                RADIUS * (lonMin - OsmWorld::getInstance()->origin_.second) * (M_PI / 180),
+                RADIUS * (OsmWorld::getInstance()->origin_.first - latMin) * (M_PI / 180));
+        My3DGround::getInstance()->maxGround_ = make_pair(
+                RADIUS * (lonMax - OsmWorld::getInstance()->origin_.second) * (M_PI / 180),
+                RADIUS * (OsmWorld::getInstance()->origin_.first - latMax) * (M_PI / 180));
 
 
 
-    double phi = max(lonMax - lonMin, latMax - latMin);
-    // Take the integer part of decimal zoom
-    int minZoom = (int) (log2(360 / phi) - 0.5);
-    int zoom = minZoom + 2;
-    int xTileStart = OsmUtil::long2tilex(lonMin, zoom);
-    int xTile = xTileStart;
-    int yTile = OsmUtil::lat2tiley(latMax, zoom);
-    double lonStart = OsmUtil::tilex2long(xTile, zoom);
-    double lon = lonStart;
-    double lat = OsmUtil::tiley2lat(yTile, zoom);
-    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - zoom: " << zoom;
-    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - xTile: " << xTile;
-    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - yTile: " << yTile;
-    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - latMin: " << latMin;
-    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lonMax: " << lonMax;
+        double phi = max(lonMax - lonMin, latMax - latMin);
+        // Take the integer part of decimal zoom
+        int minZoom = (int) (log2(360 / phi) - 0.5);
+        int zoom = minZoom + 2;
+        int xTileStart = OsmUtil::long2tilex(lonMin, zoom);
+        int xTile = xTileStart;
+        int yTile = OsmUtil::lat2tiley(latMax, zoom);
+        double lonStart = OsmUtil::tilex2long(xTile, zoom);
+        double lon = lonStart;
+        double lat = OsmUtil::tiley2lat(yTile, zoom);
+        //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - zoom: " << zoom;
+        //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - xTile: " << xTile;
+        //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - yTile: " << yTile;
+        //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - latMin: " << latMin;
+        //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lonMax: " << lonMax;
 
-    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
-    //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
-    while (lat > latMin) {
-        //        FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
-        double nextLat = OsmUtil::tiley2lat(yTile + 1, zoom);
-        while (lon < lonMax) {
-            //            FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
-            double nextLon = OsmUtil::tilex2long(xTile + 1, zoom);
-
-
-
-            double x0 = RADIUS * (lon - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
-            double x1 = RADIUS * (nextLon - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
-            double z0 = RADIUS * (OsmWorld::getInstance()->origin_.first - lat) * (M_PI / 180);
-            double z1 = RADIUS * (OsmWorld::getInstance()->origin_.first - nextLat) * (M_PI / 180);
+        //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
+        //    FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
+        while (lat > latMin) {
+            //        FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lat: " << lat;
+            double nextLat = OsmUtil::tiley2lat(yTile + 1, zoom);
+            while (lon < lonMax) {
+                //            FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
+                double nextLon = OsmUtil::tilex2long(xTile + 1, zoom);
 
 
-            shared_ptr<My3DGroundTile> my3DGroundTile(new My3DGroundTile(
-                    make_pair(x0, z0), make_pair(x1, z1), xTile, yTile, zoom));
 
-            My3DGround::getInstance()->tiles_.push_back(my3DGroundTile);
+                double x0 = RADIUS * (lon - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
+                double x1 = RADIUS * (nextLon - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
+                double z0 = RADIUS * (OsmWorld::getInstance()->origin_.first - lat) * (M_PI / 180);
+                double z1 = RADIUS * (OsmWorld::getInstance()->origin_.first - nextLat) * (M_PI / 180);
 
-            xTile++;
-            lon = nextLon;
+
+                shared_ptr<My3DGroundTile> my3DGroundTile(new My3DGroundTile(
+                        make_pair(x0, z0), make_pair(x1, z1), xTile, yTile, zoom));
+
+                My3DGround::getInstance()->tiles_.push_back(my3DGroundTile);
+
+                xTile++;
+                lon = nextLon;
+            }
+            lon = lonStart;
+            xTile = xTileStart;
+            yTile++;
+            lat = nextLat;
         }
-        lon = lonStart;
-        xTile = xTileStart;
-        yTile++;
-        lat = nextLat;
     }
 }
 
@@ -171,7 +188,6 @@ void Converter::osmWorld23DBuildings() {
             }
             my3DBuilding->perimeter_ = perimeter;
             //            double buildingPartHeight;
-            double floorHeight;
             boost::optional<double> my3DBuildingPartHeight;
             if (osmBuildingPartHeight) {
                 my3DBuildingPartHeight = *osmBuildingPartHeight
@@ -183,15 +199,10 @@ void Converter::osmWorld23DBuildings() {
                 FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - *osmBuildingPartHeight: " << *osmBuildingPartHeight;
                 FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minHeight_): " << (*osmBuildingPartIt)->minHeight_;
                 FILE_LOG(logINFO) << "Converter::osmWorld23DBuildings - *my3DBuildingPartHeight: " << *my3DBuildingPartHeight;
-                floorHeight = *my3DBuildingPartHeight
-                        / (double) ((*osmBuildingPartIt)->levels_ - (*osmBuildingPartIt)->minLevel_);
             }
             FILE_LOG(logDEBUG)
                     << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->minLevel_:"
                     << (*osmBuildingPartIt)->minLevel_;
-            FILE_LOG(logDEBUG)
-                    << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:"
-                    << (*osmBuildingPartIt)->levels_;
 
             // Add my3DBuildingPart
             double buildingPartElevation = (*osmBuildingPartIt)->minHeight_;
@@ -206,25 +217,36 @@ void Converter::osmWorld23DBuildings() {
             }
             (*my3DBuilding).addBuildingPart(my3DBuildingPart);
 
-            for (
-                    int level = (*osmBuildingPartIt)->minLevel_;
-                    level < (*osmBuildingPartIt)->levels_;
-                    level++) {
-                double floorElevation = buildingPartElevation + (double) ((level - (*osmBuildingPartIt)->minLevel_) * floorHeight);
-                shared_ptr<My3DBuildingFloorPart> my3DBuildingFloorPart(
-                        new My3DBuildingFloorPart(
-                        buildingPartPoints,
-                        floorElevation,
-                        buildingPartColour));
-                my3DBuildingFloorPart->optHeight_ = floorHeight;
+            if ((*osmBuildingPartIt)->levels_ && my3DBuildingPartHeight) {
+
+                my3DBuildingPart->transparency_ = 0.6;
+
+
+                double floorHeight = *my3DBuildingPartHeight
+                        / (double) (*((*osmBuildingPartIt)->levels_) - (*osmBuildingPartIt)->minLevel_);
                 FILE_LOG(logDEBUG)
-                        << "Converter::osmWorld23DBuildings - Level " << level
-                        << ": elevation=" << floorElevation
-                        << " / " << "minHeight=" << (*osmBuildingPartIt)->minHeight_
-                        << " / " << "minLevel=" << (*osmBuildingPartIt)->minLevel_
-                        << " / " << "height=" << floorHeight;
-                //                }
-                (*my3DBuilding).addLevel(level, my3DBuildingFloorPart);
+                        << "Converter::osmWorld23DBuildings - (*osmBuildingPartIt)->levels_:"
+                        << (*osmBuildingPartIt)->levels_;
+                for (
+                        int level = (*osmBuildingPartIt)->minLevel_;
+                        level < (*osmBuildingPartIt)->levels_;
+                        level++) {
+                    double floorElevation = buildingPartElevation + (double) ((level - (*osmBuildingPartIt)->minLevel_) * floorHeight);
+                    shared_ptr<My3DBuildingFloorPart> my3DBuildingFloorPart(
+                            new My3DBuildingFloorPart(
+                            buildingPartPoints,
+                            floorElevation,
+                            buildingPartColour));
+                    my3DBuildingFloorPart->optHeight_ = floorHeight;
+                    FILE_LOG(logDEBUG)
+                            << "Converter::osmWorld23DBuildings - Level " << level
+                            << ": elevation=" << floorElevation
+                            << " / " << "minHeight=" << (*osmBuildingPartIt)->minHeight_
+                            << " / " << "minLevel=" << (*osmBuildingPartIt)->minLevel_
+                            << " / " << "height=" << floorHeight;
+                    //                }
+                    (*my3DBuilding).addLevel(level, my3DBuildingFloorPart);
+                }
             }
         }
         My3DWorld::getInstance()->addBuilding(my3DBuilding);

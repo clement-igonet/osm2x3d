@@ -29,20 +29,30 @@ using namespace std;
 
 //#define PI           3.14159265358979323846  /* pi */
 
-void OsmWorld::initFromStream(stringstream& osmXmlStream) {
+void OsmWorld::initFromStream(
+        stringstream& osmXmlStream,
+        boost::optional<int> zoom,
+        boost::optional<int> xTile,
+        boost::optional<int> yTile) {
     read_xml(osmXmlStream, pt);
-    this->init_();
+    this->init_(zoom, xTile, yTile);
 }
 
-void OsmWorld::initFromFile(string osmXmlFile) {
+void OsmWorld::initFromFile(
+        string osmXmlFile,
+        boost::optional<int> zoom,
+        boost::optional<int> xTile,
+        boost::optional<int> yTile) {
     read_xml(osmXmlFile, pt);
-    this->init_();
+    this->init_(zoom, xTile, yTile);
 }
 
-void OsmWorld::init_() {
+void OsmWorld::init_(
+        boost::optional<int> zoom,
+        boost::optional<int> xTile,
+        boost::optional<int> yTile) {
     origin_ = pair<double, double> ();
     cout.precision(numeric_limits< double >::digits10);
-    //    read_xml(osmXmlFile, pt);
     shared_ptr < unordered_map<long long, Node >> nodesMap(
             new unordered_map<long long, Node >);
     origin_.first = 0.0;
@@ -62,7 +72,11 @@ void OsmWorld::init_() {
             this->setOrigin(pair<double, double>(
                     minBound.first + (maxBound.first - minBound.first) / 2.0,
                     minBound.second + (maxBound.second - minBound.second) / 2.0));
-            OsmGround::getInstance()->init(this->minBound, this->maxBound);
+            if (zoom && xTile && yTile) {
+                OsmGround::getInstance()->init(*zoom, *xTile, *yTile);
+            } else {
+                OsmGround::getInstance()->init(this->minBound, this->maxBound);
+            }
         } else if (v.first == "node") {
             long long id;
             try {
@@ -93,7 +107,8 @@ void OsmWorld::init_() {
             string colour;
             boost::optional<double> osmBuildingPartHeight;
             double minHeight = 0;
-            int buildingLevels = 1;
+            //            int buildingLevels = 1;
+            boost::optional<int> buildingLevels;
             int buildingMinLevel = 0;
             boost::optional<double> optRoofHeight;
             string roofShape("flat");
@@ -190,11 +205,15 @@ void OsmWorld::init_() {
                         nodes,
                         minHeight,
                         //                        height,
-                        buildingLevels,
+                        //                        buildingLevels,
                         buildingMinLevel,
                         name,
                         colour,
                         osmRoof));
+                if (buildingLevels) {
+                    osmBuildingPart->levels_ = *buildingLevels;
+                }
+
                 if (osmBuildingPartHeight) {
                     osmBuildingPart->optHeight_ = *osmBuildingPartHeight;
                     FILE_LOG(logINFO) << "OsmWorld::init - name: " << name;
@@ -217,11 +236,15 @@ void OsmWorld::init_() {
                         nodes,
                         minHeight,
                         //                        height,
-                        buildingLevels,
+                        //                        buildingLevels,
                         buildingMinLevel,
                         name,
                         colour,
                         osmRoof));
+                if (buildingLevels) {
+                    osmBuildingPart->levels_ = *buildingLevels;
+                }
+
                 if (osmBuildingPartHeight) {
                     osmBuildingPart->optHeight_ = *osmBuildingPartHeight;
                 }

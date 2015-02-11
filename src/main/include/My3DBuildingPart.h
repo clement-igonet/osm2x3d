@@ -30,6 +30,7 @@ public:
     shared_ptr<vector<pair<double, double >> > points_;
     shared_ptr<My3DRoof> my3DRoof_;
     boost::optional<double> optHeight_;
+    double transparency_;
 private:
     double elevation_;
     string colour_;

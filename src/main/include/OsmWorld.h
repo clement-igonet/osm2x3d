@@ -11,6 +11,7 @@
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
 #include <boost/foreach.hpp>
+#include <boost/optional.hpp>
 using boost::property_tree::ptree;
 
 #include <unordered_map>
@@ -25,15 +26,26 @@ using namespace std;
 class OsmWorld : public Singleton<OsmWorld> {
     friend class Singleton<OsmWorld>;
 public:
-    void initFromFile(string osmXmlFile);
-    void initFromStream(stringstream& osmXmlStream);
+    void initFromFile(
+            string osmXmlFile,
+            boost::optional<int> zoom,
+            boost::optional<int> xTile,
+            boost::optional<int> yTile);
+    void initFromStream(
+            stringstream& osmXmlStream,
+            boost::optional<int> zoom,
+            boost::optional<int> xTile,
+            boost::optional<int> yTile);
     void processOrigin();
     void process3DBuildings();
     void process3DGround();
     unordered_map<long long, shared_ptr<vector<long long >> > relations;
     pair<double, double> origin_;
 private:
-    void init_();
+    void init_(
+            boost::optional<int> zoom,
+            boost::optional<int> height,
+            boost::optional<int> width);
     ptree pt;
     int zoom;
     pair<double, double> minBound;

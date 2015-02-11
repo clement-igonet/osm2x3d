@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <boost/optional.hpp>
 
 #include "Log.h"
 
@@ -51,6 +52,9 @@ Options :
 -i / --input            Open Street Map xml input file
 -o / --output           X3D xml scene graph. Default is "result.x3d" on working
                         directory
+-z / --zoom             zoom level (osm tile reference)
+-x / --xTile            x tile
+-y / --yTile            y tile
 --verbose / --brief     verbose / brief mode
 -h / --help             print this help)";
 }
@@ -61,6 +65,9 @@ int main(int argc, char **argv) {
     int c;
     string inputFile("");
     string outputFile("result.x3d");
+    boost::optional<int> zoom;
+    boost::optional<int> xTile;
+    boost::optional<int> yTile;
 
     Log::init();
     Log::setLevel(logINFO);
@@ -89,6 +96,9 @@ int main(int argc, char **argv) {
                We distinguish them by their indices. */
             {"input", required_argument, 0, 'i'},
             {"output", required_argument, 0, 'o'},
+            {"zoom", required_argument, 0, 'z'},
+            {"xTile", required_argument, 0, 'x'},
+            {"yTile", required_argument, 0, 'y'},
             {0, 0, 0, 0}
         };
         /* getopt_long stores the option index here. */
@@ -120,6 +130,21 @@ int main(int argc, char **argv) {
                 FILE_LOG(logINFO) << "option -o with value " << optarg;
                 stdout = false;
                 outputFile = optarg;
+                break;
+
+            case 'z':
+                FILE_LOG(logINFO) << "option -z with value " << optarg;
+                istringstream(optarg) >> zoom;
+                break;
+
+            case 'x':
+                FILE_LOG(logINFO) << "option -x with value " << optarg;
+                istringstream(optarg) >> xTile;
+                break;
+
+            case 'y':
+                FILE_LOG(logINFO) << "option -y with value " << optarg;
+                istringstream(optarg) >> yTile;
                 break;
 
             case '?':
@@ -154,9 +179,9 @@ int main(int argc, char **argv) {
         while (std::getline(std::cin, line)) {
             ss << line << '\n';
         }
-        OsmWorld::getInstance()->initFromStream(ss);
+        OsmWorld::getInstance()->initFromStream(ss, zoom, xTile, yTile);
     } else {
-        OsmWorld::getInstance()->initFromFile(inputFile);
+        OsmWorld::getInstance()->initFromFile(inputFile, zoom, xTile, yTile);
     }
     // Convert OSM objects to My3D objects
     Converter::osmWorld23DGround();
