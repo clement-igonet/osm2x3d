@@ -1,0 +1,30 @@
+<x3d>
+<scene>
+	<viewpoint fieldOfView='0.60' position='0 0 0'></viewpoint>
+
+	 <matrixtransform id="root_transform">
+		 <transform  translation="0 0 20" scale="50 50 50"
+		 rotation="0 1 0 3.145">
+			 <transform def="earth" rotation="1 0 0 -1.57">
+				 <shape>
+					 <appearance>
+						 <imageTexture url="some_texture.jpg">
+						 </imageTexture>
+					 </appearance>
+					 <sphere></sphere>
+				 </shape>
+			 </transform>
+			 <transform def="clouds" rotation="1 0 0 -1.57"
+			 scale="1.1 1.1 1.1">
+				 <shape>
+					 <appearance>
+						 <imageTexture url="some_texture2.jpg">
+						 </imageTexture>
+					 </appearance>
+					 <sphere></sphere>
+				 </shape>
+			 </transform>
+		 </transform>
+	 </matrixtransform>
+</scene>
+</x3d>

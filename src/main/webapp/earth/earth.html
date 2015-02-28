@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>OSM2X3D</title>
+        <!--<script src="http://www.x3dom.org/download/dev/x3dom-full.js"></script>-->
+        <script src="http://www.x3dom.org/download/1.6.2/x3dom-full.js"></script>
+        <script src="jquery-2.1.3.min"></script>
+        <script src="earth.js"></script>
+        <!--<link rel="stylesheet" href="http://www.x3dom.org/download/dev/x3dom.css">-->
+        <link rel="stylesheet" href="http://www.x3dom.org/download/1.6.2/x3dom.css">
+        <link rel='stylesheet' type='text/css' href='earth.css'/>
+    </head>
+    <body id="body">
+        <div id="headerInfo">osm2x3d</div>
+
+        <!-- cf x3dom/test/regression-suite/test/cases/billboard/billboard.html -->
+        <div id="x3dContainer">
+            <x3d id="x3dElement" showlog="true" showstat="false">
+                <Scene id="scene">
+                </Scene>             
+            </x3d>
+        </div>         
+
+<!--        <div id="x3dContainer">
+            <x3d id="x3dElement" showlog="true" showstat="false">
+                <Scene id="scene">
+                    <Transform translation='0 0 0' rotation='1 0 0 -1.5708'>
+                        <Group>
+                            <Shape>
+                                <Appearance>
+                                    <ImageTexture url='"http://a.tile.openstreetmap.org/16/11801/25709.png"'/>
+                                </Appearance>
+                                <Rectangle2D size='60010.812 40093.445'></Rectangle2D>
+                            </Shape>
+                        </Group>
+                    </Transform>
+                </Scene>             
+            </x3d>
+        </div>         -->
+
+
+        <div id="info"> info </div>
+        <script>
+        </script>
+    </body>
+</html>
+

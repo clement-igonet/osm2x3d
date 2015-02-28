@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"
+  "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.3'  xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation =' http://www.web3d.org/specifications/x3d-3.3.xsd '>
+<head>
+<meta name='title' content='CoordinateAxesLines.x3d'/>
+<meta name='creator' content='Don Brutzman'/>
+<meta name='created' content='13 October 2013'/>
+<meta name='modified' content='24 February 2014'/>
+<meta name='description' content='X Y Z axis lines (red green blue, respectively) in X3D coordinate system, providing a simple reusable widget.'/>
+<meta name='reference' content=' http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d '/>
+<meta name='reference' content=' http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxesNSEW.x3d '/>
+<meta name='reference' content=' https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d '/>
+<meta name='reference' content=' https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxesNSEW.x3d '/>
+<meta name='reference' content=' https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxesNSEW.x3d '/>
+<meta name='identifier' content=' http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxesLines.x3d '/>
+<meta name='reference' content=' http://X3dGraphics.com '/>
+<meta name='generator' content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit'/>
+<meta name='license' content=' ../license.html'/>
+</head>
+<!--
+Index for Viewpoint images : Viewpoint_1, Viewpoint_2, Viewpoint_3, Viewpoint_4
+-->
+<Scene>
+<!-- See X3dForWebAuthors/Chapter06-GeometryPointsLinesPolygons to learn more about IndexedLineSet, Coordinate and Color nodes -->
+<Shape>
+<IndexedLineSet colorPerVertex='false' colorIndex='0 1 2' coordIndex='0 1 -1 0 2 -1 0 3 -1'>
+<Coordinate point='0 0 0 100000 0 0 0 130000 0 0 0 160000'/>
+<Color color='1 0 0 0 1 0 0.2 0.2 1'/>
+</IndexedLineSet>
+</Shape>
+<!--
+<Viewpoint description='Oblique view' orientation='-0.59028 0.76927 0.2445 0.987861' position='6 6 6'/>
+<Viewpoint description='View from X axis' orientation='0 1 0 1.570796' position='10 0 0'/>
+<Viewpoint description='View from Y axis' orientation='1 0 0 -1.570796' position='0 10 0'/>
+<Viewpoint description='View from Z axis'/>
+-->
+</Scene>
+</X3D> 

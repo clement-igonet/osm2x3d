@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (9226 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="3.1561000" minlon="101.7208000" maxlat="3.1562000" maxlon="101.7209000"/>
+ <node id="266650699" visible="true" version="3" changeset="28375865" timestamp="2015-01-24T15:55:02Z" user="rene78" uid="257555" lat="3.1561957" lon="101.7208780"/>
+ <node id="266650704" visible="true" version="3" changeset="28375865" timestamp="2015-01-24T15:55:02Z" user="rene78" uid="257555" lat="3.1565960" lon="101.7210071"/>
+ <node id="266650705" visible="true" version="3" changeset="28375865" timestamp="2015-01-24T15:55:02Z" user="rene78" uid="257555" lat="3.1567331" lon="101.7205811"/>
+ <node id="266650706" visible="true" version="2" changeset="28375865" timestamp="2015-01-24T15:55:02Z" user="rene78" uid="257555" lat="3.1563327" lon="101.7204520"/>
+ <way id="24521808" visible="true" version="5" changeset="28375865" timestamp="2015-01-24T15:55:03Z" user="rene78" uid="257555">
+  <nd ref="266650699"/>
+  <nd ref="266650704"/>
+  <nd ref="266650705"/>
+  <nd ref="266650706"/>
+  <nd ref="266650699"/>
+  <tag k="addr:city" v="Kuala Lumpur"/>
+  <tag k="addr:postcode" v="50450"/>
+  <tag k="addr:street" v="Lorong Kuda"/>
+  <tag k="building" v="commercial"/>
+  <tag k="name" v="Tan &amp; Tan"/>
+ </way>
+</osm>

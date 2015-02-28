@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "http://www.web3d.org/specifications/x3d-3.3.dtd">
+<X3D profile='Immersive' version='3.3' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
+  <head>
+    <meta content='MultiTextureDesignPattern.x3d' name='title'/>
+    <meta content='Design pattern for MultiTexture, MultiTextureCoordinate, MultiTextureTransform node correspondences' name='description'/>
+    <meta content='Don Brutzman' name='creator'/>
+    <meta content='5 March 2011' name='created'/>
+    <meta content='6 January 2015' name='modified'/>
+    <meta content='X3D schematron rules for quality assurance' name='TODO'/>
+    <meta content='MultiTextureDesignPatternSceneGraph.png' name='Image'/>
+    <meta content='MultiTexture, MultiTextureCoordinate, MultiTextureTransform' name='subject'/>
+    <meta content='http://www.web3d.org/files/specifications/19775-1/V3.2/Part01/components/texturing.html#MultiTexture' name='reference'/>
+    <meta content='http://X3dGraphics.com/examples/X3dForAdvancedModeling/MultiTexture/MultiTextureDesignPattern.x3d' name='identifier'/>
+    <meta content='http://www.web3d.org/x3d/content/examples/X3dResources.html' name='reference'/>
+    <meta content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <!-- ================================ -->
+    <Background skyColor='0.72549 1 0.721569'/>
+    <Viewpoint description='MultiTexture design pattern'/>
+    <Shape>
+      <Text string='"Source shows design pattern for" "MultiTexture, MultiTextureCoordinate," " and MultiTextureTransform nodes"'>
+        <FontStyle justify='"MIDDLE" "MIDDLE"' size='0.6'/>
+      </Text>
+      <Appearance>
+        <Material diffuseColor='0.2 0.4 0.8'/>
+      </Appearance>
+    </Shape>
+    <!-- ================================ -->
+    <Shape>
+      <!-- TODO add a single geometry node here -->
+      <IndexedFaceSet>
+        <MultiTextureCoordinate>
+          <!-- TODO add multiple TextureCoordinate nodes here, match corresponding MultiTexture children -->
+          <TextureCoordinate point='0 0 1 0 1 1 0 1'/>
+          <TextureCoordinate point='0 0 1 0 1 1 0 1'/>
+          <TextureCoordinate point='0 0 1 0 1 1 0 1'/>
+        </MultiTextureCoordinate>
+      </IndexedFaceSet>
+      <Appearance>
+        <Material/>
+        <MultiTexture alpha='0.8' color='0.9 1 0.2' function='"COMPLEMENT" "ALPHAREPLICATE"' mode='"MODULATE" "REPLACE" "BLENDDIFFUSEALPHA"' source='"DIFFUSE" "SPECULAR" "FACTOR"'>
+          <!-- TODO add a multiple texture nodes here -->
+          <ImageTexture/>
+          <MovieTexture/>
+          <PixelTexture/>
+        </MultiTexture>
+        <MultiTextureTransform>
+          <!-- TODO add multiple TextureTransform nodes here, match corresponding MultiTexture children -->
+          <TextureTransform/>
+          <TextureTransform/>
+          <TextureTransform/>
+        </MultiTextureTransform>
+      </Appearance>
+    </Shape>
+  </Scene>
+</X3D>

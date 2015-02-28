@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"
+  "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile="Interchange" version="3.2"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+     xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.2.xsd">            
+    <Scene>
+        <!--<Transform translation='0 0 0' rotation='1 0 0 -1.5708'>-->
+        <Transform translation='0 0 0' rotation='1 0 0 -1.5708'>
+            <Group>
+                <Shape>
+                    <Appearance>
+                        <ImageTexture url='"http://a.tile.openstreetmap.org/16/11801/25709.png"'/>
+                    </Appearance>
+                    <Rectangle2D size='60010.812 40093.445'></Rectangle2D>
+                </Shape>
+            </Group>
+        </Transform>
+    </Scene>             
+</X3D>

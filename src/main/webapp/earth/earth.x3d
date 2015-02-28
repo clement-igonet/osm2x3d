@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D profile='Interchange' version='3.0'  xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation =' http://www.web3d.org/specifications/x3d-3.0.xsd '>
+    <head>
+        <meta name='title' content='Figure17.04dTextureSphereTest.x3d'/>
+        <meta name='creator' content='Figure 17.4d, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland'/>
+        <meta name='reference' content=' http://www.wiley.com/legacy/compbooks/vrml2sbk/ch17/17fig04d.htm '/>
+        <meta name='translator' content='Don Brutzman'/>
+        <meta name='created' content='27 August 2000'/>
+        <meta name='modified' content='15 January 2011'/>
+        <meta name='description' content='A texture-mapped Sphere. Compare Figure17.04aTextureBoxTest, Figure17.04bTextureConeTest, Figure17.04cTextureCylinderTest and Figure17.04dTextureSphereTest.'/>
+        <meta name='identifier' content=' http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Chapter17-Textures/Figure17.04dTextureSphereTest.x3d '/>
+        <meta name='generator' content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit'/>
+        <meta name='license' content=' ../../license.html'/>
+    </head>
+    <!--
+    Index for Viewpoint image : Viewpoint_1
+    -->
+    <Scene>
+        <Background
+            groundColor='0 0 0'
+            backUrl='"space_1_back.jpg"'
+            bottomUrl='"space_1_bottom.jpg"'
+            frontUrl='"space_1_front.jpg"'
+            leftUrl='"space_1_left.jpg"'
+            rightUrl='"space_1_right.jpg"'
+            topUrl='"space_1_top.jpg"'/>
+
+        <!--                <Background
+        backUrl=' "space_1_back.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/space_1_back.jpg" '
+        bottomUrl=' "space_1_bottom.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/space_1_bottom.jpg" '
+        frontUrl=' "space_1_front.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/space_1_front.jpg" '
+        leftUrl=' "space_1_left.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/space_1_left.jpg" '
+        rightUrl=' "space_1_right.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/space_1_right.jpg" '
+        topUrl=' "space_1_top.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/space_1_top.jpg" '/>-->
+
+        <!--        <Background
+        backUrl='"http://examples.x3dom.org/example/texture/generic/BK.png"'
+        bottomUrl='"http://examples.x3dom.org/example/texture/generic/DN.png"'
+        frontUrl='"http://examples.x3dom.org/example/texture/generic/FR.png"'
+        leftUrl='"http://examples.x3dom.org/example/texture/generic/LF.png"'
+        rightUrl='"http://examples.x3dom.org/example/texture/generic/RT.png"'
+        topUrl='"http://examples.x3dom.org/example/texture/generic/UP.png"' />-->
+        <!--        <Background
+        DEF='SandyShallowBottom'
+        groundAngle='0.05 1.52 1.56 1.5707'
+        groundColor='0.0 0.0 0.02 0.2 0 0.3 0.3 0 0.5 0.5 0.3 0.1 0.3 0.4 0 0.2 0.4'
+        skyAngle='0.04 0.05 0.1 1.309 1.570'
+        skyColor='0.8 0.8 0.2 0.8 0.8 0.2 0.1 0.1 0.6 0.1 0.1 0.6 0.1 0.25 0.8 0.6 0.6 0.9'/> -->
+        <!--onviewpointChanged="viewFunc(event);"-->
+        <Transform id="earthTransform" translation='0 0 0'>        
+            <Shape>
+                <Appearance>
+                    <ImageTexture
+                        url='"earth_big.png"'
+                        repeatS='true' 
+                        repeatT='true'
+                        scale='true' />
+                    <!--                    <TextureTransform 
+                    scale='2 2'/> -->
+                </Appearance>
+                <Sphere solid='true' radius="65000.0"/>
+            </Shape>
+        </Transform>    
+    </Scene>
+</X3D> 

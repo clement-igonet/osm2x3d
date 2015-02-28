@@ -38,6 +38,8 @@ void My3DWorld::buildX3Dom(ostream& outputStream) {
         //        outputStream << R"(")'>)";
         outputStream << R"(
         <Group
+            class="building")";
+        outputStream << R"(
             DEF=")" << (*buildingIt)->name_ << "\" ";
         outputStream << R"(
             id=")" << (*buildingIt)->id_ << "\"";

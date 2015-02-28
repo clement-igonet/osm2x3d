@@ -78,7 +78,7 @@ void My3DRoof::buildX3Dom(ostream& outputStream) {
                 height = 9.99;
             }
             outputStream << R"(
-                            <Group>
+                            <Group class="roof">
                                 <Shape>
                                     <Extrusion crossSection=')" << centerPointsSS.str() << "' "
                     << "spine='0 0 0 0 " << height << " 0' "

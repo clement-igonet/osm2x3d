@@ -25,7 +25,7 @@ void My3DBuildingPart::buildX3Dom(ostream& outputStream) {
     outputStream << R"(
                     <Transform translation='0 )" << elevation_ << " 0'>";
     outputStream << R"(
-                        <Group>)";
+                        <Group class="buildingPart">)";
     outputStream << R"(
                             <Shape>
                                 <Appearance>)";

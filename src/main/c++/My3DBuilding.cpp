@@ -91,7 +91,7 @@ void My3DBuilding::buildX3Dom(ostream& outputStream) {
                 <Transform translation='0 )" << elevation << " 0'>";
             outputStream << R"(
                     <Transform rotation='1 0 0 1.5708'>
-                        <Group>)";
+                        <Group class="buildingFloorPart">)";
             outputStream << R"(
                             <Shape>
                                 <Appearance>)";

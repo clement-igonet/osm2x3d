@@ -29,3 +29,20 @@ function handleSingleClick(Group) {
 //    }
 //  });
 //});
+
+viewFunc(null);
+
+function viewFunc(event)
+{
+//    alert("coucou");
+//                    var pos = event.position;
+//                    var rot = event.orientation;
+    // ...
+}
+
+//document.onload = function () {
+//    inline = document.createElement('inline');
+//    inline.setAttribute('nameSpaceName', 'myX3d'); 
+//    inline.setAttribute('url', 'result.x3d');
+//    scene.appendChild(inline);
+//}

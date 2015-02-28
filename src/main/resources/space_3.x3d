@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D profile='Interchange' version='3.0'  xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation =' http://www.web3d.org/specifications/x3d-3.0.xsd '>
+<head>
+<meta name='title' content='space3.x3d'/>
+<meta name='description' content='Panoramic background for Universal Media, showing a pink high-altitude sky with floating reflective globes.'/>
+<meta name='creator' content='Pamela Maloney, aka Imagica, copyright 1998'/>
+<meta name='translator' content='Mark Scorgie, NPS MV 4470 Image Synthesis class'/>
+<meta name='created' content='29 May 2001'/>
+<meta name='modified' content='28 February 2009'/>
+<meta name='rights' content='copyright.htm'/>
+<meta name='reference' content=' http://www.web3dmedia.com/UniversalMedia '/>
+<meta name='reference' content=' http://www.web3d.org/WorkingGroups/media '/>
+<meta name='reference' content='indexOriginalPanoramas.html'/>
+<meta name='identifier' content=' http://www.web3d.org/x3d/content/examples/Basic/UniversalMediaPanoramas/space3.x3d '/>
+<meta name='subject' content='UniversalMedia background texture panorama'/>
+<meta name='generator' content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit'/>
+<meta name='license' content=' ../license.html'/>
+</head>
+<Scene>
+<Background groundColor='0 0 0'
+  backUrl=' "space_3_back.jpg" '
+  bottomUrl=' "space_3_bottom.jpg" '
+  frontUrl=' "space_3_front.jpg" '
+  leftUrl=' "space_3_left.jpg" '
+  rightUrl=' "space_3_right.jpg" '
+  topUrl=' "space_3_top.jpg" '/>
+</Scene>
+</X3D> 
