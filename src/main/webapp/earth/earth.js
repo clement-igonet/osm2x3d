@@ -23,12 +23,14 @@ TILE_SIZE = 256;
 myZConst = 17;
 //var lon = 0;
 //var lat = Math.PI / 2;
-var viewpointGround;
 var lat, lon, elev, zoom;
 lat = 48.703885;
 lon = 2.0699095;
 elev = 14000;
+var cameraTransform;
+var viewpointGround;
 var grCamPos = new x3dom.fields.SFVec3f(0, elev, 0);
+var grCamOri = -1.57;
 
 document.onload = function () {
     switch (myX3dMode) {
@@ -67,17 +69,17 @@ function initGroundMode() {
     navigationInfo.setAttribute('type', 'turntable');
     navigationInfo.setAttribute('typeParams', '0 0 0.0 1.56');
 //                navigationInfo.setAttribute('visibilityLimit', '0');
-//                navigationInfo.setAttribute('transitionType', 'TELEPORT');
+    navigationInfo.setAttribute('transitionType', 'TELEPORT');
     scene.appendChild(navigationInfo);
 
     viewpointGround = document.createElement('Viewpoint');
     viewpointGround.setAttribute('id', 'viewpointGround');
     viewpointGround.setAttribute('orientation', '1 0 0 -1.57');
     viewpointGround.setAttribute('position', '0 ' + elev + ' 0');
-    transform = document.createElement('Transform');
-    transform.setAttribute('rotation', '0 1 0 0');
-    transform.appendChild(viewpointGround);
-    scene.appendChild(transform);
+    cameraTransform = document.createElement('Transform');
+    cameraTransform.setAttribute('rotation', '0 1 0 0');
+    cameraTransform.appendChild(viewpointGround);
+    scene.appendChild(cameraTransform);
 
 //    inline = document.createElement('inline');
 //    inline.setAttribute('nameSpaceName', 'myX3d');
@@ -97,15 +99,60 @@ function initGroundMode() {
 
 function updateGroundView() {
     x3dom.debug.doLog('xgrCamPos: ' + grCamPos, x3dom.debug.INFO);
-    lon += grCamPos.x * 360.0 / (EARTH_RADIUS * grCamPos.y);
-    lat += grCamPos.z * 360.0 / (EARTH_RADIUS * grCamPos.y);
-    x3dom.debug.doLog('xlon: ' + lon, x3dom.debug.INFO);
-    x3dom.debug.doLog('xlat: ' + lat, x3dom.debug.INFO);
-    grCamPos.x = 0.0;
-    grCamPos.z = 0.0;
-    zoom = parseInt(myZConst - Math.log2(grCamPos.y));
+    var x3dElement = document.getElementById('x3dElement');
+    var scene = document.getElementById("scene");
+
+    curViewPoint = x3dElement.runtime.viewpoint();
+    var rotationCenter = curViewPoint._vf.centerOfRotation;
+    var orientation;
+    x3dom.debug.doLog('grCamOri: ' + grCamOri, x3dom.debug.INFO);
+
+    var lonDiff = (180 / Math.PI) * rotationCenter.x / EARTH_RADIUS;
+    var latDiff = -(180 / Math.PI) * rotationCenter.z / EARTH_RADIUS;
+    x3dom.debug.doLog('lonDiff: ' + lonDiff, x3dom.debug.INFO);
+    x3dom.debug.doLog('latDiff: ' + latDiff, x3dom.debug.INFO);
+
+    lon += lonDiff;
+    lat += latDiff;
+
+    if (grCamOri[0] && grCamOri[1]) {
+        orientation = (-grCamOri[0].x)
+                + ' ' + (-grCamOri[0].y)
+                + ' ' + (-grCamOri[0].z)
+                + ' ' + (-grCamOri[1]);
+        x3dom.debug.doLog('uuu: ' + grCamOri[0].x, x3dom.debug.INFO);
+
+        // e.g. -0.9999999999999999 0 0 1.5707963267948966
+    } else {
+        orientation = viewpointGround.getAttribute('orientation');
+        // e.g. 1 0 0 -1.57
+    }
+//    orientation = aOrientation;
+    x3dom.debug.doLog('orientation: ' + orientation, x3dom.debug.INFO);
+
+    cameraTransform.removeChild(viewpointGround);
+    viewpointGround = document.createElement('Viewpoint');
+    viewpointGround.setAttribute('id', 'viewpointGround');
+    viewpointGround.setAttribute('orientation', orientation);
+//    viewpointGround.setAttribute('orientation', (rightVec + ' -1.57'));
+//    viewpointGround.setAttribute('position', 0 + ' ' + processDist(grCamPos) + ' ' + 0);
+    viewpointGround.setAttribute('position',
+            (grCamPos.x - rotationCenter.x)
+            + ' ' + (grCamPos.y - rotationCenter.y)
+            + ' ' + (grCamPos.z - rotationCenter.z));
+//    viewpointGround.setAttribute('position', 0 + ' ' + grCamPos.y + ' ' + 0);
+    viewpointGround.setAttribute('centerOfRotation', '0 0 0');
+
+    cameraTransform.appendChild(viewpointGround);
+    viewpointGround.setAttribute('set_bind', 'true');
+    viewpointGround.addEventListener("viewpointChanged", view_ground_changed, false);
+
+//    zoom = parseInt(myZConst - Math.log2(grCamPos.y));
+    zoom = processZoom(grCamPos);
     var xtile = long2xtile(lon, zoom);
     var ytile = lat2ytile(lat, zoom);
+//    x3dom.debug.doLog('xTile: ' + xtile, x3dom.debug.INFO);
+//    x3dom.debug.doLog('yTile: ' + ytile, x3dom.debug.INFO);
     var lonTile = xtile2long(xtile, zoom);
     var latTile = ytile2lat(ytile, zoom);
     var lonTilePlus = xtile2long(xtile + 1, zoom);
@@ -135,6 +182,15 @@ function updateGroundView() {
 //                navigationInfo.setAttribute('visibilityLimit', '0');
 //                navigationInfo.setAttribute('transitionType', 'TELEPORT');
 
+
+    var size = width + ' ' + height;
+//    x3dom.debug.doLog('size: ' + size, x3dom.debug.INFO);
+    var translation = (x + width / 2) + ' 0 ' + (z + height / 2);
+//    x3dom.debug.doLog('translation: ' + translation, x3dom.debug.INFO);
+
+    var scene = document.getElementById("scene");
+    var oldTransform = document.getElementById("x3dTile");
+
 //  <Transform translation="' + translation + '" rotation="1 0 0 -1.5708">
 //      <Shape>
 //          <Appearance>
@@ -143,28 +199,11 @@ function updateGroundView() {
 //          <Rectangle2D size="' + size + '"></Rectangle2D>
 //      </Shape>
 //  </Transform>
-
-    var size = width + ' ' + height;
-    x3dom.debug.doLog('size: ' + size, x3dom.debug.INFO);
-//    var translation = (x + height / 2) + ' 0 ' + (z + width / 2);
-    var translation = (x + width / 2) + ' 0 ' + (z + height / 2);
-//    var translation = (x) + ' 0 ' + (z);
-    x3dom.debug.doLog('translation: ' + translation, x3dom.debug.INFO);
-
-    var scene = document.getElementById("scene");
-    var oldTransform = document.getElementById("x3dTile");
-    if (oldTransform) {
-        scene.removeChild(oldTransform);
-    }
-
     imageTexture = document.createElement('ImageTexture');
     imageTexture.setAttribute(
             'url',
             'http://a.tile.openstreetmap.org/'
             + zoom + '/' + xtile + '/' + ytile + '.png');
-//    ERROR: [Utils|createTexture2D] Can't load Image: http://a.tile.openstreetmap.org/17/66706/48835.png
-//    ERROR: [Utils|createTexture2D] Can't load Image: http://a.tile.openstreetmap.org/19/266825/195342.png
-//    ERROR: [Utils|createTexture2D] Can't load Image: http://a.tile.openstreetmap.org/18/133412/97671.png
     appearance = document.createElement('Appearance');
     appearance.appendChild(imageTexture);
     rectangle = document.createElement('Rectangle2D');
@@ -173,30 +212,42 @@ function updateGroundView() {
     shape.appendChild(appearance);
     shape.appendChild(rectangle);
     transform = document.createElement('Transform');
-//    transform.setAttribute('id', zoom + '_' + xtile + '_' + ytile);
     transform.setAttribute('id', "x3dTile");
     transform.setAttribute('translation', translation);
     transform.setAttribute('rotation', "1 0 0 -1.5708");
     transform.appendChild(shape);
 
-//    var coordinate = document.getElementById('coordinate');
-//    var zzz = '0 0 0 ' + 20000 / zoom + ' 0 0 0 ' + 26000 / zoom + ' 0 0 0 ' + 32000 / zoom;
-//    var zzz = '0 0 0 4000 0 0 0 5200 0 0 0 6400'
-//    x3dom.debug.doLog('zzz: ' + zzz, x3dom.debug.INFO);
-//    coordinate.setAttribute(zzz);
-//    coordinate.setAttribute('point', '0 0 0 1000 0 0 0 1300 0 0 0 1600');
-//    coordinate.setAttribute('point', zzz);
-
-
     updateCoord(zoom);
 
+    if (oldTransform) {
+        scene.removeChild(oldTransform);
+    }
     scene.appendChild(transform);
+}
+
+function processDist(camCoord) {
+    var rdist2 = Math.pow(camCoord.x, 2)
+            + Math.pow(camCoord.y, 2)
+            + Math.pow(camCoord.z, 2);
+    return Math.sqrt(rdist2);
+}
+function processZoom(camCoord) {
+    var rdist2 = Math.pow(camCoord.x, 2)
+            + Math.pow(camCoord.y, 2)
+            + Math.pow(camCoord.z, 2);
+    var rdist = Math.sqrt(rdist2);
+    var zoom = parseInt(myZConst - Math.log2(rdist));
+    var zoom = Math.min(zoom, 19);
+    var zoom = Math.max(zoom, 1);
+    return zoom;
 }
 
 function view_ground_changed(e) {
 
     grCamPos = e.position;
-    x3dom.debug.doLog('viewpoint position: ' + grCamPos, x3dom.debug.INFO);
+//    x3dom.debug.doLog('grCamPos: ' + grCamPos, x3dom.debug.INFO);
+    grCamOri = e.orientation;
+//    x3dom.debug.doLog('e.orientation: ' + grCamOri[1], x3dom.debug.INFO);
 //    rdist2 = Math.pow(grCamPos.x, 2)
 //            + Math.pow(grCamPos.y, 2)
 //            + Math.pow(grCamPos.z, 2);
@@ -214,10 +265,8 @@ function view_ground_changed(e) {
     height = x3dElement.runtime.getHeight();
     width = x3dElement.runtime.getWidth();
 
-    zoom = parseInt(myZConst - Math.log2(grCamPos.y));
-    zoom = Math.min(zoom, 19);
-    zoom = Math.max(zoom, 1);
-    x3dom.debug.doLog('zoom: ' + zoom, x3dom.debug.INFO);
+    zoom = processZoom(grCamPos);
+//    x3dom.debug.doLog('zoom: ' + zoom, x3dom.debug.INFO);
     // http://gis.stackexchange.com/questions/12991/how-to-calculate-distance-to-ground-of-all-18-osm-zoom-levels
     // http://wiki.openstreetmap.org/wiki/Zoom_levels
     // The distance represented by one pixel (S) is given by
@@ -231,9 +280,9 @@ function view_ground_changed(e) {
 
 function updateCoord(zoom) {
 
-    var coordShape = document.getElementById('coordShape');
-    if (coordShape) {
-        scene.removeChild(coordShape);
+    var coordTrans = document.getElementById('coordTrans');
+    if (coordTrans) {
+        scene.removeChild(coordTrans);
     }
 
     coordinate = document.createElement('Coordinate');
@@ -252,9 +301,11 @@ function updateCoord(zoom) {
     indexedLineSet.appendChild(coordinate);
     indexedLineSet.appendChild(color);
     shape = document.createElement('Shape');
-    shape.setAttribute('id', 'coordShape');
     shape.appendChild(indexedLineSet);
-    scene.appendChild(shape);
+    transformC = document.createElement('Transform');
+    transformC.setAttribute('id', 'coordTrans');
+    transformC.appendChild(shape);
+    scene.appendChild(transformC);
 }
 
 function initEarthMode() {
@@ -262,7 +313,7 @@ function initEarthMode() {
     navigationInfo.setAttribute('id', 'nav');
     navigationInfo.setAttribute('headlight', 'true');
     navigationInfo.setAttribute('type', 'turntable');
-    navigationInfo.setAttribute('typeParams', '0 0 0 3.14');
+    navigationInfo.setAttribute('typeParams', '0 0 1.57 3.14');
     navigationInfo.setAttribute('visibilityLimit', '0');
     navigationInfo.setAttribute('transitionType', 'TELEPORT');
     scene.appendChild(navigationInfo);
