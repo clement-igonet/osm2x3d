@@ -10,7 +10,7 @@ function handleSingleClick(Group) {
 }
 
 DISTANCE_LIMIT = 75000.0;
-EARTH_RADIUS = 6372.7982;
+EARTH_RADIUS = 6372798.2;
 EARTH_CIRC = EARTH_RADIUS * 2 * Math.PI;
 TILE_SIZE = 256;
 Osm2X3d.myZConst = 17;
@@ -35,7 +35,7 @@ document.onload = function () {
 function Osm2X3dGround() {
     this.lat = 48.703885;
     this.lon = 2.0699095;
-    this.elev = 14000;
+    this.elev = 14000000;
     this.cameraTransform = document.createElement('Transform');
     this.viewpoint;
     this.camPos = new x3dom.fields.SFVec3f(0, this.elev, 0);
@@ -236,7 +236,7 @@ Osm2X3dGround.prototype.updateCoord = function (zoom) {
     coordinate = document.createElement('Coordinate');
     coordinate.setAttribute('id', 'coordinate');
     var fact = Math.pow(2, zoom);
-    var zzz = '0 0 0 ' + 40000 / fact + ' 0 0 0 ' + 40000 / fact + ' 0 0 0 ' + 40000 / fact;
+    var zzz = '0 0 0 ' + 40000000 / fact + ' 0 0 0 ' + 40000000 / fact + ' 0 0 0 ' + 40000000 / fact;
     x3dom.debug.doLog('zzz: ' + zzz, x3dom.debug.INFO);
     coordinate.setAttribute('point', zzz);
     color = document.createElement('Color');
@@ -346,7 +346,7 @@ Osm2X3d.processZoom = function (camCoord) {
             + Math.pow(camCoord.y, 2)
             + Math.pow(camCoord.z, 2);
     var rdist = Math.sqrt(rdist2);
-    var zoom = parseInt(Osm2X3d.myZConst - Math.log2(rdist));
+    var zoom = parseInt(Osm2X3d.myZConst - Math.log2(rdist / 1000.0));
     var zoom = Math.min(zoom, 19);
     var zoom = Math.max(zoom, 1);
     return zoom;
