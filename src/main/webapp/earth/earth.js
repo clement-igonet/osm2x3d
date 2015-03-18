@@ -138,42 +138,38 @@ Osm2X3dGround.prototype.updateScene = function () {
     var z = EARTH_RADIUS * (self.lat - latTile) * Math.PI / 180;
     self.updateCoord(zoom);
 //    var scene = document.getElementById("scene");
-    var sceneContent = document.getElementById("x3dTile");
+    var sceneContent = document.getElementById('x3dTile');
     if (sceneContent) {
         sceneContent.parentNode.removeChild(sceneContent);
     }
-    var transform = document.createElement('Transform');
 //    if (zoom <= 16) {
+
     var size = width + ' ' + height;
     var translation = (x + width / 2) + ' 0 ' + (z + height / 2);
-//  <Transform id='x3dTile' translation="' + translation + '" rotation="1 0 0 -1.5708">
-//      <Shape>
-//          <Appearance>
-//              <ImageTexture url=\'"' + url + '"\'/>
-//          </Appearance>
-//          <Rectangle2D size="' + size + '"></Rectangle2D>
-//      </Shape>
-//  </Transform>
-    imageTexture = document.createElement('ImageTexture');
-    imageTexture.setAttribute(
-            'url',
-            'http://a.tile.openstreetmap.org/'
-            + zoom + '/' + xtile + '/' + ytile + '.png');
-    appearance = document.createElement('Appearance');
-    appearance.appendChild(imageTexture);
-    rectangle = document.createElement('Rectangle2D');
-    rectangle.setAttribute('size', size);
-    shape = document.createElement('Shape');
-    shape.appendChild(appearance);
-    shape.appendChild(rectangle);
-    transform.setAttribute('id', 'x3dTile');
-    transform.setAttribute('translation', translation);
-    transform.setAttribute('rotation', "1 0 0 -1.5708");
-    transform.appendChild(shape);
-    scene.appendChild(transform);
+
+    var domElement = Osm2X3d.createGround(size, translation, zoom, xtile, ytile);
+    scene.appendChild(domElement);
+
 
     if (zoom > 16) {
-        
+        inline = document.createElement('inline');
+        inline.setAttribute('id', 'x3dTile');
+        inline.setAttribute('nameSpaceName', 'myX3d');
+        var lonTile = Osm2X3d.xtile2long(xtile, zoom);
+        var latTile = Osm2X3d.ytile2lat(ytile, zoom);
+        var lonTilePlus = Osm2X3d.xtile2long(xtile + 1, zoom);
+        var latTilePlus = Osm2X3d.ytile2lat(ytile + 1, zoom);
+        var url = 'http://web.osm2x3d.net/osm2x3d.php?'
+                + 'll_lon=' + lonTile
+                + '&ll_lat=' + latTilePlus
+                + '&ur_lon=' + lonTilePlus
+                + '&ur_lat=' + latTile;
+//        var url = 'LasVegas.x3d';
+//        inline.setAttribute('url', url);
+        x3dom.debug.doLog('url: ' + url, x3dom.debug.INFO);
+
+        inline.setAttribute('url', 'LasVegas.x3d');
+        scene.appendChild(inline);
     }
 //    } else {
 //        inline = document.createElement('inline');
@@ -352,3 +348,31 @@ Osm2X3d.processZoom = function (camCoord) {
     return zoom;
 }
 
+Osm2X3d.createGround = function (size, translation, zoom, xtile, ytile) {
+//  <Transform id='x3dTile' translation="' + translation + '" rotation="1 0 0 -1.5708">
+//      <Shape>
+//          <Appearance>
+//              <ImageTexture url=\'"' + url + '"\'/>
+//          </Appearance>
+//          <Rectangle2D size="' + size + '"></Rectangle2D>
+//      </Shape>
+//  </Transform>
+    var imageTexture = document.createElement('ImageTexture');
+    imageTexture.setAttribute(
+            'url',
+            'http://a.tile.openstreetmap.org/'
+            + zoom + '/' + xtile + '/' + ytile + '.png');
+    var appearance = document.createElement('Appearance');
+    appearance.appendChild(imageTexture);
+    var rectangle = document.createElement('Rectangle2D');
+    rectangle.setAttribute('size', size);
+    var shape = document.createElement('Shape');
+    shape.appendChild(appearance);
+    shape.appendChild(rectangle);
+    var transform = document.createElement('Transform');
+    transform.setAttribute('id', 'x3dTile');
+    transform.setAttribute('translation', translation);
+    transform.setAttribute('rotation', "1 0 0 -1.5708");
+    transform.appendChild(shape);
+    return transform;
+}
