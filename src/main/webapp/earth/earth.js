@@ -33,9 +33,12 @@ document.onload = function () {
 }
 
 function Osm2X3dGround() {
-    this.lat = 48.703885;
-    this.lon = 2.0699095;
-    this.elev = 14000000;
+//    18/40.74856/-73.98641
+//    this.lat = 48.703885;
+//    this.lon = 2.0699095;
+    this.lat = 40.74856;
+    this.lon = -73.98641;
+    this.elev = 1400;
     this.cameraTransform = document.createElement('Transform');
     this.viewpoint;
     this.camPos = new x3dom.fields.SFVec3f(0, this.elev, 0);
@@ -216,14 +219,8 @@ Osm2X3dGround.prototype.updateScene = function () {
         transform.appendChild(shape);
         group.appendChild(transform);
     }
-    var mainTransform = document.createElement('Transform');
-    mainTransform.setAttribute('id', 'x3dTile');
-    mainTransform.setAttribute('translation', translation);
-    mainTransform.setAttribute('rotation', "1 0 0 -1.5708");
-    mainTransform.appendChild(group);
-    scene.appendChild(mainTransform);
 
-    if (zoom > 16) {
+    if (zoom > 15) {
         inline = document.createElement('inline');
         inline.setAttribute('id', 'x3dTile');
         inline.setAttribute('nameSpaceName', 'myX3d');
@@ -237,12 +234,28 @@ Osm2X3dGround.prototype.updateScene = function () {
                 + '&ur_lon=' + lonTilePlus
                 + '&ur_lat=' + latTile;
 //        var url = 'LasVegas.x3d';
-//        inline.setAttribute('url', url);
+        inline.setAttribute('url', url);
         x3dom.debug.doLog('url: ' + url, x3dom.debug.INFO);
 
-        inline.setAttribute('url', 'LasVegas.x3d');
-        scene.appendChild(inline);
+//        inline.setAttribute('url', 'LasVegas.x3d');
+//        inline.setAttribute('url', 'esb.x3d');
+//        scene.appendChild(inline);
+
+        transform = document.createElement('Transform');
+        transform.setAttribute(
+                'translation', '0 0 0');
+        transform.setAttribute('rotation', "1 0 0 1.5708");
+        transform.appendChild(inline);
+        group.appendChild(transform);
     }
+
+    var mainTransform = document.createElement('Transform');
+    mainTransform.setAttribute('id', 'x3dTile');
+    mainTransform.setAttribute('translation', translation);
+    mainTransform.setAttribute('rotation', "1 0 0 -1.5708");
+    mainTransform.appendChild(group);
+    scene.appendChild(mainTransform);
+    //    
 //    } else {
 //        inline = document.createElement('inline');
 //        inline.setAttribute('id', 'x3dTile');
