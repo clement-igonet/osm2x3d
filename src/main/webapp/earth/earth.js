@@ -128,14 +128,16 @@ Osm2X3dGround.prototype.updateScene = function () {
     zoom = Osm2X3d.processZoom(self.camPos);
     var xtile = Osm2X3d.long2xtile(self.lon, zoom);
     var ytile = Osm2X3d.lat2ytile(self.lat, zoom);
+    x3dom.debug.doLog('xtile: ' + xtile, x3dom.debug.INFO);
+    x3dom.debug.doLog('ytile: ' + ytile, x3dom.debug.INFO);
     var lonTile = Osm2X3d.xtile2long(xtile, zoom);
     var latTile = Osm2X3d.ytile2lat(ytile, zoom);
     var lonTilePlus = Osm2X3d.xtile2long(xtile + 1, zoom);
     var latTilePlus = Osm2X3d.ytile2lat(ytile + 1, zoom);
-    var width = EARTH_RADIUS * (lonTilePlus - lonTile) * Math.PI / 180;
-    var height = EARTH_RADIUS * (latTile - latTilePlus) * Math.PI / 180;
-    var x = EARTH_RADIUS * (lonTile - self.lon) * Math.PI / 180;
-    var z = EARTH_RADIUS * (self.lat - latTile) * Math.PI / 180;
+    var widthTile_3d = EARTH_RADIUS * (lonTilePlus - lonTile) * Math.PI / 180;
+    var heightTile_3d = EARTH_RADIUS * (latTile - latTilePlus) * Math.PI / 180;
+    var x_3d = EARTH_RADIUS * (lonTile - self.lon) * Math.PI / 180;
+    var z_3d = EARTH_RADIUS * (self.lat - latTile) * Math.PI / 180;
     self.updateCoord(zoom);
 //    var scene = document.getElementById("scene");
     var sceneContent = document.getElementById('x3dTile');
@@ -144,12 +146,82 @@ Osm2X3dGround.prototype.updateScene = function () {
     }
 //    if (zoom <= 16) {
 
-    var size = width + ' ' + height;
-    var translation = (x + width / 2) + ' 0 ' + (z + height / 2);
+    var size = widthTile_3d + ' ' + heightTile_3d;
+    var translation = (x_3d + widthTile_3d / 2) + ' 0 ' + (z_3d + heightTile_3d / 2);
 
-    var domElement = Osm2X3d.createGround(size, translation, zoom, xtile, ytile);
-    scene.appendChild(domElement);
+    var tiles = [];
+    var widthCanvas = x3dElement.runtime.getWidth();
+    var heightCanvas = x3dElement.runtime.getHeight();
 
+//    var heightCanvas = 255;
+//    var widthCanvas = 255;
+
+//    var nTileWidth = widthCanvas / 256;
+//    var nTileHeight = heightCanvas / 256;
+
+    var xtileFloat = Osm2X3d.long2xtileFloat(self.lon, zoom);
+    var ytileFloat = Osm2X3d.lat2ytileFloat(self.lat, zoom);
+
+    var xtileCenter_2d = widthCanvas / 2 - (xtileFloat - xtile) * 256;
+    var ytileCenter_2d = heightCanvas / 2 - (ytileFloat - ytile) * 256;
+
+    var xtileShift = Math.floor((xtileCenter_2d + 255) / 256);
+    var ytileShift = Math.floor((ytileCenter_2d + 255) / 256);
+
+    var xtileUL_2d = xtileCenter_2d - (xtileShift * 256);
+    var ytileUL_2d = ytileCenter_2d - (ytileShift * 256);
+
+    var nTileWidth = Math.floor((widthCanvas - xtileUL_2d + 255) / 256);
+    var nTileHeight = Math.floor((heightCanvas - ytileUL_2d + 255) / 256);
+
+    var n = 0;
+    for (i = 0; i < nTileWidth; i++) {
+        for (j = 0; j < nTileHeight; j++) {
+            var xtileShift_ = i - xtileShift;
+            var ytileShift_ = j - ytileShift;
+            var tile = {
+                zoom: zoom,
+                xtile: xtile + xtileShift_,
+                ytile: ytile + ytileShift_
+            }
+            tiles[n++] = tile;
+//            x3dom.debug.doLog('zoom: ' + tile.zoom, x3dom.debug.INFO);
+//            x3dom.debug.doLog('zoom: ' + tile.zoom, x3dom.debug.INFO);
+        }
+    }
+
+    var group = document.createElement('Group');
+    var transform;
+    x3dom.debug.doLog('tiles.length: ' + tiles.length, x3dom.debug.INFO);
+    for (k = 0; k < tiles.length; k++) {
+        var imageTexture = document.createElement('ImageTexture');
+        imageTexture.setAttribute(
+                'url',
+                'http://a.tile.openstreetmap.org/'
+                + zoom + '/' + tiles[k].xtile + '/' + tiles[k].ytile + '.png');
+        var appearance = document.createElement('Appearance');
+        appearance.appendChild(imageTexture);
+        var rectangle = document.createElement('Rectangle2D');
+        rectangle.setAttribute('size', size);
+        var shape = document.createElement('Shape');
+        shape.appendChild(appearance);
+        shape.appendChild(rectangle);
+        transform = document.createElement('Transform');
+        var translation_ = (widthTile_3d * (tiles[k].xtile - xtile)) + ' ' + -(heightTile_3d * (tiles[k].ytile - ytile)) + ' 0';
+        x3dom.debug.doLog('translation_: ' + translation_, x3dom.debug.INFO);
+        transform.setAttribute(
+                'translation',
+                translation_);
+//        transform.setAttribute('rotation', "1 0 0 -1.5708");
+        transform.appendChild(shape);
+        group.appendChild(transform);
+    }
+    var mainTransform = document.createElement('Transform');
+    mainTransform.setAttribute('id', 'x3dTile');
+    mainTransform.setAttribute('translation', translation);
+    mainTransform.setAttribute('rotation', "1 0 0 -1.5708");
+    mainTransform.appendChild(group);
+    scene.appendChild(mainTransform);
 
     if (zoom > 16) {
         inline = document.createElement('inline');
@@ -206,10 +278,6 @@ function view_changed(e) {
     x3dom.debug.doLog('camOri : ' + osm2X3d.camOri, x3dom.debug.INFO);
 
     x3dElement = document.getElementById('x3dElement');
-    height = x3dElement.runtime.getHeight();
-    x3dom.debug.doLog('height: ' + height, x3dom.debug.INFO);
-    width = x3dElement.runtime.getWidth();
-    x3dom.debug.doLog('width: ' + width, x3dom.debug.INFO);
     zoom = Osm2X3d.processZoom(osm2X3d.camPos);
     x3dom.debug.doLog('zoom: ' + zoom, x3dom.debug.INFO);
     // http://gis.stackexchange.com/questions/12991/how-to-calculate-distance-to-ground-of-all-18-osm-zoom-levels
@@ -324,6 +392,14 @@ Osm2X3d.long2xtile = function (lon, zoom) {
 Osm2X3d.lat2ytile = function (lat, zoom) {
     return (Math.floor((1 - Math.log(Math.tan(lat * Math.PI / 180) + 1 / Math.cos(lat * Math.PI / 180)) / Math.PI) / 2 * Math.pow(2, zoom)));
 }
+
+Osm2X3d.long2xtileFloat = function (lon, zoom) {
+    return ((lon + 180) / 360 * Math.pow(2, zoom));
+}
+Osm2X3d.lat2ytileFloat = function (lat, zoom) {
+    return ((1 - Math.log(Math.tan(lat * Math.PI / 180) + 1 / Math.cos(lat * Math.PI / 180)) / Math.PI) / 2 * Math.pow(2, zoom));
+}
+
 Osm2X3d.xtile2long = function (x, z) {
     return (x / Math.pow(2, z) * 360 - 180);
 }
