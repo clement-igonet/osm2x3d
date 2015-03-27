@@ -17,8 +17,8 @@ public:
     void addLevel(int level, shared_ptr<My3DBuildingFloorPart> my3DBuildingFloorPart);
     void addBuildingPart(shared_ptr<My3DBuildingPart> my3DBuildingPart);
 
-    string buildX3Dom();
-    void buildX3Dom(ostream& outputStream);
+//    string buildX3Dom();
+    void buildX3Dom(int loD, ostream& outputStream);
     string name_;
     int id_;
     double perimeter_;

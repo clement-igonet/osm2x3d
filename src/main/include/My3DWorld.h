@@ -11,7 +11,7 @@ class My3DWorld : public Singleton<My3DWorld> {
     friend class Singleton<My3DWorld>;
 public:
     void addBuilding(shared_ptr<My3DBuilding> my3DBuilding);
-    void buildX3Dom(ostream& outputStream);
+    void buildX3Dom(int loD, bool hasTiles, ostream& outputStream);
 //    int getNumberOfBuildings();
 private:
     vector<shared_ptr<My3DBuilding >> buildings;

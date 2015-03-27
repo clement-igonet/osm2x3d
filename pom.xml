@@ -127,9 +127,9 @@
                             <arguments>
                                 <argument>-i</argument>
                                 <!--<argument>${project.basedir}/src/main/resources/osm/Moscow.osm</argument>-->
-                                <argument>${project.basedir}/src/main/resources/osm/Louvre.osm</argument>
+                                <!--<argument>${project.basedir}/src/main/resources/osm/Louvre.osm</argument>-->
                                 <!--<argument>${project.basedir}/src/main/resources/osm/ESB02.osm</argument>-->
-                                <!--<argument>${project.basedir}/src/main/resources/osm/ESB_light.osm</argument>-->
+                                <argument>${project.basedir}/src/main/resources/osm/ESB_light.osm</argument>
                                 <!--<argument>${project.basedir}/src/main/resources/osm/Louvre.osm</argument>-->
                                 <!--<argument>${project.basedir}/src/main/resources/osm/Petronia.osm</argument>-->
                                 <!--<argument>${project.basedir}/src/main/resources/osm/Petronia_bug.osm</argument>-->
@@ -140,6 +140,8 @@
                                 <argument>${project.build.directory}/result.x3d</argument>
                                 <argument>--verbose</argument>
                                 <argument>--noTile</argument>
+                                <argument>--LoD</argument>
+                                <argument>4</argument>
                                 <!--<argument>- -embedded</argument>-->
                             </arguments>
                         </configuration>

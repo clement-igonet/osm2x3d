@@ -25,9 +25,11 @@ using namespace std;
 //}
 
 /* Flag set by ‘--verbose’. */
-static int verbose_flag;
-static int help_flag;
+static int verbose_flag = 0;
+static int help_flag = 0;
 static int has_tiles = 1;
+//static int has_floors = 1;
+//static int has_det_roof = 1;
 
 /*******************************************************************************
  * This tool is a converter from Open Street Map xml data file
@@ -51,19 +53,22 @@ Usage : osm2x3d.uexe - i / --input INPUT - o / -output OUTPUT
 Example :
 $ osm2x3d.uexe - i esb.osm - o result.x3d --verbose
 Options :
+-h / --help             print this help
+--verbose / --brief     verbose / brief mode
+-t / --noTile           no OSM tile
 -i / --input            Open Street Map xml input file
 -o / --output           X3D xml scene graph. Default is "result.x3d" on working
                         directory
+-l / --LoD              Level of Detail (Building, BuildingPart)
 -z / --zoom             zoom level (osm tile reference)
 -x / --xTile            x tile
--y / --yTile            y tile
---verbose / --brief     verbose / brief mode
--h / --help             print this help)";
+-y / --yTile            y tile)";
 }
 // cf http://www.boost.org/doc/libs/1_55_0/libs/log/example/doc/tutorial_file.cpp
 
 int main(int argc, char **argv) {
     bool stdout = true;
+    int loD = 4;
     int c;
     string inputFile("");
     string outputFile("result.x3d");
@@ -99,6 +104,7 @@ int main(int argc, char **argv) {
                We distinguish them by their indices. */
             {"input", required_argument, 0, 'i'},
             {"output", required_argument, 0, 'o'},
+            {"LoD", required_argument, 0, 'l'},
             {"xTile", required_argument, 0, 'x'},
             {"yTile", required_argument, 0, 'y'},
             {"zoom", required_argument, 0, 'z'},
@@ -107,7 +113,7 @@ int main(int argc, char **argv) {
         /* getopt_long stores the option index here. */
         int option_index = 0;
 
-        c = getopt_long(argc, argv, "i:o:tx:y:z:", long_options, &option_index);
+        c = getopt_long(argc, argv, "bhi:o:l:tvx:y:z:", long_options, &option_index);
 
         /* Detect the end of the options. */
         if (c == -1)
@@ -133,6 +139,11 @@ int main(int argc, char **argv) {
                 FILE_LOG(logINFO) << "option -o with value " << optarg;
                 stdout = false;
                 outputFile = optarg;
+                break;
+
+            case 'l':
+                FILE_LOG(logINFO) << "option -l with value " << optarg;
+                istringstream(optarg) >> loD;
                 break;
 
             case 'x':
@@ -186,6 +197,29 @@ int main(int argc, char **argv) {
     } else {
         OsmWorld::getInstance()->initFromFile(inputFile, zoom, xTile, yTile);
     }
+//    switch (loD) {
+//        case 4:
+//            has_floors = true;
+//            has_det_roof = true;
+//            break;
+//        case 3:
+//            has_floors = false;
+//            has_det_roof = true;
+//            break;
+//        case 2:
+//            has_floors = false;
+//            has_det_roof = false;
+//            break;
+//        case 1:
+//            has_floors = false;
+//            has_det_roof = false;
+//            break;
+//        case 0:
+//            has_floors = false;
+//            has_det_roof = false;
+//            break;
+//    }
+
     // Convert OSM objects to My3D objects
     if (has_tiles) {
         Converter::osmWorld23DGround();
@@ -197,10 +231,10 @@ int main(int argc, char **argv) {
 
     if (stdout) {
         // Extract X3D XML data from My3D objects
-        My3DWorld::getInstance()->buildX3Dom(*&cout);
+        My3DWorld::getInstance()->buildX3Dom(loD, has_tiles, *&cout);
     } else {
         std::shared_ptr<ofstream> outputStreamPtr = std::shared_ptr<ofstream> (new ofstream(outputFile));
-        My3DWorld::getInstance()->buildX3Dom(*outputStreamPtr);
+        My3DWorld::getInstance()->buildX3Dom(loD, has_tiles, *outputStreamPtr);
         outputStreamPtr->close();
     }
     exit(EXIT_SUCCESS);

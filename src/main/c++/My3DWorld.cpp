@@ -6,7 +6,10 @@ void My3DWorld::addBuilding(shared_ptr<My3DBuilding> my3DBuilding) {
     this->buildings.push_back(my3DBuilding);
 }
 
-void My3DWorld::buildX3Dom(ostream& outputStream) {
+void My3DWorld::buildX3Dom(
+        int loD,
+        bool hasTiles,
+        ostream& outputStream) {
     //    outputStream << R"(<?xml version="1.0" encoding="UTF-8"?>
     outputStream << R"(<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"
@@ -47,11 +50,13 @@ void My3DWorld::buildX3Dom(ostream& outputStream) {
             onclick="handleSingleClick(this);">)";
         //            onclick="handleGroupClick(event);">)";
         //        outputStream << "<Group>";
-        (*buildingIt)->buildX3Dom(outputStream);
+        (*buildingIt)->buildX3Dom(loD, outputStream);
         outputStream << R"(
         </Group>)";
     }
-    My3DGround::getInstance()->buildX3Dom(outputStream);
+    if (hasTiles) {
+        My3DGround::getInstance()->buildX3Dom(outputStream);
+    }
     outputStream << R"(
     </Scene>             
 </X3D>)";

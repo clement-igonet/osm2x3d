@@ -63,8 +63,6 @@ void Converter::osmWorld23DGround() {
                 RADIUS * (lonMax - OsmWorld::getInstance()->origin_.second) * (M_PI / 180),
                 RADIUS * (OsmWorld::getInstance()->origin_.first - latMax) * (M_PI / 180));
 
-
-
         double phi = max(lonMax - lonMin, latMax - latMin);
         // Take the integer part of decimal zoom
         int minZoom = (int) (log2(360 / phi) - 0.5);
@@ -90,13 +88,10 @@ void Converter::osmWorld23DGround() {
                 //            FILE_LOG(logINFO) << "Converter::osmWorld23DGround - lon: " << lon;
                 double nextLon = OsmUtil::tilex2long(xTile + 1, zoom);
 
-
-
                 double x0 = RADIUS * (lon - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
                 double x1 = RADIUS * (nextLon - OsmWorld::getInstance()->origin_.second) * (M_PI / 180);
                 double z0 = RADIUS * (OsmWorld::getInstance()->origin_.first - lat) * (M_PI / 180);
                 double z1 = RADIUS * (OsmWorld::getInstance()->origin_.first - nextLat) * (M_PI / 180);
-
 
                 shared_ptr<My3DGroundTile> my3DGroundTile(new My3DGroundTile(
                         make_pair(x0, z0), make_pair(x1, z1), xTile, yTile, zoom));
