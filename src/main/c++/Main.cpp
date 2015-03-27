@@ -27,6 +27,7 @@ using namespace std;
 /* Flag set by ‘--verbose’. */
 static int verbose_flag;
 static int help_flag;
+static int has_tiles = 1;
 
 /*******************************************************************************
  * This tool is a converter from Open Street Map xml data file
@@ -38,6 +39,7 @@ static int help_flag;
  * -i / --input   Open Street Map xml input file
  * -o / --output  X3D xml scene graph. Default is "result.x3d" on working
  * directory
+ * -t / --notiles No OSM tile
  * --verbose/--brief     verbose/brief mode
  * -h/--help      print this help
  ******************************************************************************/
@@ -89,22 +91,23 @@ int main(int argc, char **argv) {
     while (1) {
         static struct option long_options[] = {
             /* These options set a flag. */
-            {"verbose", no_argument, &verbose_flag, 1},
             {"brief", no_argument, &verbose_flag, 0},
             {"help", no_argument, &help_flag, 1},
+            {"noTile", no_argument, &has_tiles, 0},
+            {"verbose", no_argument, &verbose_flag, 1},
             /* These options don't set a flag.
                We distinguish them by their indices. */
             {"input", required_argument, 0, 'i'},
             {"output", required_argument, 0, 'o'},
-            {"zoom", required_argument, 0, 'z'},
             {"xTile", required_argument, 0, 'x'},
             {"yTile", required_argument, 0, 'y'},
+            {"zoom", required_argument, 0, 'z'},
             {0, 0, 0, 0}
         };
         /* getopt_long stores the option index here. */
         int option_index = 0;
 
-        c = getopt_long(argc, argv, "i:o:", long_options, &option_index);
+        c = getopt_long(argc, argv, "i:o:tx:y:z:", long_options, &option_index);
 
         /* Detect the end of the options. */
         if (c == -1)
@@ -132,11 +135,6 @@ int main(int argc, char **argv) {
                 outputFile = optarg;
                 break;
 
-            case 'z':
-                FILE_LOG(logINFO) << "option -z with value " << optarg;
-                istringstream(optarg) >> zoom;
-                break;
-
             case 'x':
                 FILE_LOG(logINFO) << "option -x with value " << optarg;
                 istringstream(optarg) >> xTile;
@@ -145,6 +143,11 @@ int main(int argc, char **argv) {
             case 'y':
                 FILE_LOG(logINFO) << "option -y with value " << optarg;
                 istringstream(optarg) >> yTile;
+                break;
+
+            case 'z':
+                FILE_LOG(logINFO) << "option -z with value " << optarg;
+                istringstream(optarg) >> zoom;
                 break;
 
             case '?':
@@ -184,7 +187,9 @@ int main(int argc, char **argv) {
         OsmWorld::getInstance()->initFromFile(inputFile, zoom, xTile, yTile);
     }
     // Convert OSM objects to My3D objects
-    Converter::osmWorld23DGround();
+    if (has_tiles) {
+        Converter::osmWorld23DGround();
+    }
     Converter::osmWorld23DBuildings();
 
     //    OsmWorld::getInstance()->process3DBuildings();
