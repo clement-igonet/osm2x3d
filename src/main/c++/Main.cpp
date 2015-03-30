@@ -197,28 +197,6 @@ int main(int argc, char **argv) {
     } else {
         OsmWorld::getInstance()->initFromFile(inputFile, zoom, xTile, yTile);
     }
-//    switch (loD) {
-//        case 4:
-//            has_floors = true;
-//            has_det_roof = true;
-//            break;
-//        case 3:
-//            has_floors = false;
-//            has_det_roof = true;
-//            break;
-//        case 2:
-//            has_floors = false;
-//            has_det_roof = false;
-//            break;
-//        case 1:
-//            has_floors = false;
-//            has_det_roof = false;
-//            break;
-//        case 0:
-//            has_floors = false;
-//            has_det_roof = false;
-//            break;
-//    }
 
     // Convert OSM objects to My3D objects
     if (has_tiles) {

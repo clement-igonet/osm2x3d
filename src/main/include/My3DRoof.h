@@ -18,8 +18,6 @@ public:
 
     My3DRoof(
             shared_ptr <vector < pair<double, double >> > points,
-            double elevation,
-//            double height,
             Shape::Type shape,
             string colour);
     void buildX3Dom(ostream& outputStream);
@@ -29,7 +27,9 @@ public:
     double angle_;
     long levels_;
     double direction_;
-    double elevation_;
+//    double elevation_;
+    boost::optional<double> optElevation_;
+    
     //    double height_;
     boost::optional<double> optHeight_;
     string colour_;

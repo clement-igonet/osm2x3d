@@ -154,33 +154,7 @@ void OsmWorld::init_(
                         name = w.second.get<string > ("<xmlattr>.v");
                     } else if (w.second.get<string > ("<xmlattr>.k") == "building:colour") {
                         colour = w.second.get<string > ("<xmlattr>.v");
-                    }//<way id="53815257" visible="true" version="14" changeset="25664167" timestamp="2014-09-25T12:39:11Z" user="Goffredo" uid="194751">
-                        //  <nd ref="679352088"/>
-                        //  <nd ref="679352080"/>
-                        //  <nd ref="679352072"/>
-                        //  <nd ref="679352082"/>
-                        //  <nd ref="679352096"/>
-                        //  <nd ref="679352088"/>
-                        //  <tag k="building" v="yes"/>
-                        //  <tag k="building:material" v="glass"/>
-                        //  <tag k="height" v="22 m"/>
-                        //  <tag k="layer" v="1"/>
-                        //  <tag k="name" v="Pyramide du Louvre"/>
-                        //  <tag k="name:de" v="Pyramide im Louvre"/>
-                        //  <tag k="name:et" v="Louvre'i püramiid"/>
-                        //  <tag k="name:fr" v="Pyramide du Louvre"/>
-                        //  <tag k="name:he" v="פירמידת מוזיאון הלובר"/>
-                        //  <tag k="name:it" v="Piramide del Louvre"/>
-                        //  <tag k="name:pl" v="Piramida Luwru"/>
-                        //  <tag k="name:ru" v="Пирамида Лувра"/>
-                        //  <tag k="name:uk" v="Піраміда Лувра"/>
-                        //  <tag k="roof:height" v="22"/>
-                        //  <tag k="roof:material" v="glass"/>
-                        //  <tag k="roof:shape" v="pyramidal"/>
-                        //  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009"/>
-                        //  <tag k="wikipedia" v="fr:Pyramide du Louvre"/>
-                        // </way>
-                    else if (w.second.get<string > ("<xmlattr>.k") == "roof:shape") {
+                    } else if (w.second.get<string > ("<xmlattr>.k") == "roof:shape") {
                         roofShape = w.second.get<string> ("<xmlattr>.v");
                     } else if (w.second.get<string > ("<xmlattr>.k") == "roof:height") {
                         optRoofHeight = OsmUtil::height2m(w.second.get<string > ("<xmlattr>.v"));
